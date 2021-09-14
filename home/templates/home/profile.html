@@ -1,0 +1,72 @@
+{% extends './base.html' %}
+{% block body %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static './Css/profile.css'%}">
+    <title>profile</title>
+</head>
+<body>
+    <section class="profile">
+        <div class="container">
+            <div class="profile-head">
+                <img class="user" src="{% static './images/alicia.png' %}" alt="">
+                <h4 class="name">Jennifer Lopez</h4>
+                <p class="about">Been at Mediterranean for fourteen years. raised by mother convent and schools at St Richard.</p>
+                <div class="interact">
+                    <button class="follow">follow</button>
+                    <img class="like" src="{% static './images/heart.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="profile-history">
+            <div class="card">
+                <div class="followers">
+                    <h3 class="count"><span class="followers-count">7.5</span><span>K</span></h3>
+                    <p>followers</p>
+                </div>
+                <div class="events">
+                    <h3>53</h3>
+                    <p>events</p>
+                </div>
+                <div class="donations">
+                    <h3>18</h3>
+                    <p>donations</p>
+                </div>
+            </div>
+            <div class="container1">
+                <h3 class="photos">EVENTS PHOTOS</h3>
+                <div class="photos">
+                    <img src="{% static './images/alicia.png' %}" alt="">
+                    <img src="{% static './images/veronica.png' %}" alt="">
+                </div>
+                <div class="address">
+                    <h4>address</h4>
+                    <p>497 Evergreen Rd. Roseville, <br> CA 95673</p>
+                </div>
+                <div class="contact">
+                    <h5>contact</h5>
+                    <p>+43 334 54 887</p>
+                    <p>jennifer300@gmail.com</p>
+                    <p><img class="facebook" src="{% static './images/facebook_icon.png' %}" alt="">jenniferlopez</p>
+                    <p><img class="twitter" src="{% static './images/twitter_icon.png' %}" alt="">jenniferlp</p>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <h3>About <span>Jennifer</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi, exercitationem, tempora sapiente magnam magni officiis natus dicta fuga nisi voluptatum non dolores iusto sequi quam nobis ipsam minima consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis magni voluptatibus maxime officia iusto perferendis nulla labore possimus. Sequi tenetur vitae iure exercitationem et unde, itaque corrupti minima ducimus fugit.
+            <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi, exercitationem, tempora sapiente magnam magni officiis natus dicta fuga nisi voluptatum non dolores iusto sequi quam nobis ipsam minima consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis magni voluptatibus maxime officia iusto perferendis nulla labore possimus. Sequi tenetur vitae iure exercitationem et unde, itaque corrupti minima ducimus fugit.</p>
+        </div>
+        <div class="donate-btn">
+            <img class="btn" src="{% static './images/heart.png' %}" alt="">
+        <button class="donate-btn">Donate</button>
+        </div>
+    </section>
+</body>
+</html>
+{% endblock %}

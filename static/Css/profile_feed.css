@@ -1,0 +1,164 @@
+/* only section; a search bar, and multiple cards each containing images and text */
+section.grid{
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 60px;
+}
+section.grid div.search-bar{
+    width: 330px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 63%;
+	border: solid 1px #837f7f;
+	box-shadow: 2px 5px 3px #beb4b4;
+}
+section.grid div.search-bar input#search-bar{
+    border: none;
+    width: 280px;
+    height: 100%;
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+section.grid div.search-bar input#search-bar:focus{
+    background-color: #cfc9c9;
+    outline: none;
+}
+section.grid div.search-bar img#search_icon{
+    height: 100%;
+}
+section.grid div.search-bar img#search_icon:hover{
+	cursor: pointer;
+}
+section.grid div.card1{
+    display: flex;
+    border-radius: 20px;
+	border: solid 1px #837f7f;
+	box-shadow: 2px 5px 3px #beb4b4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 70%;
+}
+section.grid div.card1 img{
+    border-radius: 50%;
+    height: 60%;
+    width: 120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+section.grid div.card1 div.container{
+    color: #2699FB;
+    margin-top: 70px;
+    width: 70%;
+}
+section.grid div.card1 div.container h5.name{
+    font-size: 1.0em;
+    padding-bottom: 10px;
+}
+section.grid div.card1 div.container div.about{
+    display: flex;
+}
+section.grid div.card1 div.container div.about h6.about{
+    font-size: 0.8em;
+}
+section.grid div.card1 div.container div.about p.about-info{
+    font-size: 0.9em;
+    padding-left: 5px;
+}
+section.grid div.card1 div.container div.about p.about-info span{
+    font-size: 0.8em;
+    color: #161717;
+}
+section.grid div.card1 p.date{
+    color: #2699FB;
+    margin-left: 30px;
+    margin-top: 120px;
+    font-size: 0.6em;
+}
+@media only screen and (max-width: 980px){
+	/* only section; a search bar, and multiple cards each containing images and text */
+    section.grid div.search-bar{
+    	margin-left: 50%;
+    }
+}
+@media only screen and (max-width: 710px){
+	/* only section; a search bar, and multiple cards each containing images and text */
+    section.grid div.search-bar{
+    	margin-left: 42%;
+    }
+}
+@media only screen and (max-width: 590px){
+	/* only section; a search bar, and multiple cards each containing images and text */
+    section.grid div.search-bar{
+    	margin-left: 30%;
+    }
+}
+@media only screen and (max-width: 500px){
+    /* only section; a search bar, and multiple cards each containing images and text */
+	section.grid div.search-bar{
+		width: 65%;
+		margin-left: 30%;
+	}
+	section.grid div.search-bar input#search-bar{
+		width: 80%;
+	}
+	section.grid div.card1{
+		flex-flow: column;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 60px;
+		width: 90%;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	section.grid div.card1 img{
+		margin-left: auto;
+		margin-right: auto;
+		width: 120px;
+	}
+	section.grid div.card1 div.container{
+		margin-top: 0;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	section.grid div.card1 div.container div.about{
+		flex-flow: column;
+		padding-bottom: 20px;
+	}
+	section.grid div.card1 div.container div.about p.about-info{
+		padding-top: 0;
+		padding-left: 0;
+	}
+	section.grid div.card1 p.date{
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px
+	}
+}
+@media only screen and (max-width: 390px){
+	/* first section; a search bar, and multiple cards each containing images and text */
+    section.grid div.search-bar{
+		width: 65%;
+		margin-left: 30%;
+	}
+	section.grid div.search-bar input#search-bar{
+		width: 75%;
+	}
+}
+@media only screen and (max-width: 320px){
+	/* first section; a search bar, and multiple cards each containing images and text */
+    section.grid div.search-bar{
+		width: 70%;
+		margin-left: 25%;
+	}
+	section.grid div.search-bar input#search-bar{
+		width: 70%;
+	}
+}

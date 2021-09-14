@@ -1,0 +1,409 @@
+/* only section;  */
+section.profile{
+    display: flex;
+    flex-flow: column;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    width: 45%;
+    border-radius: 10px;
+	border: solid 1px #837f7f;
+	box-shadow: 2px 5px 3px #beb4b4;
+}
+section.profile div.container{
+    background: url("/static/images/sample img.jpg") 100% 0 no-repeat;
+    background-size: cover;
+}
+section.profile div.container div.profile-head{
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #ffffff;
+	border: solid 1px #837f7f;
+	box-shadow: 2px 5px 3px #beb4b4;
+	position: relative;
+	top: 120px
+}
+section.profile div.container div.profile-head img.user{
+	display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 120px;
+    position: relative;
+    bottom: 60px;
+}
+section.profile div.container div.profile-head h4.name{
+    color: #2699FB;
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+}
+section.profile div.container div.profile-head p.about{
+    color: #2699FB;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+}
+section.profile div.container div.profile-head div.interact{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    position: relative;
+    bottom: 20px;
+}
+section.profile div.container div.profile-head div.interact button.follow{
+    background-color: #2699FB;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    padding: 5px 0;
+    color: #ffffff;
+    width: 90%;
+}
+section.profile div.container div.profile-head div.interact img.like{
+    margin-left: 5%;
+    margin-top: 3px;
+    height: 30px;
+    width: 40px;
+}
+section.profile div.profile-history{
+    display: flex;
+    margin-top: 160px;
+}
+section.profile div.profile-history div.card{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-left: 10%;
+    width: 30%;
+    background-color: #A0A0A0;
+    border-radius: 35px;
+	border: solid 1px #837f7f;
+    color: #F3EEEE;
+}
+section.profile div.profile-history div.card div.followers{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+section.profile div.profile-history div.card div.followers h3{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+section.profile div.profile-history div.card div.followers p{
+    text-align: center;
+    padding-top: 3px;
+    font-size: 1.5em;
+}
+section.profile div.profile-history div.card div.events{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 80px;
+}
+section.profile div.profile-history div.card div.events h3{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+section.profile div.profile-history div.card div.events p{
+    text-align: center;
+    padding-top: 3px;
+    font-size: 1.5em;
+}
+section.profile div.profile-history div.card div.donations{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+section.profile div.profile-history div.card div.donations h3{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+section.profile div.profile-history div.card div.donations p{
+    text-align: center;
+    padding-top: 3px;
+    font-size: 1.5em;
+}
+section.profile div.profile-history div.container1 {
+    margin-left: 30px;
+    color: #2699FB;
+}
+section.profile div.profile-history div.container1 h3.photos{
+    font-weight: 500;
+}
+section.profile div.profile-history div.container1 div.photos{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section.profile div.profile-history div.container1 div.photos img{
+    border-radius: 50%;
+    margin-right: 30px;
+    width: 80px;
+    height: 80px;
+}
+section.profile div.profile-history div.container1 div.address{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section.profile div.profile-history div.container1 div.address h4{
+    font-weight: 500;
+    font-size: 1.4em;
+}
+section.profile div.profile-history div.container1 div.address p{
+    font-size: 0.8em;
+    padding-top: 10px;
+}
+section.profile div.profile-history div.container1 div.contact{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section.profile div.profile-history div.container1 div.contact h5{
+    font-weight: 500;
+    font-size: 1.1em;
+}
+section.profile div.profile-history div.container1 div.contact p{
+    font-size: 0.8em;
+    padding-top: 5px;
+}
+section.profile div.profile-history div.container1 div.contact p img.facebook{
+    width: 17px;
+    height: 26px;
+    margin-right: 10px;
+    position: relative;
+    top: 10px;
+}
+section.profile div.profile-history div.container1 div.contact p img.twitter{
+    width: 26px;
+    height: 19px;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: relative;
+    top: 5px;
+}
+section.profile div.about{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: #2699FB;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+section.profile div.about h3{
+    display: flex;
+    justify-content: center;
+    font-size: 1.7em;
+}
+section.profile div.about h3 span{
+    padding-left: 15px;
+    display: block;
+    font-weight: 500;
+    font-size: 0.7em;
+}
+section.profile div.about h3 span::first-letter{
+    font-size: 150%;
+    font-weight: 600;
+}
+section.profile div.about p{
+    padding-top: 20px;
+    line-height: 1.3;
+}
+section.profile div.donate-btn{
+    display: flex;
+    margin-left: 60%;
+}
+section.profile div.donate-btn img.btn{
+    width: 12px;
+    height: 10px;
+    position: relative;
+    left: 100px;
+}
+section.profile div.donate-btn button.donate-btn{
+    border-radius: 15px;
+	color: #ffffff;
+	background-color: #2699FB;
+	padding-top: 11px;
+	padding-bottom: 9px;
+	padding-left: 17px;
+	padding-right: 17px;
+	font-weight: bold;
+	font-size: 1.08em;
+	border: none;
+    width: 40%;
+    margin-bottom: 20px;
+    position: relative;
+    left: 100px;
+}
+/* media queries */
+@media only screen and (max-width: 1270px){
+	/* only section;  */
+    section.profile{
+    	width: 60%;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+}
+@media only screen and (max-width: 940px){
+	/* only section;  */
+    section.profile{
+    	width: 70%;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+    section.profile div.donate-btn{
+		margin-left: 50%;
+	}
+}
+@media only screen and (max-width: 660px){
+	/* only section;  */
+    section.profile{
+    	width: 80%;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+    section.profile div.donate-btn{
+		margin-left: 40%;
+	}
+}
+@media only screen and (max-width: 480px){
+	/* only section;  */
+    section.profile{
+    	width: 85%;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+    section.profile div.donate-btn{
+		margin-left: 35%;
+	}
+}
+@media only screen and (max-width: 420px){
+	/* only section;  */
+	section.profile{
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+	section.profile div.container div.profile-head{
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+	section.profile div.container div.profile-head img.user{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	section.profile div.profile-history div.card{
+		margin-left: 3%;
+		border-radius: 15px;
+	}
+	section.profile div.profile-history div.card div.followers h3{
+		font-size: 1.1em;
+	}
+	section.profile div.profile-history div.card div.followers p{
+		font-size: 1.3em;
+	}
+	section.profile div.profile-history div.card div.events h3{
+		font-size: 1.1em;
+	}
+	section.profile div.profile-history div.card div.events p{
+		font-size: 1.3em;
+	}
+	section.profile div.profile-history div.card div.donations h3{
+		font-size: 1.1em;
+	}
+	section.profile div.profile-history div.card div.donations p{
+		font-size: 1.2em;
+        width: 90%;
+	}
+	section.profile div.profile-history div.container1 {
+		margin-left: 15px;
+	}
+	section.profile div.about{
+		margin-left: 5%;
+		width: 90%;
+	}
+	section.profile div.about h3{
+		font-size: 1.5em;
+	}
+	section.profile div.about h3 span::first-letter{
+		font-size: 130%;
+	}
+	section.profile div.about p{
+		padding-top: 20px;
+		line-height: 1.3;
+	}
+	section.profile div.donate-btn{
+		margin-left: 25%;
+	}
+}
+@media only screen and (max-width: 320px){
+    /* only section; */
+    section.profile div.profile-history div.card{
+    	border-radius: 10px;
+    }
+	section.profile div.profile-history div.card div.followers p{
+		font-size: 1.2em;
+	}
+	section.profile div.profile-history div.card div.events p{
+		font-size: 1.2em;
+	}
+	section.profile div.profile-history div.card div.donations p{
+		font-size: 1.1em;
+		padding-left: 2px;
+	}
+	section.profile div.profile-history div.container1 {
+		margin-left: 10px;
+	}
+	section.profile div.profile-history div.container1 h3.photos{
+        font-size: 1.1em;
+    }
+    section.profile div.profile-history div.container1 div.address p{
+    	width: 65%;
+        font-size: 0.8em;
+    }
+    section.profile div.donate-btn{
+		display: flex;
+		margin-left: 20%;
+    }
+}
+@media only screen and (max-width: 260px){
+	/* only section; */
+	section.profile div.profile-history div.card div.followers p{
+		font-size: 1.1em;
+	}
+	section.profile div.profile-history div.card div.events p{
+		font-size: 1.1em;
+	}
+	section.profile div.profile-history div.card div.donations p{
+		font-size: 0.9em;
+	}
+	section.profile div.profile-history div.container1 {
+		margin-left: 8px;
+	}
+	section.profile div.profile-history div.container1 h3.photos{
+        font-size: 1.0em;
+    }
+    section.profile div.profile-history div.container1 div.address p{
+    	width: 65%;
+        font-size: 0.8em;
+    }
+    section.profile div.donate-btn{
+		display: flex;
+		margin-left: 10%;
+    }
+}

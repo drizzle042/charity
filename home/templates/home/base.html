@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static './Css/base.css' %}">
+    <link rel="stylesheet" href="{% static './Js/aos-master/dist/aos.css' %}">
+    <script src="{% static './Js/aos-master/dist/aos.js' %}"></script>
+</head>
+<body>
+    <header>
+    <img id="menu-icon" src="{% static './images/menu icon.png' %}" alt="">
+    <ul id="dropdown">
+        <img src="{% static './images/close.png' %}" alt="" id="close">
+        <li><a href="{% url 'home:home' %}">HOME</a></li>
+        <li><a href="{% url 'home:events' %}">EVENTS</a></li>
+        <li><a href="{% url 'home:about' %}">ABOUT</a></li>
+        <li>CONTACT</li>
+        <li>VISITS</li>
+        <li><a href="{% url 'home:profiles' %}">PROFILES</a></li>
+    </ul>
+    <div class="container">
+        <nav class="navbar">
+            <figure class="logo-img">
+                <img id="logo" src="{% static './images/charity logo.png' %}" alt="logo">
+            </figure>
+            <ul id="menu">
+                <li><a href="{% url 'home:home' %}">HOME</a></li>
+                <li><a href="{% url 'home:events' %}">EVENTS</a></li>
+                <li><a href="{% url 'home:about' %}">ABOUT</a></li>
+                <li>CONTACT</li>
+                <li>VISITS</li>
+                <li><a href="{% url 'home:profiles' %}">PROFILES</a></li>
+            </ul>
+        </nav>
+        <div id="donate-btn">
+            <button><a href="{% url 'home:donate' %}">Donate</a></button>
+        </div>
+    </div>
+    </header>
+    {% block body%}
+
+    {% endblock %}
+    <footer class="footer">
+		<div class="container2">
+			<h2 class="about-us"><a href="{% url 'home:about' %}">About Us</a><br>Contact <br>Terms & Conditions</h2>
+			<figure class="social_media-icons">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+			</figure>
+			<h2 class="social_media_addresses">Facebook <br>Twitter <br>Instagram</h2>
+			<h2 class="address">497 Evergreen Rd. Roseville, CA 95673 <br>+44 345 678 903 <br>adobexd@mail.com</h2>
+		</div>
+		<div class="container3">
+			<h2 class="newsletter">Subscribe to our newsletter</h2>
+			<div class="email">
+				<form action="" class="email">
+					<input class="email" type="email" placeholder="Enter Your Email Here...">
+					<button class="email"><input type="submit" placeholder="Submit"></button>
+				</form>
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="{% static './Js/base.js' %}"></script>
+</html>

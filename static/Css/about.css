@@ -1,0 +1,92 @@
+/* first section; two cards each containing text */
+section.msg1{
+    display: flex;
+    flex-flow: column;
+}
+section.msg1 div.card1{
+    display: flex;
+    justify-content: center;
+    background-color: #2699FB;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 74%;
+    border-radius: 6px;
+    box-shadow: 3px 9px 3px #beb4b4;
+}
+section.msg1 div.card1 h3#about-us{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #ffffff;
+}
+section.msg1 div.card2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 74%;
+    border-radius: 10px;
+    border: solid 1px #837f7f;
+    box-shadow: 3px 9px 3px #beb4b4;
+}
+section.msg1 div.card2 p.about-us-msg{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+/* second section; background wall texture, contains text */
+section.licence{
+    margin-top: 40px;
+    background: url("/static/images/licence_background.png") 100% 0 no-repeat;
+}
+section.licence h3#licence{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #000000;
+    font-family: georgia;
+}
+section.licence p.licence-body{
+    font-family: georgia;
+    font-size: 0.7em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+    width: 74%;
+    line-height: 1.5;
+}  
+@media only screen and (max-width: 830px){
+	/* first section; two cards each containing text */
+	section.msg1 div.card1{
+		width: 80%;
+	}
+	section.msg1 div.card2{
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 740px){
+	/* first section; two cards each containing text */
+	section.msg1 div.card1{
+		width: 85%;
+	}
+	section.msg1 div.card2{
+		width: 85%;
+	}
+}
+@media only screen and (max-width: 690px){
+	/* first section; two cards each containing text */
+	section.msg1 div.card1{
+		width: 90%;
+	}
+	section.msg1 div.card2{
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 480px){
+	/* second section; background wall texture, contains text */
+	section.licence p.licence-body{
+		width: 85%;
+	}
+
+}

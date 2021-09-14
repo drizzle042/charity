@@ -1,0 +1,444 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+/* header containing the nav bar having background of ash blue */
+header{
+	background-color: #042A65;
+	display: flex;
+	height: 100px;
+}
+header ul#dropdown{
+	list-style: none; 
+	background-color: #ffffff; 
+	color: #2699FB; 
+	width: 50%; 
+	display: none;
+	position: absolute;
+	z-index: 2;
+	padding-left: 5%;
+	padding-top: 20px;
+	padding-bottom: 3%;
+	line-height: 2.5;
+	font-size: 1.1em;
+	font-weight: 100;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+}
+header ul#dropdown img#close{
+	color: #2699FB;
+	position: relative;
+	bottom: 10px;
+	left: 90%; 
+	width: 30px;
+	height: 30px;
+}
+header ul#dropdown a{
+	color: #2699FB;
+}
+header div.container{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+header div.container nav.navbar{
+	display: flex;
+	height: 84px;
+	border-bottom: 1px solid #ffffff;
+}
+header div.container nav.navbar figure.logo-img img#logo{
+	width: 90px;
+	height: 70px;
+	padding-top: 15px;
+}
+header img#menu-icon{
+	display: none;
+}
+header div.container nav.navbar ul#menu{
+	list-style: none;
+	display: flex;
+	flex-flow: wrap;
+	font-family: arial;
+	font-weight: 200;
+	color:#ffffff;
+	padding-top: 50px;
+	padding-left: 5px;	
+}
+header div.container nav.navbar ul#menu li{
+	text-decoration: none;
+	font-weight: 100;
+	font-size: 0.855em;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+header div.container nav.navbar ul#menu :last-child{
+	padding-right: 0;
+}
+header div.container div#donate-btn button{
+	border-radius: 15px;
+	color: #2C21C4;
+	background-color: #ffffff;
+	padding-top: 11px;
+	padding-bottom: 9px;
+	padding-left: 17px;
+	padding-right: 17px;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 1.08em;
+	border: none;
+}
+header div.container div#donate-btn button a{
+	color: #2C21C4;
+}
+header div.container div#donate-btn{
+	margin-top: 40px;
+	margin-left: 160px;
+}
+/* footer section; pale blue background, table of footer notes, email collector */
+footer.footer{
+	background-color: #2699FB;
+}
+footer.footer div.container2{
+	padding-top: 80px;
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+	color: #ffffff;
+}
+footer.footer div.container2 h2.about-us{
+	font-size: 1.3em;
+	font-weight: lighter;
+	line-height: 2.5;
+	margin-left: 80px;
+}
+footer.footer div.container2 h2.social_media_addresses{
+	font-size: 1.3em;
+	font-weight: lighter;
+	line-height: 2.5;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+footer.footer div.container2 h2.address{
+	font-size: 1.3em;
+	font-weight: lighter;
+	line-height: 2.5;
+	margin-right: 80px;
+}
+footer.footer div.container3{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+footer.footer div.container3 h2.newsletter{
+	margin-left: 40%;
+	margin-top: 80px;
+	font-weight: lighter;
+	color: #ffffff;
+}
+footer.footer div.container3 div.email{
+	width: 360px;
+	height: 40px;
+	border-radius: 2px;
+	border: 1px solid;
+	margin-left: 40%;
+	margin-top: 20px;
+	color: #ffffff;
+}
+footer.footer div.container3 div.email form.email{
+	height: 100%;
+	width: 100%;
+}
+footer.footer div.container3 div.email form.email input[type=email]{
+	background-color: #2699FB;
+	height: 80%;
+	width: 75%;
+	border: none;
+	margin-left: 8px;
+	margin-top: 0;
+}
+footer.footer div.container3 div.email form.email input[type=email]:focus{
+	border: none;
+}
+footer.footer div.container3 div.email form.email input[type=email]::placeholder{
+	font-size: 1.4em;
+	font-weight: bold;
+	padding-left: 12px;
+	color: #ffffff;
+	font-family: arial;
+}
+footer.footer div.container3 div.email form.email button{
+	border: none;
+}
+footer.footer div.container3 div.email form.email input[type=submit]{
+	background-color: #ffffff;
+	color: #2699FB;
+	height: 40px;
+	width: 125%;
+	border: 2px solid #ffffff;
+	font-size: 1.4em;
+	color: #2699FB;
+	font-family: arial;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+@media only screen and (max-width: 1000px){
+    /* header containing the nav bar having background of ash blue */
+	header div.container div#donate-btn{
+		margin-top: 40px;
+		margin-left: 60px;
+	}
+}
+@media only screen and (max-width: 860px){
+	/* header containing the nav bar having background of ash blue */
+	header div.container div#donate-btn{
+		position: initial;
+		padding-left: 85%;
+	}
+	header div.container nav.navbar figure.logo-img img#logo{
+		position: relative;
+		left: 5%;
+    }
+	header img#menu-icon{
+		display: flex;
+		height: 30px;
+		margin-top: 45px;
+		margin-left: 20px
+	}
+	header div.container nav.navbar ul#menu{
+		display: none;
+	}
+	header div.container nav.navbar{
+		border-bottom: 0px;
+	}
+	/* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
+}
+@media only screen and (max-width: 790px){
+	/* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
+	footer.footer div.container3{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 40px;
+	}
+	footer.footer div.container3 h2.newsletter{
+		margin-left: 0%;
+	}
+	footer.footer div.container3 div.email{
+		margin-left: 0%;
+	}
+}
+@media only screen and (max-width: 710px){
+	/* header containing the nav bar having background of ash blue */
+	header ul#dropdown img#close{
+		left: 85%;
+	}
+	header div.container div#donate-btn{
+		position: initial;
+		padding-left: 50%;
+	}
+	header div.container nav.navbar figure.logo-img img#logo{
+		position: relative;
+		left: 35%;
+    }
+}
+@media only screen and (max-width: 530px){
+	/* header containing the nav bar having background of ash blue */
+	header ul#dropdown img#close{
+		left: 80%;
+	}
+	header div.container div#donate-btn{
+		position: initial;
+		padding-left: 25%;
+	}
+	header img#menu-icon{
+		width: 40px;
+		height: 30px;
+	}
+	/* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
+	footer.footer{
+		display: flex;
+		flex-flow: column;
+	}
+	footer.footer div.container2{
+		flex-flow: column;
+		justify-content: center;
+	}
+	footer.footer div.container2 h2.about-us{
+        font-size: 0.9em;
+        margin-left: 10%;
+        font-weight: 600;
+    }
+    footer.footer div.container2 h2.social_media_addresses{
+        font-size: 0.9em;
+        margin-left: 10%;
+        margin-top: 40px;
+        font-weight: 600;
+    }
+    footer.footer div.container2 h2.address{
+        font-size: 0.8em;
+        margin-left: 10%;
+        margin-top: 40px;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+    footer.footer div.container3 h2.newsletter{
+        margin-top: 50px;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+    footer.footer div.container3 div.email{
+        width: 85%;
+    }
+    footer.footer div.container3 div.email form.email{
+        width: 100%;
+        height: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 1.2em;
+    }
+    footer.footer div.container3 div.email form.email input[type=email]{
+        width: 75%;
+        height: 80%;
+        margin-left: 0;
+		padding-left: 5px;
+    }
+    footer.footer div.container3 div.email form.email button{
+    	width: 20%;
+    }
+}
+@media only screen and (max-width: 410px){
+	/* header containing the nav bar having background of ash blue */
+	header ul#dropdown img#close{
+		left: 77%;
+	}
+	header div.container div#donate-btn{
+		position: initial;
+		padding-left: 15%;
+	}
+	header img#menu-icon{
+		width: 35px;
+		height: 25px;
+	}
+	header nav.navbar figure.logo-img img#logo{
+		position: relative;
+		left: 45%;
+    }
+	/* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
+	footer.footer div.container3 div.email{
+        width: 95%;
+    }
+    footer.footer div.container3 div.email form.email input[type=email]{
+        width: 70%;
+    }
+	footer.footer div.container3 div.email form.email input[type=email]::placeholder{
+		font-size: 1.1em;
+		padding-left: 5px;
+	}
+    footer.footer div.container3 div.email form.email button{
+    	width: 23%;
+    }
+}
+@media only screen and (max-width: 340px){
+	/* header containing the nav bar having background of ash blue */
+	header ul#dropdown img#close{
+		left: 75%;
+	}
+	header img#menu-icon{
+		width: 30px;
+		height: 20px;
+	}
+	header nav.navbar figure.logo-img img#logo{
+		position: relative;
+		left: 60%;
+    }
+	header div.container div#donate-btn{
+		position: initial;
+		padding-left: 15%;
+	}
+	header div.container div#donate-btn button{
+		font-size: 0.80em;
+		padding-top: 8px;
+		padding-left: 12px;
+		padding-right: 12px;
+		border-radius: 12px;
+	}
+	/* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
+	footer.footer div.container3 div.email h2.email_collector a#email_submit{
+        left: 80px;
+        font-size: 1.3em;
+    }
+}
+@media only screen and (max-width: 300px){
+	/* header containing the nav bar having background of ash blue */
+	header ul#dropdown img#close{
+		left: 73%;
+	}
+	header div.container div#donate-btn{
+		position: initial;
+		padding-left: 8%;
+	}
+	header nav.navbar figure.logo-img img#logo{
+		position: relative;
+		left: 80%;
+    }
+	/* footer section; pale blue background, grid list of supporters, table of footer notes, email collector */
+	footer.footer div.container2 h2.about-us{
+        font-size: 0.8em;
+    }
+    footer.footer div.container2 h2.social_media_addresses{
+        font-size: 0.8em;
+    }
+    footer.footer div.container2 h2.address{
+        font-size: 0.7em;
+        margin-left: 10%;
+    }
+    footer.footer div.container3 h2.newsletter{
+        font-size: 0.9em;
+    }
+    footer.footer div.container3 div.email{
+        width: 220px;
+        height: 40px
+    }
+}
+@media only screen and (max-width: 260px){
+	/* header containing the nav bar having background of ash blue */
+	header ul#dropdown img#close{
+		left: 70%;
+	}
+	header nav.navbar figure.logo-img img#logo{
+		position: relative;
+		left: 45%;
+    }
+	header div.container div#donate-btn{
+		position: initial;
+		padding-left: 5%;
+	}
+	header div#donate-btn button{
+		font-size: 0.72em;
+		padding-left: 8px;
+		padding-right: 8px;
+		border-radius: 8px;
+	}
+	/* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
+	footer.footer div.container3 div.email{
+		width: 105%;
+	}
+	footer.footer div.container3 div.email form.email input[type=email]{
+        width: 64%;
+    }
+	footer.footer div.container3 div.email form.email input[type=email]::placeholder{
+		font-size: 0.9em;
+	}
+    footer.footer div.container3 div.email form.email button{
+    	width: 27%;
+    }
+}
