@@ -212,11 +212,15 @@ section.msg3 div.container1 div.card1 h3.card1-msg{
 	margin-left: auto;
 	margin-right: auto;
 }
+section.msg3 div.container1 div.card1 figure.card1-img picture.img1{
+	width: 350px;
+	height: 280px;
+}
 section.msg3 div.container1 div.card1 figure.card1-img img.img1{
 	position: relative;
 	top: 6px;
 	left: 30px;
-	width: 400px;
+	width: 350px;
 	height: 280px;
 }
 section.msg3 div.container1 div.card2{
@@ -234,11 +238,15 @@ section.msg3 div.container1 div.card2 h3.card2-msg{
 	margin-left: auto;
 	margin-right: auto;
 }
+section.msg3 div.container1 div.card2 figure.card2-img picture.img2{
+	width: 350px;
+	height: 270px;
+}
 section.msg3 div.container1 div.card2 figure.card2-img img.img2{
 	position: relative;
 	top: 14px;
 	left: 27px;
-	width: 400px;
+	width: 350px;
 	height: 270px;
 }
 section.msg3 div.container2{
@@ -388,12 +396,14 @@ section.msg5 div.container div.card1{
 	border-radius: 40px;
 	box-shadow: 7px 3px 3px #beb4b4;
 	height: 231px;
+}
+section.msg5 div.container div.card1 figure.card1-img picture.img1{
+	width: 520px;
+	height: 100%;
 } 
 section.msg5 div.container div.card1 figure.card1-img img.img1{
-	height: 348px;
 	width: 520px;
-	position: relative;
-	bottom: 59px;
+	height: 100%;
 }
 section.msg5 div.container div.card1 h2.card1-msg{
 	margin-top: 60px;
@@ -417,12 +427,15 @@ section.msg5 div.container div.card2{
 	border-radius: 40px;
 	box-shadow: 7px 3px 3px #beb4b4;
 	height: 231px;
+}
+section.msg5 div.container div.card2 figure.card2-img picture.img2{
+	width: 520px;
+	height: 100%;
 } 
 section.msg5 div.container div.card2 figure.card2-img img.img2{
-	height: 348px;
 	width: 520px;
+	height: 100%;
 	position: relative;
-	bottom: 59px;
 	left: 12px;
 }
 section.msg5 div.container div.card2 h2.card2-msg{
@@ -438,6 +451,7 @@ section.msg6{
 	background-color: #0D0F1E;
 	display: flex;
 	justify-content: center;
+	padding-bottom: 80px;
 }
 section.msg6 div.container{
 	display: flex;
@@ -460,8 +474,6 @@ section.msg6 div.container h2.msg{
 section.msg6 div.container figure.card-img img.img{
 	width: 650px;
 	height: 420px;
-	position: relative;
-	bottom: 50px;
 }
 /* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
 footer.footer h2.msg1{
@@ -764,9 +776,7 @@ footer.footer table tr.supporters4 img.paypal{
 		height: 260px;
 	} 
 	section.msg5 div.container div.card1 figure.card1-img img.img1{
-		height: 390px;
 		width: 500px;
-		bottom: 65px;
 	}
 	section.msg5 div.container div.card1 h2.card1-msg{
 		width: 150px;
@@ -776,9 +786,7 @@ footer.footer table tr.supporters4 img.paypal{
 		height: 290px;
 	} 
 	section.msg5 div.container div.card2 figure.card2-img img.img2{
-		height: 430px;
 		width: 500px;
-		bottom: 70px;
 	}
 	section.msg5 div.container div.card2 h2.card2-msg{
 		width: 300px;
@@ -1011,8 +1019,6 @@ footer.footer table tr.supporters4 img.paypal{
 	} 
 	section.msg5 div.container div.card1 figure.card1-img img.img1{
 		width: 100%;
-		position: relative;
-		bottom: 65px;
 	}
 	section.msg5 div.container div.card1 h2.card1-msg{
 		margin-top: 50px;
@@ -1026,8 +1032,6 @@ footer.footer table tr.supporters4 img.paypal{
 	} 
 	section.msg5 div.container div.card2 figure.card2-img img.img2{
 		width: 100%;
-		position: relative;
-		bottom: 70px;
 	} 
 	/* seventh section; dark blue background, one card containing one image */
 	section.msg6 div.container{
@@ -1043,8 +1047,6 @@ footer.footer table tr.supporters4 img.paypal{
 	}
 	section.msg6 div.container figure.card-img img.img{
 		width: 110%;
-		position: relative;
-		bottom: 50px;
 	}
 	/* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
 	footer.footer table{
@@ -1286,6 +1288,11 @@ footer.footer table tr.supporters4 img.paypal{
 	}
 	section.msg4 div.container div.card2 div.card2-head h5.online{
 		left: 28px;
+	}
+	/* seventh section; dark blue background, one card containing one image */
+	section.msg6 div.container figure.card-img img.img{
+		width: 110%;
+		height: 300px;
 	}
 	/* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
 	footer.footer table tr.supporters1 img.dominos{
@@ -1533,14 +1540,12 @@ footer.footer table tr.supporters4 img.paypal{
 		height: 300px;
 	} 
 	section.msg5 div.container div.card1 figure.card1-img{
-		height: 200px;
+		height: 240px;
 		width: 100%;
 	} 
 	section.msg5 div.container div.card1 figure.card1-img img.img1{
-		height: 250px;
+		height: 220px;
 		width: 100%;
-		position: relative;
-		bottom: 42px;
 	}
 	section.msg5 div.container div.card1 h2.card1-msg{
 		margin-top: 0px;
@@ -1562,18 +1567,15 @@ footer.footer table tr.supporters4 img.paypal{
 		width: 100%;
 	} 
 	section.msg5 div.container div.card2 figure.card2-img img.img2{
-		height: 263px;
+		height: 220px;
 		width: 100%;
 		position: relative;
 		left: 0px;
-		bottom: 45px;
 	}
 	section.msg5 div.container div.card2 h2.card2-msg{
-		margin-top: 0px;
+		margin-top: 15px;
 		width: 80%;
 		font-size: 0.9em;
-		position: relative;
-		bottom: 60px;
 	}
 	/* seventh section; dark blue background, one card containing one image */
 	section.msg6 div.container{
@@ -1753,10 +1755,25 @@ footer.footer table tr.supporters4 img.paypal{
 		left: 100px;
 	}
 	/* sixth section; white background, two cards each containing an image, a text area located between the cards */
+	section.msg5 div.container div.card1 figure.card1-img img.img1{
+		height: 260px;
+		margin-top: -50px;
+	}
+	section.msg5 div.container div.card1 h2.card1-msg{
+		margin-top: -40px;
+		font-size: 1.1em;
+	}
 	section.msg5 div.container div.txt-area h2.msg{
 		margin-top: 30px;
 		line-height: 1.5;
 		font-size: 1.2em;
+	}
+	section.msg5 div.container div.card2 figure.card2-img img.img2{
+		height: 260px;
+		margin-top: -50px;
+	}
+	section.msg5 div.container div.card2 h2.card2-msg{
+		margin-top: -15px;
 	}
  	/* seventh section; dark blue background, one card containing one image */
 	section.msg6 div.container{
@@ -1945,30 +1962,24 @@ footer.footer table tr.supporters4 img.paypal{
     }
 	/* sixth section; white background, two cards each containing an image, a text area located between the cards */
 	section.msg5 div.container div.card1{
-		height: 260px;
+		height: 300px;
 	} 
 	section.msg5 div.container div.card1 figure.card1-img{
 		height: 160px;
-	} 
-	section.msg5 div.container div.card1 figure.card1-img img.img1{
-		position: relative;
-		bottom: 43px;
 	}
 	section.msg5 div.container div.card1 h2.card1-msg{
-		margin-top: 10px;
+		margin: auto;
 	}
 	section.msg5 div.container div.txt-area h2.msg{
 		margin-top: 30px;
 		line-height: 1.5;
 		font-size: 1.1em;
-		width: 212px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	section.msg5 div.container div.card2{
 		height: 380px;
-	} 
-	section.msg5 div.container div.card2 figure.card2-img img.img2{
-		position: relative;
-		bottom: 43px;
 	}
 	/* seventh section; dark blue background, one card containing one image */
 	section.msg6 div.container{
@@ -2055,7 +2066,7 @@ footer.footer table tr.supporters4 img.paypal{
     }
 	/* sixth section; white background, two cards each containing an image, a text area located between the cards */
 	section.msg5 div.container div.card1{
-		height: 270px;
+		height: 300px;
 	} 
 	section.msg5 div.container div.card2{
 		height: 420px;

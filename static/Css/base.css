@@ -151,16 +151,16 @@ footer.footer div.container3 div.email{
 	color: #ffffff;
 }
 footer.footer div.container3 div.email form.email{
+	display: flex;
+	justify-content: center;
 	height: 100%;
 	width: 100%;
 }
 footer.footer div.container3 div.email form.email input[type=email]{
 	background-color: #2699FB;
-	height: 80%;
+	height: 100%;
 	width: 75%;
 	border: none;
-	margin-left: 8px;
-	margin-top: 0;
 }
 footer.footer div.container3 div.email form.email input[type=email]:focus{
 	border: none;
@@ -168,7 +168,6 @@ footer.footer div.container3 div.email form.email input[type=email]:focus{
 footer.footer div.container3 div.email form.email input[type=email]::placeholder{
 	font-size: 1.4em;
 	font-weight: bold;
-	padding-left: 12px;
 	color: #ffffff;
 	font-family: arial;
 }
@@ -182,7 +181,6 @@ footer.footer div.container3 div.email form.email input[type=submit]{
 	width: 125%;
 	border: 2px solid #ffffff;
 	font-size: 1.4em;
-	color: #2699FB;
 	font-family: arial;
 }
 html, body{
@@ -219,7 +217,6 @@ html, body{
 	header div.container nav.navbar{
 		border-bottom: 0px;
 	}
-	/* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
 }
 @media only screen and (max-width: 790px){
 	/* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
@@ -296,20 +293,16 @@ html, body{
         font-weight: 600;
     }
     footer.footer div.container3 div.email{
-        width: 85%;
+        width: 90%;
     }
     footer.footer div.container3 div.email form.email{
         width: 100%;
         height: 100%;
-        margin-top: auto;
-        margin-bottom: auto;
         font-size: 1.2em;
     }
     footer.footer div.container3 div.email form.email input[type=email]{
         width: 75%;
-        height: 80%;
-        margin-left: 0;
-		padding-left: 5px;
+        height: 100%;
     }
     footer.footer div.container3 div.email form.email button{
     	width: 20%;
@@ -341,7 +334,6 @@ html, body{
     }
 	footer.footer div.container3 div.email form.email input[type=email]::placeholder{
 		font-size: 1.1em;
-		padding-left: 5px;
 	}
     footer.footer div.container3 div.email form.email button{
     	width: 23%;
@@ -372,9 +364,17 @@ html, body{
 		border-radius: 12px;
 	}
 	/* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
-	footer.footer div.container3 div.email h2.email_collector a#email_submit{
-        left: 80px;
-        font-size: 1.3em;
+	footer.footer div.container3 div.email{
+        width: 98%;
+    }
+	footer.footer div.container3 div.email form.email input[type=email]{
+        width: 72%;
+    }
+	footer.footer div.container3 div.email form.email input[type=email]::placeholder{
+		font-size: 1.05em;
+	}
+    footer.footer div.container3 div.email form.email button{
+    	width: 23%;
     }
 }
 @media only screen and (max-width: 300px){
@@ -405,8 +405,11 @@ html, body{
         font-size: 0.9em;
     }
     footer.footer div.container3 div.email{
-        width: 220px;
+        width: 230px;
         height: 40px
+    }
+    footer.footer div.container3 div.email form.email input[type=email]{
+        width: 70%;
     }
 }
 @media only screen and (max-width: 260px){
@@ -433,7 +436,7 @@ html, body{
 		width: 105%;
 	}
 	footer.footer div.container3 div.email form.email input[type=email]{
-        width: 64%;
+        width: 68%;
     }
 	footer.footer div.container3 div.email form.email input[type=email]::placeholder{
 		font-size: 0.9em;

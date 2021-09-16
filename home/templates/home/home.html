@@ -80,13 +80,23 @@
 			<div class="card1" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
 				<h3 class="card1-msg">MAYBE YOU MIGHT BE THE FIRST PERSON WE ARE ASKING TODAY BUT ANYWAY IF YOU CAN, BUY A CHILD A DOGHNUT TODAY!</h3>
 				<figure class="card1-img">
-					<img class="img1" src="{% static './images/donut.png'%}" alt="">
+					<picture class="img1">
+						<source 
+							srcset="{% static './images/donut410px.png' %}"
+							media="(max-width: 410px)">
+						<img class="img1" src="{% static './images/donut.png'%}" alt="">
+					</picture>
 				</figure>
 			</div>
 			<div class="card2" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
 				<h3 class="card2-msg">OR YOU COULD BUY A CHILD A BOOK TODAY!</h3>
 				<figure class="card2-img">
-					<img class="img2" src="{% static './images/book.png'%}" alt="">
+					<picture class="img2">
+						<source 
+							srcset="{% static './images/book410px.png' %}"
+							media="(max-width: 410px)">
+						<img class="img2" src="{% static './images/book.png'%}" alt="">
+					</picture>
 				</figure>
 			</div>
 		</div>
@@ -146,7 +156,12 @@
 		<div class="container">
 			<div class="card1" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
 				<figure class="card1-img">
-					<img class="img1" src="{% static './images/astronaut viewing earth.png' %}" alt="">
+					<picture class="img1">
+						<source 
+							srcset="{% static './images/astronaut viewing earth410px.png' %}"
+							media="(max-width: 410px)">	
+						<img class="img1" src="{% static './images/astronaut viewing earth.png' %}" alt="">
+					</picture>
 				</figure>
 				<h2 class="card1-msg">SO NOW WHEN WE LOOK AT OUR PLANET, WHAT DO WE SEE?</h2>
 			</div>
@@ -155,7 +170,12 @@
 			</div>
 			<div class="card2" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
 				<figure class="card2-img">
-					<img class="img2" src="{% static './images/space ship viewing earth.png' %}" alt="">
+					<picture class="img2">
+						<source 
+							srcset="{% static './images/space ship viewing earth410px.png' %}"
+							media="(max-width: 410px)">	
+						<img class="img2" src="{% static './images/space ship viewing earth.png' %}" alt="">
+					</picture>
 				</figure>
 				<h2 class="card2-msg">OR RATHER A NICE HOME FOR EVERYONE NO MATTER RACE, ETHNIC BACKGROUND, NATIONALITY, COLOR OR PHYSICAL STATE. <br> BECAUSE <br> HUMANITY SAKE IS STILL WORTH JOINING HANDS TOGETHER FOR.</h2>
 			</div>
@@ -165,7 +185,12 @@
 		<div class="container" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
 			<h2 class="msg">TODAY WE ARE GLAD TO SAY THAT WE HAVE DONE OUR BEST TO BRING CHRISTMAS TO MILLIONS OF CHILDREN AND LESS FORTUNATE ADULT INDIVIDUALS OUT THERE FOR MANY YEARS NOW AND WE THINK YOU SHOULD BE A PART OF THIS GREAT ACHIEVEMENT!</h2>
 			<figure class="card-img">
-				<img class="img" src="{% static './images/penguin.png' %}" alt="">
+				<picture class="img">
+					<source
+						srcset="{% static './images/penguin410px.png' %}"
+						media="(max-width: 410px)">
+					<img class="img" src="{% static './images/penguin.png' %}" alt="">
+				</picture>
 			</figure>
 		</div>
 	</section>
