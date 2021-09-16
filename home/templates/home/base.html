@@ -57,8 +57,10 @@
 		<div class="container3">
 			<h2 class="newsletter">Subscribe to our newsletter</h2>
 			<div class="email">
-				<form action="" class="email">
-					<input class="email" type="email" placeholder="Enter Your Email Here...">
+				<form action="" method="POST" class="email">
+                {% csrf_token %}
+					<!-- <input class="email" type="email" placeholder="Enter Your Email Here..."> -->
+                    {{ form }}
 					<button class="email"><input type="submit" placeholder="Submit"></button>
 				</form>
 			</div>

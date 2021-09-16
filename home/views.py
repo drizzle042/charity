@@ -1,35 +1,79 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from .models import Latest_new
-from .models import topstorie
+from .forms import Form
 
 # Create your views here.
 def home_page(request, *args, **kwargs):
-	return render(request, './home/home.html')
+	form = Form
+	if request.method == 'POST':
+		form = Form(request.POST)
+		if form.is_valid():
+			form.save()
+	else:
+		form = Form()
+	return render(request, './home/home.html', {'form': form})
 
 
 def events_page(request, *args, **kwargs):
-	story = topstorie.objects.all().order_by('date')
-	newsfeed = Latest_new.objects.all().order_by('date')
-	return render(request, './home/events.html', {'news':newsfeed, 'detail':story})
+	form = Form
+	if request.method == 'POST':
+		form = Form(request.POST)
+		if form.is_valid():
+			form.save()
+	else:
+		form = Form()
+	return render(request, './home/events.html', {'form': form})
 
 
 def about_page(request, *args, **kwargs):
-	return render(request, './home/about.html')
+	form = Form
+	if request.method == 'POST':
+		form = Form(request.POST)
+		if form.is_valid():
+			form.save()
+	else:
+		form = Form()
+	return render(request, './home/about.html', {'form': form})
 
 
-def story_detail(request):
-	newsfeed = topstorie.objects.all().order_by('date')	
-	return render(request, './home/story.html', {'detail':story_detail, 'news':newsfeed})
+def story_detail(request, *args, **kwargs):
+	form = Form
+	if request.method == 'POST':
+		form = Form(request.POST)
+		if form.is_valid():
+			form.save()
+	else:
+		form = Form()
+	return render(request, './home/story.html', {'form': form})
 
 
 def profile_feed(request, *args, **kwargs):
-	return render(request, './home/profile_feed.html')
+	form = Form
+	if request.method == 'POST':
+		form = Form(request.POST)
+		if form.is_valid():
+			form.save()
+	else:
+		form = Form()
+	return render(request, './home/profile_feed.html', {'form': form})
 
 
 def profile_page(request, *args, **kwargs):
-	return render(request, './home/profile.html')
+	form = Form
+	if request.method == 'POST':
+		form = Form(request.POST)
+		if form.is_valid():
+			form.save()
+	else:
+		form = Form()
+	return render(request, './home/profile.html', {'form': form})
 
 
 def donation_page(request, *args, **kwargs):
-	return render(request, './home/donate.html')
+	form = Form
+	if request.method == 'POST':
+		form = Form(request.POST)
+		if form.is_valid():
+			form.save()
+	else:
+		form = Form()
+	return render(request, './home/donate.html', {'form': form})
