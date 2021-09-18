@@ -3,10 +3,11 @@ from .forms import Form
 
 # Create your views here.
 def home_page(request, *args, **kwargs):
-	form = Form
+	form = Form(auto_id=False)
 	if request.method == 'POST':
 		form = Form(request.POST)
 		if form.is_valid():
+			form.clean()
 			form.save()
 	else:
 		form = Form()
@@ -14,10 +15,11 @@ def home_page(request, *args, **kwargs):
 
 
 def events_page(request, *args, **kwargs):
-	form = Form
+	form = Form(auto_id=False)
 	if request.method == 'POST':
 		form = Form(request.POST)
 		if form.is_valid():
+			form.clean()
 			form.save()
 	else:
 		form = Form()
@@ -25,10 +27,11 @@ def events_page(request, *args, **kwargs):
 
 
 def about_page(request, *args, **kwargs):
-	form = Form
+	form = Form(auto_id=False)
 	if request.method == 'POST':
 		form = Form(request.POST)
 		if form.is_valid():
+			form.clean()
 			form.save()
 	else:
 		form = Form()
@@ -36,10 +39,11 @@ def about_page(request, *args, **kwargs):
 
 
 def story_detail(request, *args, **kwargs):
-	form = Form
+	form = Form(auto_id=False)
 	if request.method == 'POST':
 		form = Form(request.POST)
 		if form.is_valid():
+			form.clean()
 			form.save()
 	else:
 		form = Form()
@@ -47,10 +51,11 @@ def story_detail(request, *args, **kwargs):
 
 
 def profile_feed(request, *args, **kwargs):
-	form = Form
+	form = Form(auto_id=False)
 	if request.method == 'POST':
 		form = Form(request.POST)
 		if form.is_valid():
+			form.clean()
 			form.save()
 	else:
 		form = Form()
@@ -58,10 +63,11 @@ def profile_feed(request, *args, **kwargs):
 
 
 def profile_page(request, *args, **kwargs):
-	form = Form
+	form = Form(auto_id=False)
 	if request.method == 'POST':
 		form = Form(request.POST)
 		if form.is_valid():
+			form.clean()
 			form.save()
 	else:
 		form = Form()
@@ -69,10 +75,11 @@ def profile_page(request, *args, **kwargs):
 
 
 def donation_page(request, *args, **kwargs):
-	form = Form
+	form = Form(auto_id=False)
 	if request.method == 'POST':
 		form = Form(request.POST)
 		if form.is_valid():
+			form.clean()
 			form.save()
 	else:
 		form = Form()
