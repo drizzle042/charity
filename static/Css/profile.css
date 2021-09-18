@@ -86,7 +86,7 @@ section.profile div.profile-history div.card{
     margin-left: 10%;
     width: 30%;
     background-color: #A0A0A0;
-    border-radius: 35px;
+    border-radius: 25px;
 	border: solid 1px #837f7f;
     color: #F3EEEE;
 }
@@ -141,6 +141,7 @@ section.profile div.profile-history div.card div.donations p{
 }
 section.profile div.profile-history div.container1 {
     margin-left: 30px;
+    width: 60%;
     color: #2699FB;
 }
 section.profile div.profile-history div.container1 h3.photos{
@@ -150,6 +151,20 @@ section.profile div.profile-history div.container1 div.photos{
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 100%;
+    overflow-x: scroll;
+}
+section.profile div.profile-history div.container1 div.photos::-webkit-scrollbar{
+	width: 3px;
+}
+section.profile div.profile-history div.container1 div.photos::-webkit-scrollbar-track{
+	background: #f1f1f1;
+}
+section.profile div.profile-history div.container1 div.photos::-webkit-scrollbar-track-piece{
+	background: #a1a1a1;
+}
+section.profile div.profile-history div.container1 div.photos::-webkit-scrollbar-thumb{
+	background: #2699FB;
 }
 section.profile div.profile-history div.container1 div.photos img{
     border-radius: 50%;
@@ -278,6 +293,10 @@ section.profile div.donate-btn button.donate-btn{
     }
     section.profile div.donate-btn{
 		margin-left: 40%;
+	}
+	section.profile div.profile-history div.container1 {
+		margin-left: 5%;
+		width: 55%;
 	}
 }
 @media only screen and (max-width: 480px){

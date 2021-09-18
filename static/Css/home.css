@@ -73,8 +73,12 @@ section.msg1 div.card{
 	margin-bottom: 120px;
 	padding: 40px;
 	width: 900px;
-	height: 100px;
 	font-family: arial;
+}
+section.msg1 div.card div.msg2-msg{
+	margin: auto;
+	width: 80%;
+	padding-bottom: 30px;
 }
 section.msg1 div.container div.msg1-msg{
 	width: 550px;
@@ -662,7 +666,6 @@ footer.footer table tr.supporters4 img.paypal{
 		text-align: center;
 	}
 	/* second section; white background, a card and an image */
-
 	section.msg1 div.container{
 		width: 750px;
 		height: 250px;
@@ -1697,6 +1700,9 @@ footer.footer table tr.supporters4 img.paypal{
 	section.msg1 div.card{
 		padding-bottom: 240px;
 	}
+	section.msg1 div.card div.msg2-msg{
+		width: 100%;
+	}
 	/* third section; dark blue background, three cards each containing an image and a final card of text */
 	section.msg2 div.container1 div.card1{
 		height: 280px;
@@ -1889,9 +1895,9 @@ footer.footer table tr.supporters4 img.paypal{
 		width: 300px;
 	}
 	section.msg1 div.card{
-		margin-top: 80px;
+		margin-top: 120px;
 		width: 60%;
-		padding-bottom: 370px;
+		padding-bottom: 380px;
 	}
 	/* third section; dark blue background, three cards each containing an image and a final card of text */
 	section.msg2{
@@ -2030,7 +2036,6 @@ footer.footer table tr.supporters4 img.paypal{
 	}
 	section.msg1 div.card div.msg2-msg{
 		width: 110%;
-		margin-left: -10px;
 	}
 	/* fifth section; dark blue background, three cards each containing testimonials */
 	section.msg4 div.container div.card1 div.card1-head h5.online{
@@ -2057,6 +2062,9 @@ footer.footer table tr.supporters4 img.paypal{
 		width: 60%;
 		padding-bottom: 500px;
 	}	
+	section.msg1 div.card div.msg2-msg{
+		margin-left: -15px;
+	}
 	/* fifth section; dark blue background, three cards each containing testimonials */
 	section.msg4 div.container div.card1 div.card1-head h5.online{
 	left: 5px;

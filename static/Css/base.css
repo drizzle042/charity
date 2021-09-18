@@ -107,27 +107,33 @@ footer.footer div.container2{
 	padding-top: 80px;
 	display: flex;
 	justify-content: center;
-	justify-content: space-evenly;
 	color: #ffffff;
 }
 footer.footer div.container2 h2.about-us{
 	font-size: 1.3em;
 	font-weight: lighter;
 	line-height: 2.5;
-	margin-left: 80px;
+	margin-left: 60px;
 }
 footer.footer div.container2 h2.social_media_addresses{
 	font-size: 1.3em;
 	font-weight: lighter;
 	line-height: 2.5;
-	margin-left: 80px;
-	margin-right: 80px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+footer.footer div.container2 h2.social_media_addresses img{
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 5px;
+	margin-right: 3px;
 }
 footer.footer div.container2 h2.address{
 	font-size: 1.3em;
 	font-weight: lighter;
 	line-height: 2.5;
-	margin-right: 80px;
+	margin-right: 60px;
 }
 footer.footer div.container3{
 	display: flex;
@@ -194,6 +200,25 @@ html, body{
 		margin-top: 40px;
 		margin-left: 60px;
 	}
+	/* footer section; pale blue background, table of footer notes, email collector */
+	footer.footer div.container2{
+		margin-left: auto;
+		margin-right: auto;
+		width: 95%;
+	}
+	footer.footer div.container2 h2.about-us{
+		font-size: 1.2em;
+		margin-left: 0%;
+	}
+	footer.footer div.container2 h2.social_media_addresses{
+		font-size: 1.2em;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	footer.footer div.container2 h2.address{
+		font-size: 1.2em;
+		margin-right: 0;
+	}
 }
 @media only screen and (max-width: 860px){
 	/* header containing the nav bar having background of ash blue */
@@ -220,6 +245,15 @@ html, body{
 }
 @media only screen and (max-width: 790px){
 	/* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
+	footer.footer div.container2 h2.about-us{
+		font-size: 1.1em;
+	}
+	footer.footer div.container2 h2.social_media_addresses{
+		font-size: 1.1em;
+	}
+	footer.footer div.container2 h2.address{
+		font-size: 1.1em;
+	}
 	footer.footer div.container3{
 		width: 80%;
 		margin-left: auto;
@@ -246,6 +280,16 @@ html, body{
 		position: relative;
 		left: 35%;
     }
+    /* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
+	footer.footer div.container2 h2.about-us{
+		font-size: 0.9em;
+	}
+	footer.footer div.container2 h2.social_media_addresses{
+		font-size: 0.9em;
+	}
+	footer.footer div.container2 h2.address{
+		font-size: 0.79em;
+	}
 }
 @media only screen and (max-width: 530px){
 	/* header containing the nav bar having background of ash blue */
@@ -271,21 +315,35 @@ html, body{
 	}
 	footer.footer div.container2 h2.about-us{
         font-size: 0.9em;
-        margin-left: 10%;
+        margin-left: 0;
+        padding-left: 5%;
+		padding-bottom: 5px;
+		width: 100%;
         font-weight: 600;
+		border-bottom: solid 2px #ffffff;
     }
     footer.footer div.container2 h2.social_media_addresses{
         font-size: 0.9em;
-        margin-left: 10%;
+        margin-left: 0;
+        padding-left: 5%;
+		padding-bottom: 5px;
+		width: 100%;
         margin-top: 40px;
         font-weight: 600;
+		border-bottom: solid 2px #ffffff;
     }
     footer.footer div.container2 h2.address{
         font-size: 0.8em;
-        margin-left: 10%;
+        padding-left: 5%;
+		padding-bottom: 15px;
+		width: 100%;
         margin-top: 40px;
         line-height: 1.5;
         font-weight: 500;
+		border-bottom: solid 2px #ffffff;
+    }
+    footer.footer div.container3{
+    	margin-left: 5%;
     }
     footer.footer div.container3 h2.newsletter{
         margin-top: 50px;
@@ -399,7 +457,6 @@ html, body{
     }
     footer.footer div.container2 h2.address{
         font-size: 0.7em;
-        margin-left: 10%;
     }
     footer.footer div.container3 h2.newsletter{
         font-size: 0.9em;

@@ -403,6 +403,10 @@ section.msg6 h3.float.msg{
     color: #2699FB;
     text-align: center;
     white-space: nowrap;
+    animation-name: float;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 /* section seven; dark blue background */
 section.msg7{
@@ -714,6 +718,21 @@ section.msg7 div.container6 div.card3 p.card3-msg2 span{
     color: #c0c0c0;
 }
 /* media queries */
+@media only screen and (max-width: 1000px){
+    section.msg1 h3.float.msg{
+        animation-name: float-2;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    section.msg2 div.card1{
+        animation-name: float-2;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+}
 @media only screen and (max-width: 960px){
     /* first section; dark blue background, a float message and three cards each containing images and text */
     section.msg1 div.container{
@@ -1842,5 +1861,21 @@ section.msg7 div.container6 div.card3 p.card3-msg2 span{
     }
     section.msg4 div.card h4.card-msg{
         font-size: 1.0em;
+    }
+}
+@keyframes float {
+    from{
+        transform: translateX(101%);
+    }
+    to{
+        transform: translateX(-1400px);
+    }
+}
+@keyframes float-2 {
+    from{
+        transform: translateX(101%);
+    }
+    to{
+        transform: translateX(-1050px);
     }
 }
