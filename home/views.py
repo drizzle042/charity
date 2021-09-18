@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .forms import Form
+from .models import Profile
 
 # Create your views here.
 def home_page(request, *args, **kwargs):
@@ -51,6 +52,7 @@ def story_detail(request, *args, **kwargs):
 
 
 def profile_feed(request, *args, **kwargs):
+	profiles = Profile.objects.all()
 	form = Form(auto_id=False)
 	if request.method == 'POST':
 		form = Form(request.POST)
@@ -59,7 +61,11 @@ def profile_feed(request, *args, **kwargs):
 			form.save()
 	else:
 		form = Form()
-	return render(request, './home/profile_feed.html', {'form': form})
+	context = {
+		'profiles': profiles,
+		'form': form
+	}
+	return render(request, './home/profile_feed.html', context)
 
 
 def profile_page(request, *args, **kwargs):

@@ -11,12 +11,12 @@ class Email(models.Model):
 
 # The profiles database Modelform to map to database
 class Profile(models.Model):
-	profile_cover_photo = models.ImageField(default = 'profile-photo.png', blank = True, upload_to = 'media/profile/profile_cover_photos/')
-	profile_photo = models.ImageField(default = 'profile-photo.png', blank = True, upload_to = 'media/profile/profile_photos/')
+	profile_cover_photo = models.ImageField(default = 'profile/profile_cover_photos/profile-photo.png', blank = True, upload_to = 'profile/profile_cover_photos/')
+	profile_photo = models.ImageField(default = 'profile/profile_photos/profile-photo.png', blank = True, upload_to = 'profile/profile_photos/')
 	first_name = models.CharField(max_length = 14)
 	last_name = models.CharField(max_length = 14)
 	slug = models.SlugField()
-	about_snippet = models.CharField(max_length = 60)
+	about_snippet = models.CharField(max_length = 120)
 	followers = models.IntegerField(default = 1, blank = True)
 	events = models.IntegerField(default = 0, blank = True)
 	donations = models.IntegerField(default = 0, blank = True)
@@ -34,7 +34,7 @@ class Profile(models.Model):
 # Event_photos database Modelform to map to database. This inherits from Profile and attaches here 
 class Profile_event_photo(models.Model):
 	profile = models.ForeignKey(Profile, on_delete = models.CASCADE)
-	event_photos = models.ImageField(blank = True, upload_to = 'media/profile/events_images/')
+	event_photos = models.ImageField(blank = True, upload_to = 'profile/events_images/')
 
 	def __str__(self):
 		return self.profile.slug
