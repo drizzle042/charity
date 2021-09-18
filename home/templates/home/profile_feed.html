@@ -16,17 +16,19 @@
             <input id="search-bar" type="text" maxlength="30" placeholder="Search">
             <img id="search-icon" src="{% static './images/search_icon.png'%}" alt="">
         </div>
+        {% for profiles in profiles %}
         <div class="card1" data-aos="fade-left" data-aos-duration="1100" data-aos-easing="ease">
-            <img src="{% static './images/christine.png'%}" alt="">
+            <img src="{{ profiles.profile_photo.url }}" alt=""> 
             <div class="container">
-                <h5 class="name">Jennifer Lopez</h5>
+                <h5 class="name">{{ profiles.first_name }} {{ profiles.last_name }}</h5>
                 <div class="about">
                     <h6 class="about">About:</h6>
-                    <p class="about-info">Been at Mediterranean for eleven years, raised at mother peter convent since she was thirteen. <span>see more...</span></p>
+                    <p class="about-info">{{ profiles.about_snippet }} <span>see more...</span></p>
                 </div>
             </div>
-            <p class="date">15th may 2014</p>
+            <p class="date">{{ profiles.date }}</p>
         </div>
+        {% endfor %}
     </section>
 </body>
 </html>

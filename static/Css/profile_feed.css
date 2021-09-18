@@ -46,6 +46,7 @@ section.grid div.card1 img{
     border-radius: 50%;
     height: 60%;
     width: 120px;
+    margin-right: 20px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
