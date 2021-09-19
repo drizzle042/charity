@@ -308,6 +308,7 @@ section.msg4 div.container div.card1{
 section.msg4 div.container div.card1 div.card1-head{
 	display: flex;
 	background-color: #2699FB;
+	height: 80px;
 }
 section.msg4 div.container div.card1 div.card1-head figure.user1 img.christine{
 	width: 80px;
@@ -347,6 +348,7 @@ section.msg4 div.container div.card2{
 section.msg4 div.container div.card2 div.card2-head{
 	display: flex;
 	background-color: #2699FB;
+	height: 80px;
 }
 section.msg4 div.container div.card2 div.card2-head figure.user2 img.alicia{
 	width: 60px;

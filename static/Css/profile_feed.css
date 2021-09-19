@@ -4,7 +4,7 @@ section.grid{
     flex-flow: column;
     margin-bottom: 60px;
 }
-section.grid form#search{
+section.grid div#search{
     width: 330px;
     height: 30px;
     margin-top: 20px;
@@ -12,21 +12,21 @@ section.grid form#search{
 	border: solid 1px #837f7f;
 	box-shadow: 2px 5px 3px #beb4b4;
 }
-section.grid form#search input#search-bar{
+section.grid div#search input#search-bar{
     border: none;
     width: 280px;
     height: 100%;
     padding-left: 20px;
     font-size: 1.2em;
 }
-section.grid form#search input#search-bar:focus{
+section.grid div#search input#search-bar:focus{
     background-color: #cfc9c9;
     outline: none;
 }
-section.grid form#search img#search_icon{
+section.grid div#search img#search_icon{
     height: 100%;
 }
-section.grid form#search img#search_icon:hover{
+section.grid div#search img#search_icon:hover{
 	cursor: pointer;
 }
 section.grid div.profile-list{
@@ -85,29 +85,29 @@ section.grid div.card1 p.date{
 }
 @media only screen and (max-width: 980px){
 	/* only section; a search bar, and multiple cards each containing images and text */
-    section.grid form#search{
+    section.grid div#search{
     	margin-left: 50%;
     }
 }
 @media only screen and (max-width: 710px){
 	/* only section; a search bar, and multiple cards each containing images and text */
-    section.grid form#search{
+    section.grid div#search{
     	margin-left: 42%;
     }
 }
 @media only screen and (max-width: 590px){
 	/* only section; a search bar, and multiple cards each containing images and text */
-    section.grid form#search{
+    section.grid div#search{
     	margin-left: 30%;
     }
 }
 @media only screen and (max-width: 500px){
     /* only section; a search bar, and multiple cards each containing images and text */
-	section.grid form#search{
+	section.grid div#search{
 		width: 65%;
 		margin-left: 30%;
 	}
-	section.grid form#search input#search-bar{
+	section.grid div#search input#search-bar{
 		width: 80%;
 	}
 	section.grid div.card1{
@@ -149,21 +149,21 @@ section.grid div.card1 p.date{
 }
 @media only screen and (max-width: 390px){
 	/* first section; a search bar, and multiple cards each containing images and text */
-    section.grid form#search{
+    section.grid div#search{
 		width: 65%;
 		margin-left: 30%;
 	}
-	section.grid form#search input#search-bar{
+	section.grid div#search input#search-bar{
 		width: 75%;
 	}
 }
 @media only screen and (max-width: 320px){
 	/* first section; a search bar, and multiple cards each containing images and text */
-    section.grid form#search{
+    section.grid div#search{
 		width: 70%;
 		margin-left: 25%;
 	}
-	section.grid form#search input#search-bar{
+	section.grid div#search input#search-bar{
 		width: 70%;
 	}
 }
@@ -173,7 +173,9 @@ a.link{
 h1.no-match{
 	position: absolute;
 	color: #9e9a9a;
-	width: 100%;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 	top: 220px;
 	z-index: -2;

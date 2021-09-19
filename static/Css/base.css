@@ -99,6 +99,26 @@ header div.container div#donate-btn{
 	margin-top: 40px;
 	margin-left: 160px;
 }
+/* signal messages */
+ul.messages{
+    position: absolute;
+	z-index: 4;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    color:  #2699FB;
+	list-style: none;	
+	box-shadow: 2px 5px 3px #beb4b4;
+    text-align: center;
+    width: 60%;
+    margin-left: 17%;
+    margin-top: 20px;
+    font-weight: 600;
+    animation-name: disappear;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
 /* footer section; pale blue background, table of footer notes, email collector */
 footer.footer{
 	background-color: #2699FB;
@@ -501,4 +521,26 @@ html, body{
     footer.footer div.container3 div.email form.email button{
     	width: 27%;
     }
+}
+@keyframes disappear{
+	0%{
+		opacity: 1.0;
+	}
+	50%{
+		opacity: 0.9;
+	}
+	98%{
+		opacity: 0;
+	}
+	99%{
+		width: 60%;
+		margin-left: 17%;
+		margin-top: 20px;
+	}
+	100%{
+		width: 10%;
+		margin-left: 35%;
+		margin-top: -80px;
+		opacity: 0;
+	}
 }

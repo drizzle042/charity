@@ -40,6 +40,13 @@
         </div>
     </div>
     </header>
+    {% if messages %}
+    <ul class="messages">
+        {% for messages in messages %}
+        <li {% if messages.tags %} class="{{ messages.tags }}" {% endif%}>{{ messages }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
     {% block body%}
 
     {% endblock %}

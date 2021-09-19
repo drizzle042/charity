@@ -12,10 +12,10 @@
 </head>
 <body>
     <section class="grid">
-        <form id="search" data-aos="zoom-in" data-aos-duration="1400" data-aos-easing="ease">
+        <div id="search" data-aos="zoom-in" data-aos-duration="1400" data-aos-easing="ease">
             <input id="search-bar" type="text" maxlength="30" placeholder="Search" onkeyup="searchFunction()">
             <img id="search-icon" src="{% static './images/search_icon.png'%}" alt="">
-        </form>
+        </div>
         <div class="profile-list">
             <h1 class="no-match">No profiles match your search</h1>
             {% for profiles in profiles %}
