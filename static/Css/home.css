@@ -34,6 +34,7 @@ section.banner div.container div.banner-msg p{
 	color: #ffffff;
 	padding-top: 0;
 	padding: 15px;
+	padding-bottom: 20px;
 	text-align: center;
 }
 /* second section; white background, a card and an image */
@@ -65,6 +66,7 @@ section.msg1 div.container figure.msg1-img img.img1{
 section.msg1 div.card{
 	border: solid 1px #837f7f;
 	color: #2699FB;
+	text-align: center;
 	border-radius: 40px;
 	box-shadow: 3px 9px 3px #beb4b4;
 	margin-top: 80px;
@@ -1057,49 +1059,49 @@ footer.footer table tr.supporters4 img.paypal{
 		width: 90%;
 	}
 	footer.footer table tr.supporters1 img.ribena{
-		width: 70%;
-		height: 60%;
+		width: 130px;
+		height: 100px;
 	}
 	footer.footer table tr.supporters1 img.dominos{
-		width: 80%;
-		height: 80%;
+		width: 180px;
+		height: 180px;
 	}
 	footer.footer table tr.supporters1 img.amazon{
-		width: 80%;
-		height: 100%;
+		width: 180px;
+		height: 80px;
 	}
 	footer.footer table tr.supporters2 img.swappa{
-		width: 100%;
+		width: 180px;
 		height: 140px;
 	}
 	footer.footer table tr.supporters2 img.uber{
-		width: 90%;
+		width: 220px;
 		height: 160px;
 		margin-left: 0px;
 	}
 	footer.footer table tr.supporters2 img.oraimo{
-		width: 90%;
-		height: 100%;
+		width: 220px;
+		height: 120px;
 	}
 	footer.footer table tr.supporters3 img.nike{
-		width: 100%;
-		height: 100%;
+		width: 200px;
+		height: 120px;
 	}
 	footer.footer table tr.supporters3 img.cocacola{
-		width: 100%;
-		height: 100%;
+		width: 240px;
+		height: 260px;
 	}
 	footer.footer table tr.supporters3 img.binance{
-		width: 60%;
-		height: 100%;
+		width: 140px;
+		height: 100px;
 		padding-left: 30px;
 	}
 	footer.footer table tr.supporters4 img.apple{
 		width: 160px;
 	}
 	footer.footer table tr.supporters4 img.smart{
-		width: 240px;
-		height: 140px;
+		width: 200px;
+		height: 120px;
 		margin-left: 20px;
 	}
 	footer.footer table tr.supporters4 img.paypal{
@@ -1299,12 +1301,12 @@ footer.footer table tr.supporters4 img.paypal{
 	}
 	/* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
 	footer.footer table tr.supporters1 img.dominos{
-		width: 70%;
-		height: 70%;
+		width: 140px;
+		height: 140px;
 	}
 	footer.footer table tr.supporters1 img.amazon{
-		width: 80%;
-		height: 100%;
+		width: 180px;
+		height: 80px;
 	}
 	footer.footer table tr.supporters2 img.swappa{
 		height: 120px;
@@ -1314,12 +1316,12 @@ footer.footer table tr.supporters4 img.paypal{
 		height: 120px;
 	}
 	footer.footer table tr.supporters2 img.oraimo{
-		height: 90%;
+		height: 90px;
 		padding-left: 20px;
 	}
 	footer.footer table tr.supporters3 img.nike{
-		width: 100%;
-		height: 100%;
+		width: 160px;
+		height: 120px;
 	}
 	footer.footer table tr.supporters3 img.cocacola{
 		width: 180px;
@@ -1610,7 +1612,7 @@ footer.footer table tr.supporters4 img.paypal{
 	margin: 0 auto;
 	}
 	footer.footer table tr.supporters1 img.ribena{
-		width: 70%;
+		width: 110px;
 		height: 80px;
 		border-radius: 40px;
 	}
@@ -1622,55 +1624,56 @@ footer.footer table tr.supporters4 img.paypal{
 		margin-left: 0px;
 	}
 	footer.footer table tr.supporters1 img.amazon{
-		width: 70%;
-		height: 80px;
+		width: 120px;
+		height: 70px;
 		border-radius: 10px;
-		margin-left: 20px;
+		margin-left: 10px;
 	}
 	footer.footer table tr.supporters2 img.swappa{
-		width: 80%;
+		width: 130px;
 		height: 80px;
 	}
 	footer.footer table tr.supporters2 img.uber{
-		width: 80%;
+		width: 120px;
 		height: 80px;
 		margin-left: 0px;
 	}
 	footer.footer table tr.supporters2 img.oraimo{
-		width: 80%;
+		width: 130px;
 		height: 80px;
 		margin-left: -15px;
 	}
 	footer.footer table tr.supporters3 img.nike{
-		width: 80%;
+		width: 130px;
 		height: 80px;
 		border-radius: 20px;
 	}
 	footer.footer table tr.supporters3 img.cocacola{
-		width: 80%;
+		width: 130px;
 		height: 140px;
 		margin-left: 0px;
 	}
 	footer.footer table tr.supporters3 img.binance{
-		width: 80%;
-		height: 80px;
+		width: 120px;
+		height: 70px;
 		padding-left: 0px;
 		margin-left: 10px;
+		border-radius: 5px;
 	}
 	footer.footer table tr.supporters4 img.apple{
-		width: 80%;
+		width: 100px;
 		height: 80px;
 		border-radius: 25px;
 	}
 	footer.footer table tr.supporters4 img.smart{
-		width: 80%;
-		height: 80px;
+		width: 110px;
+		height: 70px;
 		border-radius: 10px;
 		margin-left: 10px;
 	}
 	footer.footer table tr.supporters4 img.paypal{
-		width: 80%;
-		height: 80px;
+		width: 120px;
+		height: 90px;
 		margin-left: 0px;
 		border-radius: 25px;
 		margin-left: 10px;
