@@ -12,7 +12,7 @@ section.profile{
 	box-shadow: 2px 5px 3px #beb4b4;
 }
 section.profile div.container{
-    background: url("/static/images/sample img.jpg") 100% 0 no-repeat;
+    background: url("{{ profiles.profile_cover_photo.url }}") 100% 0 no-repeat;
     background-size: cover;
 }
 section.profile div.container div.profile-head{
@@ -33,7 +33,7 @@ section.profile div.container div.profile-head img.user{
     margin-left: auto;
     margin-right: auto;
     width: 100px;
-    height: 120px;
+    height: 100px;
     position: relative;
     bottom: 60px;
 }
@@ -350,7 +350,8 @@ section.profile div.donate-btn button.donate-btn{
         width: 90%;
 	}
 	section.profile div.profile-history div.container1 {
-		margin-left: 15px;
+		margin-left: 5%;
+		width: 62%;
 	}
 	section.profile div.about{
 		margin-left: 5%;
@@ -385,9 +386,6 @@ section.profile div.donate-btn button.donate-btn{
 		font-size: 1.1em;
 		padding-left: 2px;
 	}
-	section.profile div.profile-history div.container1 {
-		margin-left: 10px;
-	}
 	section.profile div.profile-history div.container1 h3.photos{
         font-size: 1.1em;
     }
@@ -410,9 +408,6 @@ section.profile div.donate-btn button.donate-btn{
 	}
 	section.profile div.profile-history div.card div.donations p{
 		font-size: 0.9em;
-	}
-	section.profile div.profile-history div.container1 {
-		margin-left: 8px;
 	}
 	section.profile div.profile-history div.container1 h3.photos{
         font-size: 1.0em;

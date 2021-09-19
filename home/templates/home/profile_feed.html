@@ -12,24 +12,28 @@
 </head>
 <body>
     <section class="grid">
-        <div class="search-bar" data-aos="zoom-in" data-aos-duration="1400" data-aos-easing="ease">
-            <input id="search-bar" type="text" maxlength="30" placeholder="Search">
+        <form id="search" data-aos="zoom-in" data-aos-duration="1400" data-aos-easing="ease">
+            <input id="search-bar" type="text" maxlength="30" placeholder="Search" onkeyup="searchFunction()">
             <img id="search-icon" src="{% static './images/search_icon.png'%}" alt="">
-        </div>
-        {% for profiles in profiles %}
-        <div class="card1" data-aos="fade-left" data-aos-duration="1100" data-aos-easing="ease">
-            <img src="{{ profiles.profile_photo.url }}" alt=""> 
-            <div class="container">
-                <h5 class="name">{{ profiles.first_name }} {{ profiles.last_name }}</h5>
-                <div class="about">
-                    <h6 class="about">About:</h6>
-                    <p class="about-info">{{ profiles.about_snippet }} <span>see more...</span></p>
+        </form>
+        <div class="profile-list">
+            <h1 class="no-match">No profiles match your search</h1>
+            {% for profiles in profiles %}
+            <div class="card1">
+                <img src="{{ profiles.profile_photo.url }}" alt=""> 
+                <div class="container">
+                    <h5 class="name">{{ profiles.first_name }} {{ profiles.last_name }}</h5>
+                    <div class="about">
+                        <h6 class="about">About:</h6>
+                        <p class="about-info">{{ profiles.about_snippet }} <span><a class="link" href="{% url 'home:profile' slug=profiles.slug %}"> see more...</a></span></p>
+                    </div>
                 </div>
+                <p class="date">{{ profiles.date }}</p>
             </div>
-            <p class="date">{{ profiles.date }}</p>
+            {% endfor %}
         </div>
-        {% endfor %}
     </section>
+    <script src="{% static './Js/profile_feed.js' %}"></script>
 </body>
 </html>
 {% endblock %}

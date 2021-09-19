@@ -8,15 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static './Css/profile.css'%}">
-    <title>profile</title>
+    <title>{{ profiles.first_name }} {{ profiles.last_name }}</title>
 </head>
 <body>
     <section class="profile">
-        <div class="container" data-aos="zoom-in" data-aos-duration="1300" data-aos-easing="ease">
+        <div class="container" data-aos="zoom-in" data-aos-duration="1300" data-aos-easing="ease" style="background: url('{{ profiles.profile_cover_photo.url }}') 100% 0 no-repeat;">
             <div class="profile-head">
-                <img class="user" src="{% static './images/alicia.png' %}" alt="">
-                <h4 class="name">Jennifer Lopez</h4>
-                <p class="about">Been at Mediterranean for fourteen years. raised by mother convent and schools at St Richard.</p>
+                <img class="user" src="{{ profiles.profile_photo.url }}" alt="">
+                <h4 class="name">{{ profiles.first_name }} {{ profiles.last_name }}</h4>
+                <p class="about">{{ profiles.about_snippet }}</p>
                 <div class="interact">
                     <button class="follow">follow</button>
                     <img class="like" src="{% static './images/heart.png' %}" alt="">
@@ -26,47 +26,41 @@
         <div class="profile-history">
             <div class="card" data-aos="fade-right" data-aos-duration="1100" data-aos-easing="ease">
                 <div class="followers">
-                    <h3 class="count"><span class="followers-count">7.5</span><span>K</span></h3>
+                    <h3 class="count"><span class="followers-count">{{ profiles.followers }}</span></h3>
                     <p>followers</p>
                 </div>
                 <div class="events">
-                    <h3>53</h3>
+                    <h3>{{ profiles.events }}</h3>
                     <p>events</p>
                 </div>
                 <div class="donations">
-                    <h3>18</h3>
+                    <h3>{{ profiles.donations }}</h3>
                     <p>donations</p>
                 </div>
             </div>
             <div class="container1">
                 <h3 class="photos">EVENTS PHOTOS</h3>
                 <div class="photos" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease">
-                    <img src="{% static './images/alicia.png' %}" alt="">
-                    <img src="{% static './images/veronica.png' %}" alt="">
-                    <img src="{% static './images/alicia.png' %}" alt="">
-                    <img src="{% static './images/veronica.png' %}" alt="">
-                    <img src="{% static './images/alicia.png' %}" alt="">
-                    <img src="{% static './images/veronica.png' %}" alt="">
-                    <img src="{% static './images/alicia.png' %}" alt="">
-                    <img src="{% static './images/veronica.png' %}" alt="">
+                    {% for event_photos in event_photos %}
+                    <img src="{{ event_photos.event_photos.url }}" alt="">
+                    {% endfor %}
                 </div>
                 <div class="address">
                     <h4>address</h4>
-                    <p>497 Evergreen Rd. Roseville, <br> CA 95673</p>
+                    <p>{{ profiles.address_field}}</p>
                 </div>
                 <div class="contact">
                     <h5>contact</h5>
-                    <p>+43 334 54 887</p>
-                    <p>jennifer300@gmail.com</p>
-                    <p><img class="facebook" src="{% static './images/facebook_icon.png' %}" alt="">jenniferlopez</p>
-                    <p><img class="twitter" src="{% static './images/twitter_icon.png' %}" alt="">jenniferlp</p>
+                    <p>+ {{ profiles.mobile_contact }}</p>
+                    <p>{{ profiles.email }}</p>
+                    <p><img class="facebook" src="{% static './images/facebook_icon.png' %}" alt="">{{ profiles.facebook_contact }}</p>
+                    <p><img class="twitter" src="{% static './images/twitter_icon.png' %}" alt="">{{ profiles.twitter_contact }}</p>
                 </div>
             </div>
         </div>
         <div class="about" data-aos="zoom-in" data-aos-duration="1300" data-aos-easing="ease">
-            <h3>About <span>Jennifer</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi, exercitationem, tempora sapiente magnam magni officiis natus dicta fuga nisi voluptatum non dolores iusto sequi quam nobis ipsam minima consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis magni voluptatibus maxime officia iusto perferendis nulla labore possimus. Sequi tenetur vitae iure exercitationem et unde, itaque corrupti minima ducimus fugit.
-            <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi, exercitationem, tempora sapiente magnam magni officiis natus dicta fuga nisi voluptatum non dolores iusto sequi quam nobis ipsam minima consequatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis magni voluptatibus maxime officia iusto perferendis nulla labore possimus. Sequi tenetur vitae iure exercitationem et unde, itaque corrupti minima ducimus fugit.</p>
+            <h3>About <span>{{ profiles.first_name }}</span></h3>
+            <p>{{ profiles.about }}</p>
         </div>
         <div class="donate-btn" data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease">
             <img class="btn" src="{% static './images/heart.png' %}" alt="">
