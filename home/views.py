@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .forms import Form
 from .models import Profile, Profile_event_photo
+from django.contrib import messages 
 
 # Create your views here.
 
@@ -11,9 +12,13 @@ def home_page(request, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
+			messages.success(request, "Your email was received successfully!", fail_silently = True)
 	else:
 		form = Form()
-	return render(request, './home/home.html', {'form': form})
+	context = {
+		'form': form
+	}
+	return render(request, './home/home.html', context)
 
 
 def events_page(request, *args, **kwargs):
@@ -23,9 +28,13 @@ def events_page(request, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
+			messages.success(request, "Your email was received successfully!", fail_silently = True)
 	else:
 		form = Form()
-	return render(request, './home/events.html', {'form': form})
+	context = {
+		'form': form
+	}
+	return render(request, './home/events.html', context)
 
 
 def about_page(request, *args, **kwargs):
@@ -35,9 +44,13 @@ def about_page(request, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
+			messages.success(request, "Your email was received successfully!", fail_silently = True)
 	else:
 		form = Form()
-	return render(request, './home/about.html', {'form': form})
+	context = {
+		'form': form
+	}
+	return render(request, './home/about.html', context)
 
 
 def story_detail(request, *args, **kwargs):
@@ -47,9 +60,13 @@ def story_detail(request, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
+			messages.success(request, "Your email was received successfully!", fail_silently = True)
 	else:
 		form = Form()
-	return render(request, './home/story.html', {'form': form})
+	context = {
+		'form': form
+	}
+	return render(request, './home/story.html', context)
 
 
 def profile_feed(request, *args, **kwargs):
@@ -60,6 +77,7 @@ def profile_feed(request, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
+			messages.success(request, "Your email was received successfully!", fail_silently = True)
 	else:
 		form = Form()
 	context = {
@@ -78,6 +96,7 @@ def profile_page(request, slug, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
+			messages.success(request, "Your email was received successfully!", fail_silently = True)
 	else:
 		form = Form()
 	context = {
@@ -95,6 +114,10 @@ def donation_page(request, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
+			messages.success(request, "Your email was received successfully!", fail_silently = True)
 	else:
 		form = Form()
-	return render(request, './home/donate.html', {'form': form})
+	context = {
+		'form': form
+	}
+	return render(request, './home/donate.html', context)
