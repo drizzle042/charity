@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from .forms import Form
-from .models import Profile
+from .models import Profile, Profile_event_photo
 
 # Create your views here.
+
 def home_page(request, *args, **kwargs):
 	form = Form(auto_id=False)
 	if request.method == 'POST':
@@ -68,7 +69,9 @@ def profile_feed(request, *args, **kwargs):
 	return render(request, './home/profile_feed.html', context)
 
 
-def profile_page(request, *args, **kwargs):
+def profile_page(request, slug, *args, **kwargs):
+	profiles = Profile.objects.get(slug=slug)
+	event_photos = Profile_event_photo.objects.filter(profile=profiles)
 	form = Form(auto_id=False)
 	if request.method == 'POST':
 		form = Form(request.POST)
@@ -77,7 +80,12 @@ def profile_page(request, *args, **kwargs):
 			form.save()
 	else:
 		form = Form()
-	return render(request, './home/profile.html', {'form': form})
+	context = {
+		'profiles': profiles,
+		'event_photos': event_photos,
+		'form': form
+	}
+	return render(request, './home/profile.html', context)
 
 
 def donation_page(request, *args, **kwargs):

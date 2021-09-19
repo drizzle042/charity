@@ -10,6 +10,6 @@ urlpatterns = [
     path('story/', views.story_detail, name='detail'),
     path('about/', views.about_page, name='about'),
     path('profiles/', views.profile_feed, name='profiles'),
-    path('profile/', views.profile_page, name='profile'),
     path('donate/', views.donation_page, name='donate'),
+    path('profile/<slug:slug>/', views.profile_page, name='profile'),
 ]
