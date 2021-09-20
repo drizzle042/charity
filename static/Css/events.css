@@ -18,75 +18,30 @@ section.msg1 div.container{
     margin-top: 40px;
     padding-bottom: 20px;
 }
-section.msg1 div.container div.card1{
+section.msg1 div.container div.card{
     background-color: #ffffff;
     border-radius: 15px;
     width: 270px;
     height: 300px;
+    padding-bottom: 20px;
 }
-section.msg1 div.container div.card1 img.card1-img{
+section.msg1 div.container div.card img.card-img{
     width: 100%;
     height: 200px;
 }
-section.msg1 div.container div.card1 h4.card1-msg1{
+section.msg1 div.container div.card h4.card-msg1{
     color: #2699FB;
-    padding-left: 5px;
+    text-align: center;
 }
-section.msg1 div.container div.card1 p.card1-msg2{
+section.msg1 div.container div.card p.card-msg2{
     padding-left: 5px;
     font-size: 0.8em;
 }
-section.msg1 div.container div.card1 p.card1-msg2 span{
+section.msg1 div.container div.card p.card-msg2 span{
     font-size: 0.9em;
     color: #c0c0c0;
 }
-section.msg1 div.container div.card2{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg1 div.container div.card2 img.card2-img{
-    width: 100%;
-    height: 200px;
-}
-section.msg1 div.container div.card2 h4.card2-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg1 div.container div.card2 p.card2-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg1 div.container div.card2 p.card2-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg1 div.container div.card3{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg1 div.container div.card3 img.card3-img{
-    width: 100%;
-    height: 200px;
-}
-section.msg1 div.container div.card3 h4.card3-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg1 div.container div.card3 p.card3-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg1 div.container div.card3 p.card3-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-/* second section; white background, two cards each containing text */
+/* second section; white background, two cards each containing text and a text area */
 section.msg2{
     display: flex;
     flex-flow: column;
@@ -128,165 +83,58 @@ section.msg2 div.card2 h3.card2-msg{
     width: 530px;
     font-weight: 500;
 }
+section.msg2 h3.float.msg{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #2699FB;
+    text-align: center;
+    white-space: nowrap;
+    animation-name: float;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 /* third section; dark blue background, six cards each containing an image, and text */
 section.msg3{
     background-color: #0D0F1E;
     margin-top: 20px;
 }
-section.msg3 div.container1{
+section.msg3 div.container{
     display: flex;
     padding-top: 20px;
+    padding-bottom: 20px;
     width: 860px;
     margin-left: auto;
     margin-right: auto;
 }
-section.msg3 div.container1 div.card1{
+section.msg3 div.container div.card{
     background-color: #ffffff;
     border-radius: 15px;
     width: 270px;
     height: 300px;
-}
-section.msg3 div.container1 div.card1 img.card1-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg3 div.container1 div.card1 h4.card1-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg3 div.container1 div.card1 p.card1-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg3 div.container1 div.card1 p.card1-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg3 div.container1 div.card2{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg3 div.container1 div.card2 img.card2-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg3 div.container1 div.card2 h4.card2-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg3 div.container1 div.card2 p.card2-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg3 div.container1 div.card2 p.card2-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg3 div.container1 div.card3{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg3 div.container1 div.card3 img.card3-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg3 div.container1 div.card3 h4.card3-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg3 div.container1 div.card3 p.card3-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg3 div.container1 div.card3 p.card3-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg3 div.container2{
-    display: flex;
-    padding-top: 20px;
-    width: 860px;
-    margin-left: auto;
-    margin-right: auto;
     padding-bottom: 20px;
 }
-section.msg3 div.container2 div.card1{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-}
-section.msg3 div.container2 div.card1 img.card1-img{
+section.msg3 div.container div.card img.card-img{
     width: 270px;
     height: 200px;
 }
-section.msg3 div.container2 div.card1 h4.card1-msg1{
+section.msg3 div.container div.card h4.card-msg1{
     color: #2699FB;
     padding-left: 5px;
 }
-section.msg3 div.container2 div.card1 p.card1-msg2{
+section.msg3 div.container div.card p.card-msg2{
     padding-left: 5px;
     font-size: 0.8em;
 }
-section.msg3 div.container2 div.card1 p.card1-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg3 div.container2 div.card2{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg3 div.container2 div.card2 img.card2-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg3 div.container2 div.card2 h4.card2-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg3 div.container2 div.card2 p.card2-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg3 div.container2 div.card2 p.card2-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg3 div.container2 div.card3{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg3 div.container2 div.card3 img.card3-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg3 div.container2 div.card3 h4.card3-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg3 div.container2 div.card3 p.card3-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg3 div.container2 div.card3 p.card3-msg2 span{
+section.msg3 div.container div.card p.card-msg2 span{
     font-size: 0.9em;
     color: #c0c0c0;
 }
 /* fourth section; white background, one card containing text */
 section.msg4{
     display: flex;
+    padding-top: 40px;
+    padding-bottom: 80px;
 }
 section.msg4 div.card{
     display: flex;
@@ -312,411 +160,6 @@ section.msg4 div.card h4.card-msg span{
     font-size: 0.9em;
     color: #c0c0c0;
 }
-/* fifth section; dark blue backgrund, three cards each containing an image and text */
-section.msg5{
-    background-color: #0D0F1E;
-    margin-top: 20px;
-}
-section.msg5 div.container{
-    display: flex;
-    padding-top: 20px;
-    width: 860px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-}
-section.msg5 div.container div.card1{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-}
-section.msg5 div.container div.card1 img.card1-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg5 div.container div.card1 h4.card1-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg5 div.container div.card1 p.card1-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg5 div.container div.card1 p.card1-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg5 div.container div.card2{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg5 div.container div.card2 img.card2-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg5 div.container div.card2 h4.card2-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg5 div.container div.card2 p.card2-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg5 div.container div.card2 p.card2-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg5 div.container div.card3{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg5 div.container div.card3 img.card3-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg5 div.container div.card3 h4.card3-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg5 div.container div.card3 p.card3-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg5 div.container div.card3 p.card3-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-/* sixth section; a float field of text */
-section.msg6{
-    display: block;
-}
-section.msg6 h3.float.msg{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: #2699FB;
-    text-align: center;
-    white-space: nowrap;
-    animation-name: float;
-    animation-duration: 25s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-/* section seven; dark blue background */
-section.msg7{
-    background-color: #0D0F1E;
-    padding-bottom: 40px;
-}
-section.msg7 div.container2{
-    display: flex;
-    padding-top: 20px;
-    width: 860px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-}
-section.msg7 div.container2 div.card1{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-}
-section.msg7 div.container2 div.card1 img.card1-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg7 div.container2 div.card1 h4.card1-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg7 div.container2 div.card1 p.card1-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg7 div.container2 div.card1 p.card1-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg7 div.container2 div.card2{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg7 div.container2 div.card2 img.card2-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg7 div.container2 div.card2 h4.card2-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg7 div.container2 div.card2 p.card2-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg7 div.container2 div.card2 p.card2-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg7 div.container2 div.card3{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg7 div.container2 div.card3 img.card3-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg7 div.container2 div.card3 h4.card3-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg7 div.container2 div.card3 p.card3-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg7 div.container2 div.card3 p.card3-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg7 div.container4{
-    display: flex;
-    padding-top: 20px;
-    width: 860px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-}
-section.msg7 div.container4 div.card1{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-}
-section.msg7 div.container4 div.card1 img.card1-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg7 div.container4 div.card1 h4.card1-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg7 div.container4 div.card1 p.card1-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg7 div.container4 div.card1 p.card1-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg7 div.container4 div.card2{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg7 div.container4 div.card2 img.card2-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg7 div.container4 div.card2 h4.card2-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg7 div.container4 div.card2 p.card2-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg7 div.container4 div.card2 p.card2-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg7 div.container4 div.card3{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg7 div.container4 div.card3 img.card3-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg7 div.container4 div.card3 h4.card3-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg7 div.container4 div.card3 p.card3-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg7 div.container4 div.card3 p.card3-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg7 div.container5{
-    display: flex;
-    padding-top: 20px;
-    width: 860px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-}
-section.msg7 div.container5 div.card1{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-}
-section.msg7 div.container5 div.card1 img.card1-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg7 div.container5 div.card1 h4.card1-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg7 div.container5 div.card1 p.card1-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg7 div.container5 div.card1 p.card1-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg7 div.container5 div.card2{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg7 div.container5 div.card2 img.card2-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg7 div.container5 div.card2 h4.card2-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg7 div.container5 div.card2 p.card2-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg7 div.container5 div.card2 p.card2-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg7 div.container5 div.card3{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg7 div.container5 div.card3 img.card3-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg7 div.container5 div.card3 h4.card3-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg7 div.container5 div.card3 p.card3-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg7 div.container5 div.card3 p.card3-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg7 div.container6{
-    display: flex;
-    padding-top: 20px;
-    width: 860px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-}
-section.msg7 div.container6 div.card1{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-}
-section.msg7 div.container6 div.card1 img.card1-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg7 div.container6 div.card1 h4.card1-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg7 div.container6 div.card1 p.card1-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg7 div.container6 div.card1 p.card1-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg7 div.container6 div.card2{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg7 div.container6 div.card2 img.card2-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg7 div.container6 div.card2 h4.card2-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg7 div.container6 div.card2 p.card2-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg7 div.container6 div.card2 p.card2-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-section.msg7 div.container6 div.card3{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    margin-left: 10px;
-}
-section.msg7 div.container6 div.card3 img.card3-img{
-    width: 270px;
-    height: 200px;
-}
-section.msg7 div.container6 div.card3 h4.card3-msg1{
-    color: #2699FB;
-    padding-left: 5px;
-}
-section.msg7 div.container6 div.card3 p.card3-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg7 div.container6 div.card3 p.card3-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
 /* media queries */
 @media only screen and (max-width: 1000px){
     section.msg1 h3.float.msg{
@@ -738,24 +181,10 @@ section.msg7 div.container6 div.card3 p.card3-msg2 span{
     section.msg1 div.container{
         width: 95%;
     }
-    section.msg1 div.container div.card1{
+    section.msg1 div.container div.card{
         width: 32%;
     }
-    section.msg1 div.container div.card1 img.card1-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg1 div.container div.card2{
-        width: 32%;
-    }
-    section.msg1 div.container div.card2 img.card2-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg1 div.container div.card3{
-        width: 32%;
-    }
-    section.msg1 div.container div.card3 img.card3-img{
+    section.msg1 div.container div.card img.card-img{
         width: 100%;
         height: 180px;
     }
@@ -764,51 +193,13 @@ section.msg7 div.container6 div.card3 p.card3-msg2 span{
         width: 95%;
     }
     /* third section; dark blue background, six cards each containing an image, and text */
-    section.msg3 div.container1{
+    section.msg3 div.container{
         width: 95%;
     }
-    section.msg3 div.container1 div.card1{
+    section.msg3 div.container div.card{
         width: 32%;
     }
-    section.msg3 div.container1 div.card1 img.card1-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg3 div.container1 div.card2{
-        width: 32%;
-    }
-    section.msg3 div.container1 div.card2 img.card2-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg3 div.container1 div.card3{
-        width: 32%;
-    }
-    section.msg3 div.container1 div.card3 img.card3-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg3 div.container2{
-        width: 95%;
-    }
-    section.msg3 div.container2 div.card1{
-        width: 32%;
-    }
-    section.msg3 div.container2 div.card1 img.card1-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg3 div.container2 div.card2{
-        width: 32%;
-    }
-    section.msg3 div.container2 div.card2 img.card2-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg3 div.container2 div.card3{
-        width: 32%;
-    }
-    section.msg3 div.container2 div.card3 img.card3-img{
+    section.msg3 div.container div.card img.card-img{
         width: 100%;
         height: 180px;
     }
@@ -816,138 +207,10 @@ section.msg7 div.container6 div.card3 p.card3-msg2 span{
     section.msg4 div.card{
         width: 95%;
     }
-    /* fifth section; dark blue backgrund, three cards each containing an image and text */
-    section.msg5 div.container{
-        width: 95%;
-    }
-    section.msg5 div.container div.card1{
-        width: 32%;
-    }
-    section.msg5 div.container div.card1 img.card1-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg5 div.container div.card2{
-        width: 32%;
-    }
-    section.msg5 div.container div.card2 img.card2-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg5 div.container div.card3{
-        width: 32%;
-    }
-    section.msg5 div.container div.card3 img.card3-img{
-        width: 100%;
-        height: 180px;
-    }
-    /* section seven; dark blue background */
-    section.msg7 div.container2{
-        width: 95%
-    }
-    section.msg7 div.container2 div.card1{
-        width: 32%;
-    }
-    section.msg7 div.container2 div.card1 img.card1-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg7 div.container2 div.card2{
-        width: 32%;
-    }
-    section.msg7 div.container2 div.card2 img.card2-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg7 div.container2 div.card3{
-        width: 32%;
-    }
-    section.msg7 div.container2 div.card3 img.card3-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg7 div.container4{
-        width: 95%;
-    }
-    section.msg7 div.container4 div.card1{
-        width: 32%;
-    }
-    section.msg7 div.container4 div.card1 img.card1-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg7 div.container4 div.card2{
-        width: 32%;
-    }
-    section.msg7 div.container4 div.card2 img.card2-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg7 div.container4 div.card3{
-        width: 32%;
-    }
-    section.msg7 div.container4 div.card3 img.card3-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg7 div.container5{
-        width: 95%;
-    }
-    section.msg7 div.container5 div.card1{
-        width: 32%;
-    }
-    section.msg7 div.container5 div.card1 img.card1-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg7 div.container5 div.card2{
-        width: 32%;
-    }
-    section.msg7 div.container5 div.card2 img.card2-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg7 div.container5 div.card3{
-        width: 32%;
-    }
-    section.msg7 div.container5 div.card3 img.card3-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg7 div.container6{
-        width: 95%;
-    }
-    section.msg7 div.container6 div.card1{
-        width: 32%;
-    }
-    section.msg7 div.container6 div.card1 img.card1-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg7 div.container6 div.card2{
-        width: 32%;
-    }
-    section.msg7 div.container6 div.card2 img.card2-img{
-        width: 100%;
-        height: 180px;
-    }
-    section.msg7 div.container6 div.card3{
-        width: 32%;
-    }
-    section.msg7 div.container6 div.card3 img.card3-img{
-        width: 100%;
-        height: 180px;
-    }
 }
 @media only screen and (max-width: 670px){
     /* first section; dark blue background, a float message and three cards each containing images and text */
-    section.msg1 div.container div.card1 img.card1-img{
-        height: 150px;
-    }
-    section.msg1 div.container div.card2 img.card2-img{
-        height: 150px;
-    }
-    section.msg1 div.container div.card3 img.card3-img{
+    section.msg1 div.container div.card img.card-img{
         height: 150px;
     }
     /* second section; white background, two cards each containing text */
@@ -955,22 +218,7 @@ section.msg7 div.container6 div.card3 p.card3-msg2 span{
         width: 95%;
     }
     /* third section; dark blue background, six cards each containing an image, and text */
-    section.msg3 div.container1 div.card1 img.card1-img{
-        height: 150px;
-    }
-    section.msg3 div.container1 div.card2 img.card2-img{
-        height: 150px;
-    }
-    section.msg3 div.container1 div.card3 img.card3-img{
-        height: 150px;
-    }
-    section.msg3 div.container2 div.card1 img.card1-img{
-        height: 150px;
-    }
-    section.msg3 div.container2 div.card2 img.card2-img{
-        height: 150px;
-    }
-    section.msg3 div.container2 div.card3 img.card3-img{
+    section.msg3 div.container div.card img.card-img{
         height: 150px;
     }
     /* fourth section; white background, one card containing text */
@@ -982,349 +230,8 @@ section.msg7 div.container6 div.card3 p.card3-msg2 span{
         width: 95%;
         margin: auto;
     }
-    /* fifth section; dark blue backgrund, three cards each containing an image and text */
-    section.msg5 div.container div.card1 img.card1-img{
-        height: 150px;
-    }
-    section.msg5 div.container div.card2 img.card2-img{
-        height: 150px;
-    }
-    section.msg5 div.container div.card3 img.card3-img{
-        height: 150px;
-    }
-    /* section seven; dark blue background */
-    section.msg7 div.container2 div.card1 img.card1-img{
-        height: 150px;
-    }
-    section.msg7 div.container2 div.card2 img.card2-img{
-        height: 150px;
-    }
-    section.msg7 div.container2 div.card3 img.card3-img{
-        height: 150px;
-    }
-    section.msg7 div.container4 div.card1 img.card1-img{
-        height: 150px;
-    }
-    section.msg7 div.container4 div.card2 img.card2-img{
-        height: 150px;
-    }
-    section.msg7 div.container4 div.card3 img.card3-img{
-        height: 150px;
-    }
-    section.msg7 div.container5 div.card1 img.card1-img{
-        height: 150px;
-    }
-    section.msg7 div.container5 div.card2 img.card2-img{
-        height: 150px;
-    }
-    section.msg7 div.container5 div.card3 img.card3-img{
-        height: 150px;
-    }
-    section.msg7 div.container6 div.card1 img.card1-img{
-        height: 150px;
-    }
-    section.msg7 div.container6 div.card2 img.card2-img{
-        height: 150px;
-    }
-    section.msg7 div.container6 div.card3 img.card3-img{
-        height: 150px;
-    }
 }
-@media only screen and (max-width: 550px){
-    /* first section; dark blue background, a float message and three cards each containing images and text */
-    section.msg1 div.container div.card1{
-        height: 260px;
-    }
-    section.msg1 div.container div.card1 img.card1-img{
-        height: 120px;
-    }
-    section.msg1 div.container div.card1 h4.card1-msg1{
-        font-size: 0.8em;
-    }
-    section.msg1 div.container div.card1 p.card1-msg2{
-        font-size: 0.65em;
-    }
-    section.msg1 div.container div.card2{
-        height: 260px;
-    }
-    section.msg1 div.container div.card2 img.card2-img{
-        height: 120px;
-    }
-    section.msg1 div.container div.card2 h4.card2-msg1{
-        font-size: 0.8em;
-    }
-    section.msg1 div.container div.card2 p.card2-msg2{
-        font-size: 0.65em;
-    }
-    section.msg1 div.container div.card3{
-        height: 260px;
-    }
-    section.msg1 div.container div.card3 img.card3-img{
-        height: 120px;
-    }
-    section.msg1 div.container div.card3 h4.card3-msg1{
-        font-size: 0.8em;
-    }
-    section.msg1 div.container div.card3 p.card3-msg2{
-        font-size: 0.65em;
-    }
-    /* third section; dark blue background, six cards each containing an image, and text */
-    section.msg3 div.container1 div.card1{
-        height: 260px;
-    }
-    section.msg3 div.container1 div.card1 img.card1-img{
-        height: 120px;
-    }
-    section.msg3 div.container1 div.card1 h4.card1-msg1{
-        font-size: 0.8em;
-    }
-    section.msg3 div.container1 div.card1 p.card1-msg2{
-        font-size: 0.65em;
-    }
-    section.msg3 div.container1 div.card2{
-        height: 260px;
-    }
-    section.msg3 div.container1 div.card2 img.card2-img{
-        height: 120px;
-    }
-    section.msg3 div.container1 div.card2 h4.card2-msg1{
-        font-size: 0.8em;
-    }
-    section.msg3 div.container1 div.card2 p.card2-msg2{
-        font-size: 0.65em;
-    }
-    section.msg3 div.container1 div.card3{
-        height: 260px;
-    }
-    section.msg3 div.container1 div.card3 img.card3-img{
-        height: 120px;
-    }
-    section.msg3 div.container1 div.card3 h4.card3-msg1{
-        font-size: 0.8em;
-    }
-    section.msg3 div.container1 div.card3 p.card3-msg2{
-        font-size: 0.65em;
-    }
-    section.msg3 div.container2 div.card1{
-        height: 260px;
-    }
-    section.msg3 div.container2 div.card1 img.card1-img{
-        height: 120px;
-    }
-    section.msg3 div.container2 div.card1 h4.card1-msg1{
-        font-size: 0.8em;
-    }
-    section.msg3 div.container2 div.card1 p.card1-msg2{
-        font-size: 0.65em;
-    }
-    section.msg3 div.container2 div.card2{
-        height: 260px;
-    }
-    section.msg3 div.container2 div.card2 img.card2-img{
-        height: 120px;
-    }
-    section.msg3 div.container2 div.card2 h4.card2-msg1{
-        font-size: 0.8em;
-    }
-    section.msg3 div.container2 div.card2 p.card2-msg2{
-        font-size: 0.65em;
-    }
-    section.msg3 div.container2 div.card3{
-        height: 260px;
-    }
-    section.msg3 div.container2 div.card3 img.card3-img{
-        height: 120px;
-    }
-    section.msg3 div.container2 div.card3 h4.card3-msg1{
-        font-size: 0.8em;
-    }
-    section.msg3 div.container2 div.card3 p.card3-msg2{
-        font-size: 0.65em;
-    }
-    /* fifth section; dark blue backgrund, three cards each containing an image and text */
-    section.msg5 div.container div.card1{
-        height: 260px;
-    }
-    section.msg5 div.container div.card1 img.card1-img{
-        height: 120px;
-    }
-    section.msg5 div.container div.card1 h4.card1-msg1{
-        font-size: 0.8em;
-    }
-    section.msg5 div.container div.card1 p.card1-msg2{
-        font-size: 0.65em;
-    }
-    section.msg5 div.container div.card2{
-        height: 260px;
-    }
-    section.msg5 div.container div.card2 img.card2-img{
-        height: 120px;
-    }
-    section.msg5 div.container div.card2 h4.card2-msg1{
-        font-size: 0.8em;
-    }
-    section.msg5 div.container div.card2 p.card2-msg2{
-        font-size: 0.65em;
-    }
-    section.msg5 div.container div.card3{
-        height: 260px;
-    }
-    section.msg5 div.container div.card3 img.card3-img{
-        height: 120px;
-    }
-    section.msg5 div.container div.card3 h4.card3-msg1{
-        font-size: 0.8em;
-    }
-    section.msg5 div.container div.card3 p.card3-msg2{
-        font-size: 0.65em;
-    }
-    /* section seven; dark blue background */
-    section.msg7 div.container2 div.card1{
-        height: 260px;
-    }
-    section.msg7 div.container2 div.card1 img.card1-img{
-        height: 120px;
-    }
-    section.msg7 div.container2 div.card1 h4.card1-msg1{
-        font-size: 0.8em;
-    }
-    section.msg7 div.container2 div.card1 p.card1-msg2{
-        font-size: 0.65em;
-    }
-    section.msg7 div.container2 div.card2{
-        height: 260px;
-    }
-    section.msg7 div.container2 div.card2 img.card2-img{
-        height: 120px;
-    }
-    section.msg7 div.container2 div.card2 h4.card2-msg1{
-        font-size: 0.8em;
-    }
-    section.msg7 div.container2 div.card2 p.card2-msg2{
-        font-size: 0.65em;
-    }
-    section.msg7 div.container2 div.card3{
-        height: 260px;
-    }
-    section.msg7 div.container2 div.card3 img.card3-img{
-        height: 120px;
-    }
-    section.msg7 div.container2 div.card3 h4.card3-msg1{
-        font-size: 0.8em;
-    }
-    section.msg7 div.container2 div.card3 p.card3-msg2{
-        font-size: 0.65em;
-    }
-    section.msg7 div.container4 div.card1{
-        height: 260px;
-    }
-    section.msg7 div.container4 div.card1 img.card1-img{
-        height: 120px;
-    }
-    section.msg7 div.container4 div.card1 h4.card1-msg1{
-        font-size: 0.8em;
-    }
-    section.msg7 div.container4 div.card1 p.card1-msg2{
-        font-size: 0.65em;
-    }
-    section.msg7 div.container4 div.card2{
-        height: 260px;
-    }
-    section.msg7 div.container4 div.card2 img.card2-img{
-        height: 120px;
-    }
-    section.msg7 div.container4 div.card2 h4.card2-msg1{
-        font-size: 0.8em;
-    }
-    section.msg7 div.container4 div.card2 p.card2-msg2{
-        font-size: 0.65em;
-    }
-    section.msg7 div.container4 div.card3{
-        height: 260px;
-    }
-    section.msg7 div.container4 div.card3 img.card3-img{
-        height: 120px;
-    }
-    section.msg7 div.container4 div.card3 h4.card3-msg1{
-        font-size: 0.8em;
-    }
-    section.msg7 div.container4 div.card3 p.card3-msg2{
-        font-size: 0.65em;
-    }
-    section.msg7 div.container5 div.card1{
-        height: 260px;
-    }
-    section.msg7 div.container5 div.card1 img.card1-img{
-        height: 120px;
-    }
-    section.msg7 div.container5 div.card1 h4.card1-msg1{
-        font-size: 0.8em;
-    }
-    section.msg7 div.container5 div.card1 p.card1-msg2{
-        font-size: 0.65em;
-    }
-    section.msg7 div.container5 div.card2{
-        height: 260px;
-    }
-    section.msg7 div.container5 div.card2 img.card2-img{
-        height: 120px;
-    }
-    section.msg7 div.container5 div.card2 h4.card2-msg1{
-        font-size: 0.8em;
-    }
-    section.msg7 div.container5 div.card2 p.card2-msg2{
-        font-size: 0.65em;
-    }
-    section.msg7 div.container5 div.card3{
-        height: 260px;
-    }
-    section.msg7 div.container5 div.card3 img.card3-img{
-        height: 120px;
-    }
-    section.msg7 div.container5 div.card3 h4.card3-msg1{
-        font-size: 0.8em;
-    }
-    section.msg7 div.container5 div.card3 p.card3-msg2{
-        font-size: 0.65em;
-    }
-    section.msg7 div.container6 div.card1{
-        height: 260px;
-    }
-    section.msg7 div.container6 div.card1 img.card1-img{
-        height: 120px;
-    }
-    section.msg7 div.container6 div.card1 h4.card1-msg1{
-        font-size: 0.8em;
-    }
-    section.msg7 div.container6 div.card1 p.card1-msg2{
-        font-size: 0.65em;
-    }
-    section.msg7 div.container6 div.card2{
-        height: 260px;
-    }
-    section.msg7 div.container6 div.card2 img.card2-img{
-        height: 120px;
-    }
-    section.msg7 div.container6 div.card2 h4.card2-msg1{
-        font-size: 0.8em;
-    }
-    section.msg7 div.container6 div.card2 p.card2-msg2{
-        font-size: 0.65em;
-    }
-    section.msg7 div.container6 div.card3{
-        height: 260px;
-    }
-    section.msg7 div.container6 div.card3 img.card3-img{
-        height: 120px;
-    }
-    section.msg7 div.container6 div.card3 h4.card3-msg1{
-        font-size: 0.8em;
-    }
-    section.msg7 div.container6 div.card3 p.card3-msg2{
-        font-size: 0.65em;
-    }
-}
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 580px){
 	/* first section; dark blue background, a float message and three cards each containing images and text */
     section.msg1{
         display: flex;
@@ -1344,46 +251,16 @@ section.msg7 div.container6 div.card3 p.card3-msg2 span{
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    section.msg1 div.container div.card1{
+    section.msg1 div.container div.card{
         width: 100%;
         height: 350px;
     }
-    section.msg1 div.container div.card1 img.card1-img{
+    section.msg1 div.container div.card img.card-img{
         width: 100%;
         height: 250px;
     }
-    section.msg1 div.container div.card2{
-        width: 100%;
-        height: 350px;
-        margin-top: 40px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    section.msg1 div.container div.card2 img.card2-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg1 div.container div.card3{
-        width: 100%;
-        height: 350px;
-        margin-top: 40px;
-        margin-left: 0;
-    }
-    section.msg1 div.container div.card3 img.card3-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg1 div.container div.card3 h4.card3-msg1{
-        color: #2699FB;
-        padding-left: 5px;
-    }
-    section.msg1 div.container div.card3 p.card3-msg2{
-        padding-left: 5px;
-        font-size: 0.8em;
-    }
-    section4.msg1 div.container div.card3 p.card3-msg2 span{
-        font-size: 0.9em;
-        color: #c0c0c0;
+    section.msg1 div.container div.card h4.card-msg1{
+        margin-top: 10px;
     }
     /* second section; white background, two cards each containing text */
     section.msg2 div.card1{
@@ -1399,406 +276,44 @@ section.msg7 div.container6 div.card3 p.card3-msg2 span{
         margin-top: 25px;
         width: 95%;
     }
+    section.msg2 h3.float.msg{
+        white-space: nowrap;
+    }
     /* third section; dark blue background, six cards each containing an image, and text */
-    section.msg3 div.container1{
+    section.msg3 div.container{
         display: flex;
         flex-flow: column;
         padding-top: 40px;
         margin-left: auto;
         width: 95%;
     }
-    section.msg3 div.container1 div.card1{
+    section.msg3 div.container div.card{
         width: 100%;
         height: 350px;
         margin-left: auto;
         margin-right: auto;
     }
-    section.msg3 div.container1 div.card1 img.card1-img{
+    section.msg3 div.container div.card img.card-img{
         width: 100%;
         height: 250px;
     }
-    section.msg3 div.container1 div.card2{
-        width: 100%;
-        height: 350px;
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    section.msg3 div.container1 div.card2 img.card2-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg3 div.container1 div.card3{
-        width: 100%;
-        height: 350px;
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    section.msg3 div.container1 div.card3 img.card3-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg3 div.container2{
-        display: flex;
-        flex-flow: column;
-        padding-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
-    section.msg3 div.container2 div.card1{
-        width: 95%;
-        height: 350px;
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    section.msg3 div.container2 div.card1 img.card1-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg3 div.container2 div.card2{
-        width: 95%;
-        height: 350px;
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    section.msg3 div.container2 div.card2 img.card2-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg3 div.container2 div.card3{
-        width: 95%;
-        height: 350px;
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    section.msg3 div.container2 div.card3 img.card3-img{
-        width: 100%;
-        height: 250px;
+    section.msg3 div.container div.card h4.card-msg1{
+        margin-top: 10px;
     }
     /* fourth section; white background, one card containing text */
     section.msg4 div.card{
         margin-left: 5%;
         width: 90%;
-        height: 320px;
+        height: 360px;
     }
     section.msg4 div.card h4.card-msg{
         font-size: 1.1em;
         width: 92%;
     }
-    /* fifth section; dark blue backgrund, three cards each containing an image and text */
-    section.msg5 div.container{
-        display: flex;
-        flex-flow: column;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
-    section.msg5 div.container div.card1{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    section.msg5 div.container div.card1 img.card1-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg5 div.container div.card2{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    section.msg5 div.container div.card2 img.card2-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg5 div.container div.card3{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    section.msg5 div.container div.card3 img.card3-img{
-        width: 100%;
-        height: 250px;
-    }
-    /* sixth section; a float field of text */
-    section.msg6 h3.float.msg{
-        white-space: nowrap;
-    }
-    /* section seven; dark blue background */
-    section.msg7{
-        padding-bottom: 30px;
-    }
-    section.msg7 div.container2{
-        display: flex;
-        flex-flow: column;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        padding-bottom: 20px;
-    }
-    section.msg7 div.container2 div.card1{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    section.msg7 div.container2 div.card1 img.card1-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg7 div.container2 div.card2{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    section.msg7 div.container2 div.card2 img.card2-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg7 div.container2 div.card3{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    section.msg7 div.container2 div.card3 img.card3-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg7 div.container4{
-        display: flex;
-        flex-flow: column;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        padding-bottom: 20px;
-    }
-    section.msg7 div.container4 div.card1{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    section.msg7 div.container4 div.card1 img.card1-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg7 div.container4 div.card2{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    section.msg7 div.container4 div.card2 img.card2-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg7 div.container4 div.card3{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    section.msg7 div.container4 div.card3 img.card3-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg7 div.container5{
-        display: flex;
-        flex-flow: column;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        padding-bottom: 20px;
-    }
-    section.msg7 div.container5 div.card1{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    section.msg7 div.container5 div.card1 img.card1-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg7 div.container5 div.card2{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    section.msg7 div.container5 div.card2 img.card2-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg7 div.container5 div.card3{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    section.msg7 div.container5 div.card3 img.card3-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg7 div.container6{
-        display: flex;
-        flex-flow: column;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        padding-bottom: 20px;
-    }
-    section.msg7 div.container6 div.card1{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    section.msg7 div.container6 div.card1 img.card1-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg7 div.container6 div.card2{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    section.msg7 div.container6 div.card2 img.card2-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg7 div.container6 div.card3{
-        width: 95%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-    section.msg7 div.container6 div.card3 img.card3-img{
-        width: 100%;
-        height: 250px;
-    }
-}
-@media only screen and (max-width: 340px){
-    /* first section; dark blue background, a float message and three cards each containing images and text */
-    section.msg1 div.container div.card1{
-        height: 360px;
-    }
-    section.msg1 div.container div.card2{
-        height: 360px;
-    }
-    section.msg1 div.container div.card3{
-        height: 360px;
-    }
-    /* second section; white background, two cards each containing text */
-    section.msg2 div.card2{
-        height: 200px;
-    }
-    /* third section; dark blue background, six cards each containing an image, and text */
-
-    section.msg3 div.container1 div.card1{
-        height: 360px;
-    }
-    section.msg3 div.container1 div.card2{
-        height: 360px;
-    }
-    section.msg3 div.container1 div.card3{
-        height: 360px;
-    }
-    section.msg3 div.container2 div.card1{
-        height: 360px;
-    }
-    section.msg3 div.container2 div.card2{
-        height: 360px;
-    }
-    section.msg3 div.container2 div.card3{
-        height: 360px;
-    }
-    /* fourth section; white background, one card containing text */
-    section.msg4 div.card{
-        height: 380px;
-    }
-    /* fifth section; dark blue backgrund, three cards each containing an image and text */
-    section.msg5 div.container div.card1{
-        height: 360px;
-    }
-    section.msg5 div.container div.card2{
-        height: 360px;
-    }
-    section.msg5 div.container div.card3{
-        height: 360px;
-    }
-    /* section seven; dark blue background */
-    section.msg7 div.container2 div.card1{
-        height: 360px;
-    }
-    section.msg7 div.container2 div.card2{
-        height: 360px;
-    }
-    section.msg7 div.container2 div.card3{
-        height: 360px;
-    }
-    section.msg7 div.container4 div.card1{
-        height: 360px;
-    }
-    section.msg7 div.container4 div.card2{
-        height: 360px;
-    }
-    section.msg7 div.container4 div.card3{
-        height: 360px;
-    }
-    section.msg7 div.container5 div.card1{
-        height: 360px;
-    }
-    section.msg7 div.container5 div.card2{
-        height: 360px;
-    }
-    section.msg7 div.container5 div.card3{
-        height: 360px;
-    }
-    section.msg7 div.container6 div.card1{
-        height: 360px;
-    }
-    section.msg7 div.container6 div.card2{
-        height: 360px;
-    }
-    section.msg7 div.container6 div.card3{
-        height: 360px;
-    }
 }
 @media only screen and (max-width: 300px){
 	/* first section; dark blue background, a float message and three cards each containing images and text */
-    section.msg1 div.container div.card1{
-        height: 380px;
-    }
-    section.msg1 div.container div.card2{
-        height: 380px;
-    }
-    section.msg1 div.container div.card3{
+    section.msg1 div.container div.card{
         height: 380px;
     }
     /* second section; white background, two cards each containing text */
@@ -1806,74 +321,12 @@ section.msg7 div.container6 div.card3 p.card3-msg2 span{
         height: 200px;
     }
     /* third section; dark blue background, six cards each containing an image, and text */
-    section.msg3 div.container1 div.card1{
-        height: 380px;
-    }
-    section.msg3 div.container1 div.card2{
-        height: 380px;
-    }
-    section.msg3 div.container1 div.card3{
-        height: 380px;
-    }
-    section.msg3 div.container2 div.card1{
-        height: 380px;
-    }
-    section.msg3 div.container2 div.card2{
-        height: 380px;
-    }
-    section.msg3 div.container2 div.card3{
+    section.msg3 div.container div.card{
         height: 380px;
     }
     /* fourth section; white background, one card containing text */
     section.msg4 div.card{
-        height: 380px;
-    }
-    /* fifth section; dark blue backgrund, three cards each containing an image and text */
-    section.msg5 div.container div.card1{
-        height: 380px;
-    }
-    section.msg5 div.container div.card2{
-        height: 380px;
-    }
-    section.msg5 div.container div.card3{
-        height: 380px;
-    }
-    /* section seven; dark blue background */
-    section.msg7 div.container2 div.card1{
-        height: 380px;
-    }
-    section.msg7 div.container2 div.card2{
-        height: 380px;
-    }
-    section.msg7 div.container2 div.card3{
-        height: 380px;
-    }
-    section.msg7 div.container4 div.card1{
-        height: 380px;
-    }
-    section.msg7 div.container4 div.card2{
-        height: 380px;
-    }
-    section.msg7 div.container4 div.card3{
-        height: 380px;
-    }
-    section.msg7 div.container5 div.card1{
-        height: 380px;
-    }
-    section.msg7 div.container5 div.card2{
-        height: 380px;
-    }
-    section.msg7 div.container5 div.card3{
-        height: 380px;
-    }
-    section.msg7 div.container6 div.card1{
-        height: 380px;
-    }
-    section.msg7 div.container6 div.card2{
-        height: 380px;
-    }
-    section.msg7 div.container6 div.card3{
-        height: 380px;
+        height: 440px;
     }
 }
 @media only screen and (max-width: 260px){
@@ -1883,7 +336,7 @@ section.msg7 div.container6 div.card3 p.card3-msg2 span{
     }
 	/* fourth section; white background, one card containing text */
     section.msg4 div.card{
-        height: 340px;
+        height: 360px;
     }
     section.msg4 div.card h4.card-msg{
         font-size: 1.0em;
