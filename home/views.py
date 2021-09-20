@@ -70,7 +70,7 @@ def story_detail(request, *args, **kwargs):
 
 
 def profile_feed(request, *args, **kwargs):
-	profiles = Profile.objects.all()
+	profiles = Profile.objects.all().order_by("-date")
 	form = Form(auto_id=False)
 	if request.method == 'POST':
 		form = Form(request.POST)
