@@ -133,14 +133,14 @@ footer.footer div.container2 h2.about-us{
 	font-size: 1.3em;
 	font-weight: lighter;
 	line-height: 2.5;
-	margin-left: 60px;
+	margin-left: 2%;
 }
 footer.footer div.container2 h2.social_media_addresses{
 	font-size: 1.3em;
 	font-weight: lighter;
 	line-height: 2.5;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin-left: 10%;
+	margin-right: 9.8%;
 }
 footer.footer div.container2 h2.social_media_addresses img{
 	width: 20px;
@@ -153,16 +153,17 @@ footer.footer div.container2 h2.address{
 	font-size: 1.3em;
 	font-weight: lighter;
 	line-height: 2.5;
-	margin-right: 60px;
+	margin-right: 2%;
 }
 footer.footer div.container3{
 	display: flex;
 	flex-flow: column;
-	justify-content: center;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
 	padding-bottom: 40px;
 }
 footer.footer div.container3 h2.newsletter{
-	margin-left: 40%;
 	margin-top: 80px;
 	font-weight: lighter;
 	color: #ffffff;
@@ -172,7 +173,6 @@ footer.footer div.container3 div.email{
 	height: 40px;
 	border-radius: 2px;
 	border: 1px solid;
-	margin-left: 40%;
 	margin-top: 20px;
 	color: #ffffff;
 }
@@ -228,12 +228,12 @@ html, body{
 	}
 	footer.footer div.container2 h2.about-us{
 		font-size: 1.2em;
-		margin-left: 0%;
+		margin-left: 0;
 	}
 	footer.footer div.container2 h2.social_media_addresses{
 		font-size: 1.2em;
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-left: 8%;
+		margin-right: 8%;
 	}
 	footer.footer div.container2 h2.address{
 		font-size: 1.2em;
@@ -262,6 +262,10 @@ html, body{
 	header div.container nav.navbar{
 		border-bottom: 0px;
 	}
+	footer.footer div.container2 h2.social_media_addresses{
+		margin-left: 7%;
+		margin-right: 7%;
+	}
 }
 @media only screen and (max-width: 790px){
 	/* footer section; pale blue background, table list of supporters, table of footer notes, email collector */
@@ -270,6 +274,8 @@ html, body{
 	}
 	footer.footer div.container2 h2.social_media_addresses{
 		font-size: 1.1em;
+		margin-left: 6%;
+		margin-right: 6%;
 	}
 	footer.footer div.container2 h2.address{
 		font-size: 1.1em;
@@ -306,9 +312,12 @@ html, body{
 	}
 	footer.footer div.container2 h2.social_media_addresses{
 		font-size: 0.9em;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 	footer.footer div.container2 h2.address{
 		font-size: 0.79em;
+		line-height: 3.0;
 	}
 }
 @media only screen and (max-width: 530px){

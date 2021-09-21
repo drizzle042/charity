@@ -1,6 +1,6 @@
-/* first section; dark blue background, a float message and three cards each containing images and text */
-section.msg1{
-    background-color: #0D0F1E;
+/* first section; white background, a float message and three cards each containing images and text */
+section.msg1 div.wrapper{
+    background-color: #2699FB;
 }
 section.msg1 h3.float.msg{
     color: #26FB9F;
@@ -9,61 +9,9 @@ section.msg1 h3.float.msg{
     font-size: 1.8em;
     font-weight: 500;
     white-space: nowrap;
-}
-section.msg1 div.container{
-    display: flex;
-    width: 860px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
     padding-bottom: 20px;
 }
-section.msg1 div.container div.card{
-    background-color: #ffffff;
-    border-radius: 15px;
-    width: 270px;
-    height: 300px;
-    padding-bottom: 20px;
-}
-section.msg1 div.container div.card img.card-img{
-    width: 100%;
-    height: 200px;
-}
-section.msg1 div.container div.card h4.card-msg1{
-    color: #2699FB;
-    text-align: center;
-}
-section.msg1 div.container div.card p.card-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
-}
-section.msg1 div.container div.card p.card-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
-}
-/* second section; white background, two cards each containing text and a text area */
-section.msg2{
-    display: flex;
-    flex-flow: column;
-}
-section.msg2 div.card1{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15px;
-    width: 900px;
-    height: 40px;
-	border: solid 1px #837f7f;
-	box-shadow: 2px 5px 3px #beb4b4;
-}
-section.msg2 div.card1 h4.card1-msg.float{
-    margin-top: 10px;
-    color: #2699FB;
-    font-weight: 500;
-}
-section.msg2 div.card2{
+section.msg1 div.card1{
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -75,68 +23,98 @@ section.msg2 div.card2{
 	border: solid 1px #837f7f;
 	box-shadow: 2px 5px 3px #beb4b4;
 }
-section.msg2 div.card2 h3.card2-msg{
+section.msg1 div.card1 h3.card1-msg{
     text-align: center;
-    margin-top: 40px;
+    padding: 40px;
     font-size: 1.3em;
     color: #2699FB;
     width: 530px;
     font-weight: 500;
 }
-section.msg2 h3.float.msg{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #2699FB;
-    text-align: center;
-    white-space: nowrap;
-    animation-name: float;
-    animation-duration: 25s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-/* third section; dark blue background, six cards each containing an image, and text */
-section.msg3{
-    background-color: #0D0F1E;
-    margin-top: 20px;
-}
-section.msg3 div.container{
+section.msg1 div.card2{
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 860px;
+    justify-content: center;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-}
-section.msg3 div.container div.card{
-    background-color: #ffffff;
     border-radius: 15px;
-    width: 270px;
-    height: 300px;
+    width: 900px;
+    height: 40px;
+	border: solid 1px #837f7f;
+	box-shadow: 2px 5px 3px #beb4b4;
+}
+section.msg1 div.card2 h4.card2-msg.float{
+    margin-top: 10px;
+    color: #2699FB;
+    font-weight: 500;
+}
+/* second section; white background, two cards each containing text and a text area */
+section.msg2{
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+section.msg2 div.container{
+    display: flex;
+    flex-flow: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
     padding-bottom: 20px;
 }
-section.msg3 div.container div.card img.card-img{
-    width: 270px;
-    height: 200px;
+section.msg2 div.container div.card{
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse; 
+	border: solid 1px #837f7f;
+	box-shadow: 2px 5px 3px #beb4b4;
 }
-section.msg3 div.container div.card h4.card-msg1{
+section.msg2 div.container div.card div.wrapper{
+    display: flex;
+    flex-flow: column;
+    height: 62%;
+    margin: auto;
+    margin-left: 2%;
+    border-left: solid 2px #837f7f;
+    border-bottom: solid 2px #837f7f;
+    padding: 2%;
+    border-radius: 10px;
+}
+section.msg2 div.container div.card img.card-img{
+    width: 50%;
+    height: 70%;
+    border-radius: 20px;
+    margin: auto;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+section.msg2 div.container div.card h4.card-msg1{
     color: #2699FB;
-    padding-left: 5px;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #837f7f;
 }
-section.msg3 div.container div.card p.card-msg2{
-    padding-left: 5px;
-    font-size: 0.8em;
+section.msg2 div.container div.card p.card-msg2{
+    font-size: 1.3em;
+    padding-top: 20px;
 }
-section.msg3 div.container div.card p.card-msg2 span{
+section.msg2 div.container div.card p.card-msg2 span{
     font-size: 0.9em;
     color: #c0c0c0;
 }
-/* fourth section; white background, one card containing text */
-section.msg4{
-    display: flex;
-    padding-top: 40px;
-    padding-bottom: 80px;
+/* third section; white background, six cards each containing an image, and text */
+section.msg3{
+    margin-top: 20px;
 }
-section.msg4 div.card{
+section.msg3 div.card{
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -148,7 +126,7 @@ section.msg4 div.card{
 	border: solid 1px #837f7f;
 	box-shadow: 2px 5px 3px #beb4b4;
 }
-section.msg4 div.card h4.card-msg{
+section.msg3 div.card h4.card-msg{
     text-align: center;
     margin-top: 15px;
     font-size: 1.3em;
@@ -156,19 +134,31 @@ section.msg4 div.card h4.card-msg{
     width: 750px;
     font-weight: 500;
 }
-section.msg4 div.card h4.card-msg span{
+section.msg3 div.card h4.card-msg span{
     font-size: 0.9em;
     color: #c0c0c0;
 }
+section.msg3 h3.float.msg{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #2699FB;
+    text-align: center;
+    white-space: nowrap;
+    animation-name: float;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 /* media queries */
 @media only screen and (max-width: 1000px){
+	/* first section; white background, a float message and three cards each containing images and text */
     section.msg1 h3.float.msg{
         animation-name: float-2;
         animation-duration: 20s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
     }
-    section.msg2 div.card1{
+    section.msg1 div.card2{
         animation-name: float-2;
         animation-duration: 20s;
         animation-timing-function: linear;
@@ -177,32 +167,46 @@ section.msg4 div.card h4.card-msg span{
     
 }
 @media only screen and (max-width: 960px){
-    /* first section; dark blue background, a float message and three cards each containing images and text */
-    section.msg1 div.container{
+    /* first section; white background, a float message and three cards each containing images and text */
+    section.msg1 div.card1{
         width: 95%;
-    }
-    section.msg1 div.container div.card{
-        width: 32%;
-    }
-    section.msg1 div.container div.card img.card-img{
-        width: 100%;
-        height: 180px;
     }
     /* second section; white background, two cards each containing text */
-    section.msg2 div.card2{
+    section.msg2 div.container{
         width: 95%;
     }
-    /* third section; dark blue background, six cards each containing an image, and text */
-    section.msg3 div.container{
-        width: 95%;
-    }
-    section.msg3 div.container div.card{
-        width: 32%;
-    }
-    section.msg3 div.container div.card img.card-img{
+    section.msg2 div.container div.card{
         width: 100%;
-        height: 180px;
+        height: 300px;
     }
+    section.msg2 div.container div.card div.wrapper{
+    	height: 72%;
+    }
+    /* third section; white background, six cards each containing an image, and text */
+    section.msg3 div.card{
+        width: 92%;
+        padding: 10px;
+    } 
+}
+@media only screen and (max-width: 800px){
+    /* second section; white background, two cards each containing text */
+    section.msg2 div.container div.card{
+        height: 350px;
+    }
+    section.msg2 div.container div.card div.wrapper{
+    	height: 70%;
+    }
+    section.msg2 div.container div.card img.card-img{
+		width: 40%;
+		height: 60%;
+    }
+    section.msg2 div.container div.card h4.card-msg1{
+		font-size: 1.3em;
+    }
+
+	section.msg2 div.container div.card p.card-msg2{
+		font-size: 1.2em;
+	}
     /* fourth section; white background, one card containing text */
     section.msg4 div.card{
         width: 95%;
@@ -218,17 +222,9 @@ section.msg4 div.card h4.card-msg span{
         width: 95%;
     }
     /* third section; dark blue background, six cards each containing an image, and text */
-    section.msg3 div.container div.card img.card-img{
-        height: 150px;
-    }
-    /* fourth section; white background, one card containing text */
-    section.msg4 div.card{
+    section.msg3 div.card{
         width: 95%;
         height: 300px;
-    }
-    section.msg4 div.card h4.card-msg{
-        width: 95%;
-        margin: auto;
     }
 }
 @media only screen and (max-width: 580px){
@@ -243,102 +239,87 @@ section.msg4 div.card h4.card-msg span{
         font-size: 1.2em;
         white-space: nowrap;
     }
-    section.msg1 div.container{
-        flex-flow: column;
-        margin-left: auto;
-        margin-right: auto;
-        width: 95%;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    section.msg1 div.container div.card{
-        width: 100%;
-        height: 350px;
-    }
-    section.msg1 div.container div.card img.card-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg1 div.container div.card h4.card-msg1{
-        margin-top: 10px;
-    }
-    /* second section; white background, two cards each containing text */
-    section.msg2 div.card1{
-        margin-left: 5%;
-    }
-    section.msg2 div.card2{
+    section.msg1 div.card1{
         margin-top: 30px;
         margin-left: 5%;
         width: 90%;
-        height: 170px;
-    }
-    section.msg2 div.card2 h3.card2-msg{
-        margin-top: 25px;
-        width: 95%;
-    }
-    section.msg2 h3.float.msg{
-        white-space: nowrap;
-    }
-    /* third section; dark blue background, six cards each containing an image, and text */
-    section.msg3 div.container{
+        max-height: 200px;
         display: flex;
-        flex-flow: column;
-        padding-top: 40px;
-        margin-left: auto;
-        width: 95%;
+        justify-content: center;
     }
-    section.msg3 div.container div.card{
-        width: 100%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    section.msg3 div.container div.card img.card-img{
-        width: 100%;
-        height: 250px;
-    }
-    section.msg3 div.container div.card h4.card-msg1{
-        margin-top: 10px;
-    }
-    /* fourth section; white background, one card containing text */
-    section.msg4 div.card{
-        margin-left: 5%;
+    section.msg1 div.card1 h3.card1-msg{
+		font-size: 1.1em;
+		padding: 20px;
+	}
+    /* second section; white background, two cards each containing text */
+    section.msg2 div.container div.card{
+        height: 140px;
+	}
+	section.msg2 div.container div.card img.card-img{
+        width: 35%;
+        height: 50%;
+	}
+	section.msg2 div.container div.card div.wrapper{
+        height: 80%;
+	}
+	section.msg2 div.container div.card h4.card-msg1{
+        font-size: 0.7em;
+        padding-bottom: 5px;
+	}
+	section.msg2 div.container div.card p.card-msg2{
+        font-size: 0.55em;
+        padding-top: 10px;
+	}
+    /* third section; white, six cards each containing an image, and text */
+    section.msg3 div.card{
         width: 90%;
         height: 360px;
     }
-    section.msg4 div.card h4.card-msg{
+    section.msg3 div.card h4.card-msg{
         font-size: 1.1em;
-        width: 92%;
     }
 }
 @media only screen and (max-width: 300px){
 	/* first section; dark blue background, a float message and three cards each containing images and text */
-    section.msg1 div.container div.card{
-        height: 380px;
+    section.msg1 div.card1{
+        height: 340px;
     }
     /* second section; white background, two cards each containing text */
     section.msg2 div.card2{
         height: 200px;
     }
+	section.msg2 div.container div.card{
+        height: 180px;
+	}
+	section.msg2 div.container div.card h4.card-msg1{
+        padding-bottom: 10px;
+	}
     /* third section; dark blue background, six cards each containing an image, and text */
-    section.msg3 div.container div.card{
-        height: 380px;
-    }
-    /* fourth section; white background, one card containing text */
-    section.msg4 div.card{
+    section.msg3 div.card{
         height: 440px;
+    }
+    section.msg3 div.card h4.card-msg{
+        font-size: 1.1em;
     }
 }
 @media only screen and (max-width: 260px){
+	/* first section; dark blue background, a float message and three cards each containing images and text */
+    section.msg1 div.card1{
+        height: 380px;
+    }
+    section.msg1 div.card1 h3.card1-msg{
+    	font-size: 1.0em;
+    	padding: 12px;
+    }
     /* second section; white background, two cards each containing text */
     section.msg2 div.card2{
         padding-bottom: 30px;
     }
 	/* fourth section; white background, one card containing text */
-    section.msg4 div.card{
+    section.msg3 div.card{
         height: 360px;
     }
-    section.msg4 div.card h4.card-msg{
+    section.msg3 div.card h4.card-msg{
         font-size: 1.0em;
     }
 }
