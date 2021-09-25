@@ -9,7 +9,7 @@ class Email(models.Model):
 	def __str__(self):
 		return self.email
 
-# The profiles database Modelform to map to database
+# The profiles database Model to map to database
 class Profile(models.Model):
 	profile_cover_photo = models.ImageField(default = 'profile/profile_cover_photos/profile-photo.png', blank = True, upload_to = 'profile/profile_cover_photos/')
 	profile_photo = models.ImageField(default = 'profile/profile_photos/profile-photo.png', blank = True, upload_to = 'profile/profile_photos/')
@@ -31,10 +31,22 @@ class Profile(models.Model):
 	def __str__(self):
 		return self.slug
 	
-# Event_photos database Modelform to map to database. This inherits from Profile and attaches here 
+# Profiles Event_photos database Model to map to database. This inherits from Profile and attaches here using a foreignkey
 class Profile_event_photo(models.Model):
 	profile = models.ForeignKey(Profile, on_delete = models.CASCADE)
-	event_photos = models.ImageField(blank = True, upload_to = 'profile/events_images/')
+	event_photos = models.ImageField(blank = True, upload_to = 'profile/events_images/', default = 'profile/events_images/photos-gallery icon.png')
 
 	def __str__(self):
 		return self.profile.slug
+
+# News database Model to map to database
+class Headline(models.Model):
+	title = models.CharField(max_length = 40)
+	image = models.ImageField(default = 'news-images/photos-gallery icon.png', upload_to = 'news-images/')
+	slug = models.SlugField()
+	story_snippet = models.CharField(max_length = 160)
+	story = models.TextField()
+	date = models.DateTimeField()
+
+	def __str__(self):
+		return self.title
