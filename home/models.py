@@ -1,4 +1,6 @@
 from django.db import models
+from django.db.models.deletion import CASCADE
+from django.db.models.fields import DateField
 
 # Create your models here.
 
@@ -50,3 +52,43 @@ class Headline(models.Model):
 
 	def __str__(self):
 		return self.title
+
+#  Flash messages database Model 
+class Advert(models.Model):
+	title = models.CharField(max_length=120)
+	first_message = models.CharField(max_length=250)
+	body = models.TextField()
+	slug = models.SlugField()
+	date = models.DateTimeField(auto_now_add=True)
+
+	def __str__(self):
+		return self.title
+
+# Advert photos 
+class Advert_image(models.Model):
+	advert = models.ForeignKey(Advert, on_delete=CASCADE)
+	photos = models.ImageField(upload_to='news-images/', blank=True)
+
+	def __str__(self):
+		return self.advert.slug
+
+# Motivational messages
+class Topstory(models.Model):
+	title = models.CharField(max_length=120)
+	body = models.TextField()
+	slug = models.SlugField()
+	date = models.DateTimeField(auto_now_add=True)
+
+	def __str__(self):
+		return self.title
+
+	def snippet(self):
+		return self.body [:450]
+
+# Motivational messages photos
+class Topstory_image(models.Model):
+	story = models.ForeignKey(Topstory, on_delete=CASCADE)
+	photos = models.ImageField(upload_to='news-images/', blank=True)
+
+	def __str__(self):
+		return self.story.slug
