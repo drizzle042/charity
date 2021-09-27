@@ -1,4 +1,3 @@
-/* only section; white background, three cards each containing an image and text */
 section.msg{
     display: flex;
 	flex-flow: column;
@@ -31,40 +30,62 @@ section.msg div.container1{
 section.msg div.container1 div.card{
     width: 100%;
 }
-section.msg div.container1 div.card img.card-img{
-    width: 100%;
-    height: 550px;
-}
 section.msg div.container1 div.card p.card-msg2{
     padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     width: 90%;
-    font-size: 0.8em;
 }
-section.msg div.container1 div.card p.card-msg2 span{
-    font-size: 0.9em;
-    color: #c0c0c0;
+section.msg div.container1 div.card div.images{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: scroll;
+}
+section.msg div.container1 div.card div.images::-webkit-scrollbar{
+    width: 3px;
+}
+section.msg div.container1 div.card div.images::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+section.msg div.container1 div.card div.images::-webkit-scrollbar-track-piece{
+    background: #a1a1a1;
+}
+section.msg div.container1 div.card div.images::-webkit-scrollbar-thumb{
+    background: #2699FB;
+}
+section.msg div.container1 div.card div.images img{
+    width: 280px;
+    height: 160px;
+    border-radius: 15px;
+    margin-right: 25px;
 }
 /* media queries */
 @media only screen and (max-width: 870px){
 	/* only section; white background, three cards each containing an image and text */
 	section.msg div.container1{
-		width: 70%;
+		width: 80%;
 	}
 	section.msg div.title-card{
-		width: 70%;
+		width: 80%;
 	}
 }
 @media only screen and (max-width: 690px){
 	/* only section; white background, three cards each containing an image and text */
 	section.msg div.container1{
-		width: 80%;
+		width: 85%;
 	}
 	section.msg div.title-card{
-		width: 80%;
+		width: 85%;
 	}
+    section.msg div.container1 div.card div.images img{
+        width: 120px;
+        height: 80px;
+    }
+    section.msg div.container1 div.card p.card-msg2{
+        font-size: 0.9em;
+    }
 }
 @media only screen and (max-width: 560px){
 	/* only section; white background, three cards each containing an image and text */
@@ -73,30 +94,5 @@ section.msg div.container1 div.card p.card-msg2 span{
 	}
 	section.msg div.title-card{
 		width: 95%;
-	}
-}
-@media only screen and (max-width: 440px){
-	section.msg div.container1 div.card img.card-img{
-		height: 400px;
-	}
-}
-@media only screen and (max-width: 380px){
-	section.msg div.container1 div.card img.card-img{
-		height: 360px;
-	}
-}
-@media only screen and (max-width: 340px){
-	section.msg div.container1 div.card img.card-img{
-		height: 300px;
-	}
-}
-@media only screen and (max-width: 300px){
-	section.msg div.container1 div.card img.card-img{
-		height: 260px;
-	}
-}
-@media only screen and (max-width: 260px){
-	section.msg div.container1 div.card img.card-img{
-		height: 240px;
 	}
 }

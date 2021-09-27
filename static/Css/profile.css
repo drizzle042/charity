@@ -7,7 +7,8 @@ section.profile{
     margin-right: auto;
     margin-bottom: 60px;
     width: 45%;
-    border-radius: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 	border: solid 1px #837f7f;
 	box-shadow: 2px 5px 3px #beb4b4;
 }

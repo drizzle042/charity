@@ -131,13 +131,13 @@ footer.footer div.container2{
 }
 footer.footer div.container2 h2.about-us{
 	font-size: 1.3em;
-	font-weight: lighter;
+	font-weight: 500;
 	line-height: 2.5;
 	margin-left: 2%;
 }
 footer.footer div.container2 h2.social_media_addresses{
 	font-size: 1.3em;
-	font-weight: lighter;
+	font-weight: 500;
 	line-height: 2.5;
 	margin-left: 10%;
 	margin-right: 9.8%;
@@ -151,7 +151,7 @@ footer.footer div.container2 h2.social_media_addresses img{
 }
 footer.footer div.container2 h2.address{
 	font-size: 1.3em;
-	font-weight: lighter;
+	font-weight: 500;
 	line-height: 2.5;
 	margin-right: 2%;
 }
@@ -165,7 +165,7 @@ footer.footer div.container3{
 }
 footer.footer div.container3 h2.newsletter{
 	margin-top: 80px;
-	font-weight: lighter;
+	font-weight: 500;
 	color: #ffffff;
 }
 footer.footer div.container3 div.email{

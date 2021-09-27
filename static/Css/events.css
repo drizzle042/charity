@@ -1,3 +1,26 @@
+a.link{
+	color: #161717;
+}
+a.title{
+    color: #2699FB;
+}
+div.page-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+div.page-links span.step-links{
+	border: solid #2699FB 1px;
+	white-space: nowrap;
+}
+div.page-links span.step-links a{
+	color: #2699FB;
+	padding: 19px;
+}
+div.page-links span.step-links span.current{
+	color: #1732a5;
+    padding: 5px;
+}
 /* first section; white background, a float message and three cards each containing images and text */
 section.msg1 div.wrapper{
     background-color: #2699FB;
@@ -15,11 +38,11 @@ section.msg1 div.card1{
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    width: 900px;
+    width: 860px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
-    height: 160px;
+    padding: 20px;
 	border: solid 1px #837f7f;
 	box-shadow: 2px 5px 3px #beb4b4;
 }
@@ -53,24 +76,24 @@ section.msg2{
     display: flex;
     flex-flow: column;
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 section.msg2 div.container{
     display: flex;
     flex-flow: column;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: 10px;
     padding-bottom: 20px;
 }
 section.msg2 div.container div.card{
     background-color: #ffffff;
-    border-radius: 15px;
+    border-radius: 25px;
     width: 900px;
     margin-left: auto;
     margin-right: auto;
-    height: 300px;
-    padding-bottom: 20px;
+    height: 180px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row-reverse; 
 	border: solid 1px #837f7f;
@@ -88,7 +111,7 @@ section.msg2 div.container div.card div.wrapper{
     border-radius: 10px;
 }
 section.msg2 div.container div.card img.card-img{
-    width: 50%;
+    width: 200px;
     height: 70%;
     border-radius: 20px;
     margin: auto;
@@ -97,13 +120,13 @@ section.msg2 div.container div.card img.card-img{
 }
 section.msg2 div.container div.card h4.card-msg1{
     color: #2699FB;
-    font-size: 1.5em;
-    padding-top: 10px;
+    font-size: 1.2em;
+    padding-top: 5px;
     padding-bottom: 10px;
     border-bottom: solid 2px #837f7f;
 }
 section.msg2 div.container div.card p.card-msg2{
-    font-size: 1.3em;
+    font-size: 1.05em;
     padding-top: 20px;
 }
 section.msg2 div.container div.card p.card-msg2 span{
@@ -111,18 +134,14 @@ section.msg2 div.container div.card p.card-msg2 span{
     color: #c0c0c0;
 }
 /* third section; white background, six cards each containing an image, and text */
-section.msg3{
-    margin-top: 20px;
-}
 section.msg3 div.card{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     width: 900px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
-    height: 200px;
+    padding: 20px;
 	border: solid 1px #837f7f;
 	box-shadow: 2px 5px 3px #beb4b4;
 }
@@ -169,7 +188,8 @@ section.msg3 h3.float.msg{
 @media only screen and (max-width: 960px){
     /* first section; white background, a float message and three cards each containing images and text */
     section.msg1 div.card1{
-        width: 95%;
+        width: 90%;
+        padding: 2.5%;
     }
     /* second section; white background, two cards each containing text */
     section.msg2 div.container{
@@ -177,7 +197,6 @@ section.msg3 h3.float.msg{
     }
     section.msg2 div.container div.card{
         width: 100%;
-        height: 300px;
     }
     section.msg2 div.container div.card div.wrapper{
     	height: 72%;
@@ -191,40 +210,33 @@ section.msg3 h3.float.msg{
 @media only screen and (max-width: 800px){
     /* second section; white background, two cards each containing text */
     section.msg2 div.container div.card{
-        height: 350px;
+        height: 210px;
     }
     section.msg2 div.container div.card div.wrapper{
     	height: 70%;
     }
     section.msg2 div.container div.card img.card-img{
-		width: 40%;
-		height: 60%;
+		width: 180px;
+		height: 65%;
     }
-    section.msg2 div.container div.card h4.card-msg1{
-		font-size: 1.3em;
-    }
-
-	section.msg2 div.container div.card p.card-msg2{
-		font-size: 1.2em;
-	}
     /* fourth section; white background, one card containing text */
     section.msg4 div.card{
         width: 95%;
     }
 }
 @media only screen and (max-width: 670px){
-    /* first section; dark blue background, a float message and three cards each containing images and text */
-    section.msg1 div.container div.card img.card-img{
-        height: 150px;
-    }
     /* second section; white background, two cards each containing text */
+	section.msg2 div.container div.card img.card-img{
+        width: 155px;
+        height: 60%;
+	}
     section.msg2 div.card2 h3.card2-msg{
         width: 95%;
     }
     /* third section; dark blue background, six cards each containing an image, and text */
     section.msg3 div.card{
-        width: 95%;
-        height: 300px;
+        width: 90%;
+        padding: 2.5%;
     }
 }
 @media only screen and (max-width: 580px){
@@ -239,88 +251,94 @@ section.msg3 h3.float.msg{
         font-size: 1.2em;
         white-space: nowrap;
     }
-    section.msg1 div.card1{
-        margin-top: 30px;
-        margin-left: 5%;
-        width: 90%;
-        max-height: 200px;
-        display: flex;
-        justify-content: center;
-    }
     section.msg1 div.card1 h3.card1-msg{
 		font-size: 1.1em;
 		padding: 20px;
 	}
     /* second section; white background, two cards each containing text */
     section.msg2 div.container div.card{
-        height: 140px;
+        height: 170px;
 	}
 	section.msg2 div.container div.card img.card-img{
-        width: 35%;
-        height: 50%;
+        height: 70%;
 	}
 	section.msg2 div.container div.card div.wrapper{
         height: 80%;
 	}
 	section.msg2 div.container div.card h4.card-msg1{
-        font-size: 0.7em;
-        padding-bottom: 5px;
+        font-size: 1.05em;
+        padding-top: 0px;
+        padding-bottom: 3px;
 	}
 	section.msg2 div.container div.card p.card-msg2{
-        font-size: 0.55em;
-        padding-top: 10px;
+        font-size: 0.9em;
+        padding-top: 8px;
 	}
     /* third section; white, six cards each containing an image, and text */
     section.msg3 div.card{
         width: 90%;
-        height: 360px;
     }
     section.msg3 div.card h4.card-msg{
         font-size: 1.1em;
     }
 }
-@media only screen and (max-width: 300px){
-	/* first section; dark blue background, a float message and three cards each containing images and text */
-    section.msg1 div.card1{
-        height: 340px;
-    }
-    /* second section; white background, two cards each containing text */
-    section.msg2 div.card2{
-        height: 200px;
-    }
-	section.msg2 div.container div.card{
-        height: 180px;
+@media only screen and (max-width: 460px){
+	/* second section; white background, two cards each containing text */
+    section.msg2 div.container div.card{
+        height: 150px;
+	}
+	section.msg2 div.container div.card img.card-img{
+        width: 120px;
+        height: 60%;
 	}
 	section.msg2 div.container div.card h4.card-msg1{
-        padding-bottom: 10px;
+        font-size: 0.85em;
+	}
+	section.msg2 div.container div.card p.card-msg2{
+        font-size: 0.7em;
+	}
+
+}
+@media only screen and (max-width: 340px){	
+	section.msg2 div.container div.card img.card-img{
+        width: 90px;
+        height: 55%;
+	}
+	div.page-links span.step-links a{
+		padding: 13px;
+	}
+}
+@media only screen and (max-width: 300px){
+    /* second section; white background, two cards each containing text */
+	section.msg2 div.container div.card{
+        height: 190px;
+	}
+	section.msg2 div.container div.card h4.card-msg1{
+        padding-bottom: 5px;
 	}
     /* third section; dark blue background, six cards each containing an image, and text */
-    section.msg3 div.card{
-        height: 440px;
-    }
     section.msg3 div.card h4.card-msg{
         font-size: 1.1em;
+    }	
+	div.page-links span.step-links a{
+		padding: 7px;
     }
 }
 @media only screen and (max-width: 260px){
-	/* first section; dark blue background, a float message and three cards each containing images and text */
-    section.msg1 div.card1{
-        height: 380px;
-    }
     section.msg1 div.card1 h3.card1-msg{
     	font-size: 1.0em;
     	padding: 12px;
     }
     /* second section; white background, two cards each containing text */
-    section.msg2 div.card2{
-        padding-bottom: 30px;
-    }
+	section.msg2 div.container div.card{
+        height: 220px;
+	}
 	/* fourth section; white background, one card containing text */
-    section.msg3 div.card{
-        height: 360px;
-    }
     section.msg3 div.card h4.card-msg{
         font-size: 1.0em;
+    }
+	div.page-links span.step-links a{
+		padding: 5px;
     }
 }
 @keyframes float {
