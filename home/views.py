@@ -159,6 +159,7 @@ def profile_page(request, slug, *args, **kwargs):
 			messages.success(request, "Your email was received successfully!", fail_silently = True)
 	else:
 		form = Form()
+	
 	context = {
 		'profiles': profiles,
 		'event_photos': event_photos,

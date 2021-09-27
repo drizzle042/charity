@@ -6,7 +6,7 @@ from django.db.models.fields import DateField
 
 # Email Modelform to map to database for receiving email from users
 class Email(models.Model):
-	email = models.EmailField()
+	email = models.EmailField(unique=True)
 
 	def __str__(self):
 		return self.email

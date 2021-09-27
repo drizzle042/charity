@@ -111,7 +111,27 @@ ul.messages{
 	box-shadow: 2px 5px 3px #beb4b4;
     text-align: center;
     width: 60%;
-    margin-left: 17%;
+	margin-left: 17%;
+    margin-top: 20px;
+    font-weight: 600;
+    animation-name: disappear;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+ul.errorlist{
+    position: absolute;
+    top: 80px;
+	z-index: 4;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    color:  #2699FB;
+	list-style: none;	
+	box-shadow: 2px 5px 3px #beb4b4;
+    text-align: center;
+    width: 60%;
+	margin-left: 10%;
     margin-top: 20px;
     font-weight: 600;
     animation-name: disappear;
@@ -540,16 +560,13 @@ html, body{
 	}
 	98%{
 		opacity: 0;
+		margin-top: 0px;
 	}
 	99%{
-		width: 60%;
-		margin-left: 17%;
-		margin-top: 20px;
+		margin-top: -200px;
 	}
 	100%{
-		width: 10%;
-		margin-left: 35%;
-		margin-top: -80px;
+		margin-top: -800px;
 		opacity: 0;
 	}
 }
