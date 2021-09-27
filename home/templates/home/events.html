@@ -14,31 +14,51 @@
 		<div class="wrapper">
 			<h3 class="float msg">we are having issues with our online services right now please bear with us!</h3>
 		</div>
+		{% for advert in advert%}
 		<div class="card1" data-aos="zoom-in" data-aos-duration="1300" data-aos-easing="ease">
-			<h3 class="card1-msg">More from Chusky, we know what to expect every now and then. The best home learning program of the century starting 17th October. </h3>
+			<h3 class="card1-msg"><a class="title" href="{% url 'home:advert' slug=advert.slug %}">{{ advert.first_message }}</a></h3>
 		</div>
+		{% endfor %}
 		<div class="card2">
 			<h4 class="card2-msg float">Asia's giant western grant is acquiring mother love 'enteron' and will now be handling her affairs</h4>
 		</div>
 	</section>
 	<section class="msg2">
 		<div class="container">
+			{% for events in events %}
 			<div class="card" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
-				<img class="card-img" src="{% static './images/sample img.jpg' %}" alt="">
+				<img class="card-img" src="{{ events.image.url }}" alt="">
 				<div class="wrapper">
-					<h4 class="card-msg1">Lorem ipsum dolor sit amet consectetur</h4>
-					<p class="card-msg2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia facere odio sapiente voluptatem delectus dolore perferendis tenetur unde! <span>see more...</span></p>
+					<h4 class="card-msg1"><a class="title" href="{% url 'home:detail' slug=events.slug %}">{{ events.title }}</a></h4>
+					<p class="card-msg2">{{ events.story_snippet }}<span><a class="link" href="{% url 'home:detail' slug=events.slug %}"> see more...</a></span></p>
 				</div>			
 			</div>
+			{% endfor %}
 		</div>	
 	</section>
 	<section class="msg3">
+		{% for topstory in topstory %}
 		<div class="card" data-aos="zoom-in" data-aos-duration="1300" data-aos-easing="ease">
-			<h4 class="card-msg">No one was born unlucky! check out the story of Isabel and how her family and her kept to their faith and put in their all to make her what she is today. though her father is late now, she knows deep in her heart that he couldn't be more proud.<br>
-				We take this chance to thank you all for your support to what Isabel turned out to be today. She just concluded her professional exams and we are so happy for her. <span>see more...</span></h4>
+			<h4 class="card-msg"><a href="{% url 'home:topstory' slug=topstory.slug %}" class="title">{{ topstory.snippet }} <span>see more...</span></a></h4>
 		</div>
+		{% endfor %}
 		<h3 class="float msg">No matter the position you are in right now just remember this..."you are the strongest of your form that could ever exist and you will get through this!</h3>
 	</section>
+	<div class="page-links">
+		<span class="step-links">
+			{% if events.has_previous %}
+				<a href="?page=1">&laquo; first</a>
+				<a href="?page={{events.previous_page_number }}">previous</a>
+			{% endif %}
+			<span class="current">
+				page {{ events.number }} of {{ events.paginator.num_pages }}
+			</span>
+			{% if events.has_next %}
+				<a href="?page={{ events.next_page_number }}">next</a>
+				<a href="?page={{events.paginator.num_pages }}">last &raquo;</a>
+			{% endif %}
+		</span>
+	</div>
 </body>
 </html>
 {% endblock %}

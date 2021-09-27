@@ -11,30 +11,11 @@
 </head>
 <body>
 	<section class="msg">
+		<div class="title-card" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease"><h4 class="card-msg1">{{ story.title }}</h4></div> 
 		<div class="container1" data-aos="fade-left" data-aos-duration="1100" data-aos-easing="ease">
 			<div class="card">
-				<img class="card-img" src="{% static './images/sample img.jpg' %}" alt="">
-				<h4 class="card-msg1">Lorem ipsum dolor sit amet consectetur</h4>
-				<p class="card-msg2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-					Officia facere odio sapiente voluptatem delectus dolore perferendis tenetur unde! 
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis ex corporis, sed pariatur, 
-					iste beatae, aperiam facilis quisquam provident expedita perferendis voluptatibus vel similique quasi 
-					at laboriosam blanditiis magni minus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-					Neque pariatur esse numquam ipsam nostrum voluptas, quasi rem necessitatibus, illo tempore ullam quia 
-					debitis facere quod magnam dolore consequatur officia impedit. Lorem ipsum dolor sit amet consectetur 
-					adipisicing elit. Perferendis alias sed, magni corrupti laudantium eius dolor necessitatibus temporibus 
-					atque nisi distinctio, rem dolore? Soluta itaque accusamus, dignissimos labore expedita excepturi. 
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure architecto minima tenetur molestiae illum, 
-					quaerat totam ea praesentium temporibus atque. Voluptate rerum reprehenderit, quidem odio reiciendis neque voluptatum 
-					sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusamus tenetur corporis excepturi, 
-					exercitationem sequi qui laboriosam dignissimos. Quisquam necessitatibus nobis repellendus numquam? 
-					Voluptate quidem eaque aliquam facilis alias iste. llorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, nisi? Ad voluptatum, 
-					placeat quasi cupiditate modi fugiat ea, ipsa, inventore ducimus repellendus magnam eum architecto tenetur aliquam veritatis dolor! Sunt?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minima dolorem iste alias quam aliquam 
-					consectetur non ipsam consequuntur porro adipisci modi rem a, repudiandae illum esse. Neque, maiores voluptas.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, eos? Nesciunt quisquam fuga libero dignissimos doloremque repellat esse ea, 
-					magni, natus beatae maiores aliquam sunt dolores, saepe fugit maxime accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, id magnam voluptatibus incidunt alias, delectus 
-					repellendus aspernatur ducimus quidem accusantium fuga. Molestias enim quaerat illum molestiae repudiandae ratione odio ipsam!
+				<img class="card-img" src="{{ story.image.url }}" alt="">
+				<p class="card-msg2">{{ story.story }}
 				</p>
 			</div>
 		</div>

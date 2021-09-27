@@ -1,0 +1,23 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static './Css/topstories_extension.css' %}">
+</head>
+<body>
+    <section class="msg">
+		<div class="title-card" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease"><h4 class="card-msg1">{% block title_head %}{% endblock %}</h4></div> 
+		<div class="container1" data-aos="fade-left" data-aos-duration="1100" data-aos-easing="ease">
+			<div class="card">
+				<p class="card-msg2">{% block story %}{% endblock %}</p>
+                <div class="images">
+                    {% block images %}{% endblock %}
+                </div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
+{% endblock %}

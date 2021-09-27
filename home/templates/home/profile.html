@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static './Css/profile.css'%}">
-    <title>{{ profiles.first_name }} {{ profiles.last_name }}</title>
+    <title>Profiles | {{ profiles.first_name }} {{ profiles.last_name }}</title>
 </head>
 <body>
     <section class="profile">
@@ -18,7 +18,7 @@
                 <h4 class="name">{{ profiles.first_name }} {{ profiles.last_name }}</h4>
                 <p class="about">{{ profiles.about_snippet }}</p>
                 <div class="interact">
-                    <button class="follow">follow</button>
+                    <button class="follow" action="" method="POST">follow</button>
                     <img class="like" src="{% static './images/heart.png' %}" alt="">
                 </div>
             </div>

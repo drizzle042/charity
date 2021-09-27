@@ -1,0 +1,5 @@
+{% extends "home/topstories_extension.html" %}
+{% load static %}
+{% block title_head %}{{ advert.title }}{% endblock %}
+{% block story %}{{ advert.body }}{% endblock %}
+{% block images %}{% for advert_images in advert_images%}<img src="{{advert_images.photos.url}}" alt="">{% endfor %}{% endblock %}
