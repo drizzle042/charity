@@ -21,13 +21,15 @@
             {% for profiles in profiles %}
             <div class="card1">
                 <img src="{{ profiles.profile_photo.url }}" alt=""> 
-                <div class="container">
-                    <h5 class="name">{{ profiles.first_name }} {{ profiles.last_name }}</h5>
-                    <div class="about">
-                        <h6 class="about">About:</h6>
-                        <p class="about-info">{{ profiles.about_snippet }} <span><a class="link" href="{% url 'home:profile' slug=profiles.slug %}"> see more...</a></span></p>
+                <a class="link" href="{% url 'home:profile' slug=profiles.slug %}">
+                    <div class="container">
+                        <h5 class="name">{{ profiles.first_name }} {{ profiles.last_name }}</h5>
+                        <div class="about">
+                            <h6 class="about">About:</h6>
+                            <p class="about-info">{{ profiles.about_snippet }} <span><a class="link" href="{% url 'home:profile' slug=profiles.slug %}"> see more...</a></span></p>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <p class="date">{{ profiles.date }}</p>
             </div>
             {% endfor %}
