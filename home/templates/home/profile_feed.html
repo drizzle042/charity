@@ -21,7 +21,7 @@
             {% for profiles in profiles %}
             <div class="card1">
                 <img src="{{ profiles.profile_photo.url }}" alt=""> 
-                <a class="link" href="{% url 'home:profile' slug=profiles.slug %}">
+                <a class="color-link" href="{% url 'home:profile' slug=profiles.slug %}">
                     <div class="container">
                         <h5 class="name">{{ profiles.first_name }} {{ profiles.last_name }}</h5>
                         <div class="about">

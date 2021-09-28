@@ -170,6 +170,9 @@ section.grid div.card1 p.date{
 a.link{
 	color: #161717;
 }
+a.color-link{
+	color: #2699FB;
+}
 h1.no-match{
 	position: absolute;
 	color: #9e9a9a;
