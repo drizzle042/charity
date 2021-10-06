@@ -11,6 +11,17 @@
     <title>Profiles | {{ profiles.first_name }} {{ profiles.last_name }}</title>
 </head>
 <body>
+    <section class="followers-email-card" style="display: none;">
+        <div class="followers-email-card">
+            <h3 class="card-msg">Please Enter Your Email To Receive Updates on {{ profiles.first_name }}'s Welfare</h3>
+            <form action="" method="POST" class="email-submit">
+                {% csrf_token %}
+                {{ followers_email_form }}
+                <input type="submit" name="followers" value="Follow" class="email-submit">
+                <button id="cancel">cancel</button>
+            </form>
+        </div>
+    </section>
     <section class="profile">
         <div class="container" data-aos="zoom-in" data-aos-duration="1300" data-aos-easing="ease" style="background: url('{{ profiles.profile_cover_photo.url }}') 100% 0 no-repeat;">
             <div class="profile-head">
@@ -18,7 +29,7 @@
                 <h4 class="name">{{ profiles.first_name }} {{ profiles.last_name }}</h4>
                 <p class="about">{{ profiles.about_snippet }}</p>
                 <div class="interact">
-                    <button class="follow" action="" method="POST">follow</button>
+                    <button id="follow-button">follow</button>
                     <img class="like" src="{% static './images/heart.png' %}" alt="">
                 </div>
             </div>
@@ -67,6 +78,7 @@
         <button class="donate-btn">Donate</button>
         </div>
     </section>
+    <script src="{% static './Js/profile.js' %}"></script>
 </body>
 </html>
 {% endblock %}

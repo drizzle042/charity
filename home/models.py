@@ -1,6 +1,5 @@
 from django.db import models
 from django.db.models.deletion import CASCADE
-from django.db.models.fields import DateField
 
 # Create your models here.
 
@@ -32,6 +31,14 @@ class Profile(models.Model):
 
 	def __str__(self):
 		return self.slug
+
+# followers email collector database table
+class Followers_email(models.Model):
+	profile = models.ForeignKey(Profile, on_delete=CASCADE)
+	email = models.EmailField(unique=True, blank=True)
+	
+	def __str__(self):
+		return self.profile.slug
 	
 # Profiles Event_photos database Model to map to database. This inherits from Profile and attaches here using a foreignkey
 class Profile_event_photo(models.Model):

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Email, Profile, Profile_event_photo, Headline, Advert, Advert_image, Topstory, Topstory_image 
+from .models import Email, Followers_email, Profile, Profile_event_photo, Headline, Advert, Advert_image, Topstory, Topstory_image 
 
 class Inline_stack(admin.StackedInline):
     model = Profile_event_photo
@@ -14,6 +14,8 @@ class Topsstory_images_stacked(admin.StackedInline):
 admin.site.register(Email),
 
 admin.site.register(Headline),
+
+admin.site.register(Followers_email),
 
 @admin.register(Profile)
 class Inline(admin.ModelAdmin):

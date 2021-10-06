@@ -1,4 +1,75 @@
 /* only section;  */
+section.followers-email-card{
+	position: absolute;
+	z-index: 3;
+	background-color: rgb(131, 127, 127, 0.8);
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 300%;
+	position: fixed;
+	margin-top: -120px;
+}
+section.followers-email-card div.followers-email-card{
+	background-color: #ffffff;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 20%;
+	border-radius: 10px;
+}
+section.followers-email-card div.followers-email-card h3.card-msg{
+	color: #2699FB;
+	font-size: 1.1em;
+    margin-bottom: 3%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: solid 1px #837f7f;
+}
+section.followers-email-card div.followers-email-card form.email-submit{
+	display: flex;
+	flex-flow: column;
+	width: 95%; 
+	margin-left: auto;
+	margin-right: auto;
+}
+section.followers-email-card div.followers-email-card form.email-submit input[type=email]{
+    background-color: #837f7f;
+    height: 30px;
+    margin-bottom: 10px;
+	color: #ffffff;
+	font-size: 1.3em;
+	padding: 10px;	
+}
+section.followers-email-card div.followers-email-card form.email-submit input[type=email]::placeholder{
+	color: #ffffff;
+	font-size: 1.3em;
+	padding: 10px;
+}
+section.followers-email-card div.followers-email-card form.email-submit input[type=submit]{
+	background-color: #2699FB;
+	border: none;
+	height: 35px;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+section.followers-email-card div.followers-email-card form.email-submit input[type=submit]:hover{
+	background-color: rgba(38, 152, 251, 0.801);
+}
+section.followers-email-card div.followers-email-card form.email-submit button#cancel{
+	height: 35px;
+	background-color: rgba(89, 91, 92, 0.767);
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 1.3em;
+}
 section.profile{
     display: flex;
     flex-flow: column;
@@ -61,7 +132,7 @@ section.profile div.container div.profile-head div.interact{
     position: relative;
     bottom: 20px;
 }
-section.profile div.container div.profile-head div.interact button.follow{
+section.profile div.container div.profile-head div.interact button#follow-button{
     background-color: #2699FB;
     border: none;
     border-radius: 5px;
@@ -69,6 +140,9 @@ section.profile div.container div.profile-head div.interact button.follow{
     padding: 5px 0;
     color: #ffffff;
     width: 90%;
+}
+section.profile div.container div.profile-head div.interact button#follow-button:hover{
+	background-color: rgba(38, 152, 251, 0.815);
 }
 section.profile div.container div.profile-head div.interact img.like{
     margin-left: 5%;
@@ -287,6 +361,10 @@ section.profile div.donate-btn button.donate-btn{
 }
 @media only screen and (max-width: 660px){
 	/* only section;  */
+	section.followers-email-card div.followers-email-card{
+		width: 95%;
+		margin-top: 40%;
+	}
     section.profile{
     	width: 80%;
     	margin-left: auto;
@@ -313,6 +391,13 @@ section.profile div.donate-btn button.donate-btn{
 }
 @media only screen and (max-width: 420px){
 	/* only section;  */
+	section.followers-email-card div.followers-email-card{
+		margin-top: 50%;
+	}
+	section.followers-email-card div.followers-email-card form.email-submit input[type=email]::placeholder{
+		font-size: 1.1em;
+		padding: 3px;
+	}
 	section.profile{
 		margin-left: auto;
 		margin-right: auto;
@@ -373,7 +458,14 @@ section.profile div.donate-btn button.donate-btn{
 	}
 }
 @media only screen and (max-width: 320px){
-    /* only section; */
+    /* only section;  */
+	section.followers-email-card div.followers-email-card{
+		margin-top: 60%;
+	}
+	section.followers-email-card div.followers-email-card form.email-submit input[type=email]::placeholder{
+		font-size: 0.98em;
+		padding: 2px;
+	}
     section.profile div.profile-history div.card{
     	border-radius: 10px;
     }
@@ -401,6 +493,10 @@ section.profile div.donate-btn button.donate-btn{
 }
 @media only screen and (max-width: 260px){
 	/* only section; */
+	section.followers-email-card div.followers-email-card form.email-submit input[type=email]::placeholder{
+		font-size: 0.85em;
+		padding: 2px;
+	}
 	section.profile div.profile-history div.card div.followers p{
 		font-size: 1.1em;
 	}

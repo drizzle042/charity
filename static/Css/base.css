@@ -207,13 +207,15 @@ footer.footer div.container3 div.email form.email input[type=email]{
 	height: 100%;
 	width: 75%;
 	border: none;
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #ffffff;
+	font-family: arial;
 }
 footer.footer div.container3 div.email form.email input[type=email]:focus{
 	border: none;
 }
 footer.footer div.container3 div.email form.email input[type=email]::placeholder{
-	font-size: 1.4em;
-	font-weight: bold;
 	color: #ffffff;
 	font-family: arial;
 }
@@ -405,7 +407,7 @@ html, body{
     footer.footer div.container3 div.email form.email{
         width: 100%;
         height: 100%;
-        font-size: 1.2em;
+        font-size: 0.65em;
     }
     footer.footer div.container3 div.email form.email input[type=email]{
         width: 75%;
@@ -478,7 +480,7 @@ html, body{
         width: 72%;
     }
 	footer.footer div.container3 div.email form.email input[type=email]::placeholder{
-		font-size: 1.05em;
+		font-size: 0.95em;
 	}
     footer.footer div.container3 div.email form.email button{
     	width: 23%;
