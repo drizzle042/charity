@@ -1,6 +1,9 @@
-from django.shortcuts import render
-from .forms import Form
-from .models import Advert, Advert_image, Profile, Profile_event_photo, Headline, Topstory, Topstory_image
+from django.db.models.deletion import CASCADE
+from django.forms import forms
+from django.forms.models import ModelForm
+from django.shortcuts import redirect, render
+from .forms import Followers_email_form, Form
+from .models import Advert, Advert_image, Followers_email, Profile, Profile_event_photo, Headline, Topstory, Topstory_image
 from django.contrib import messages 
 from django.core.paginator import Paginator
 
@@ -14,6 +17,7 @@ def home_page(request, *args, **kwargs):
 			form.clean()
 			form.save()
 			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			form = Form()
 	else:
 		form = Form()
 	context = {
@@ -43,6 +47,7 @@ def events_page(request, *args, **kwargs):
 			form.clean()
 			form.save()
 			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			form = Form()
 	else:
 		form = Form()
 
@@ -64,6 +69,7 @@ def story_detail(request, slug, *args, **kwargs):
 			form.clean()
 			form.save()
 			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			form = Form()
 	else:
 		form = Form()
 	context = {
@@ -83,6 +89,7 @@ def topstories(request, slug, *args, **kwargs):
 			form.clean()
 			form.save()
 			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			form = Form()
 	else:
 		form = Form()
 	context = {
@@ -103,6 +110,7 @@ def advert(request, slug, *args, **kwargs):
 			form.clean()
 			form.save()
 			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			form = Form()
 	else:
 		form = Form()
 	context = {
@@ -121,6 +129,7 @@ def about_page(request, *args, **kwargs):
 			form.clean()
 			form.save()
 			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			form = Form()
 	else:
 		form = Form()
 	context = {
@@ -138,6 +147,7 @@ def profile_feed(request, *args, **kwargs):
 			form.clean()
 			form.save()
 			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			form = Form()
 	else:
 		form = Form()
 	context = {
@@ -149,21 +159,41 @@ def profile_feed(request, *args, **kwargs):
 
 def profile_page(request, slug, *args, **kwargs):
 	profiles = Profile.objects.get(slug=slug)
+	profiles_followers_count = profiles.followers
 	event_photos = Profile_event_photo.objects.filter(profile=profiles)
 	form = Form(auto_id=False)
-	if request.method == 'POST':
-		form = Form(request.POST)
-		if form.is_valid():
-			form.clean()
-			form.save()
-			messages.success(request, "Your email was received successfully!", fail_silently = True)
-	else:
-		form = Form()
+	data={
+		'profile' : profiles,
+	}
+	followers_email_form = Followers_email_form(request.POST or None, initial=data, auto_id=False)
+
+	if request.method == 'POST' and "followers" in request.POST:
+			if followers_email_form.is_valid():
+				followers_email_form.clean()
+				followers_email_form.save()
+				messages.success(request, "Your email was received successfully!", fail_silently=True)
+				F = profiles_followers_count('followers') + 1
+				F.save()
+				followers_email_form = Followers_email_form()
+			else:
+				followers_email_form = Followers_email_form()
+
+	if request.method == 'POST' and "subscription_email" in request.POST:
+			form = Form(request.POST)
+			if form.is_valid():
+				form.clean()
+				form.save()
+				messages.success(request, "Your email was received successfully!", fail_silently = True)
+				form = Form()
+			else:
+				form = Form()
+
 	
 	context = {
 		'profiles': profiles,
 		'event_photos': event_photos,
-		'form': form
+		'form': form,
+		'followers_email_form': followers_email_form
 	}
 	return render(request, './home/profile.html', context)
 
@@ -176,6 +206,7 @@ def donation_page(request, *args, **kwargs):
 			form.clean()
 			form.save()
 			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			form = Form()
 	else:
 		form = Form()
 	context = {

@@ -36,6 +36,9 @@ section.followers-email-card div.followers-email-card form.email-submit{
 	margin-left: auto;
 	margin-right: auto;
 }
+section.followers-email-card div.followers-email-card form.email-submit select.profile{
+	display: none;
+}
 section.followers-email-card div.followers-email-card form.email-submit input[type=email]{
     background-color: #837f7f;
     height: 30px;
@@ -363,7 +366,7 @@ section.profile div.donate-btn button.donate-btn{
 	/* only section;  */
 	section.followers-email-card div.followers-email-card{
 		width: 95%;
-		margin-top: 40%;
+		margin-top: 35%;
 	}
     section.profile{
     	width: 80%;
@@ -392,7 +395,7 @@ section.profile div.donate-btn button.donate-btn{
 @media only screen and (max-width: 420px){
 	/* only section;  */
 	section.followers-email-card div.followers-email-card{
-		margin-top: 50%;
+		margin-top: 40%;
 	}
 	section.followers-email-card div.followers-email-card form.email-submit input[type=email]::placeholder{
 		font-size: 1.1em;
@@ -460,7 +463,7 @@ section.profile div.donate-btn button.donate-btn{
 @media only screen and (max-width: 320px){
     /* only section;  */
 	section.followers-email-card div.followers-email-card{
-		margin-top: 60%;
+		margin-top: 45%;
 	}
 	section.followers-email-card div.followers-email-card form.email-submit input[type=email]::placeholder{
 		font-size: 0.98em;
