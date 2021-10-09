@@ -159,7 +159,6 @@ def profile_feed(request, *args, **kwargs):
 
 def profile_page(request, slug, *args, **kwargs):
 	profiles = Profile.objects.get(slug=slug)
-	profiles_followers_count = profiles.followers
 	event_photos = Profile_event_photo.objects.filter(profile=profiles)
 	form = Form(auto_id=False)
 	data={
@@ -171,9 +170,9 @@ def profile_page(request, slug, *args, **kwargs):
 			if followers_email_form.is_valid():
 				followers_email_form.clean()
 				followers_email_form.save()
-				messages.success(request, "Your email was received successfully!", fail_silently=True)
-				F = profiles_followers_count('followers') + 1
-				F.save()
+				profiles.followers += 1
+				profiles.save()
+				messages.success(request, "Your email was received successfully!, You now follow "+ profiles.first_name +"'s updates", fail_silently=True)
 				followers_email_form = Followers_email_form()
 			else:
 				followers_email_form = Followers_email_form()
@@ -213,3 +212,5 @@ def donation_page(request, *args, **kwargs):
 		'form': form
 	}
 	return render(request, './home/donate.html', context)
+
+

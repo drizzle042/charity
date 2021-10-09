@@ -24,7 +24,7 @@ class Followers_email_form(ModelForm):
             })
         self.fields['profile'].label=''
         self.fields['profile'].widget.attrs.update({
-            'class': 'profile',
+            'class': 'profile'
         })
     class Meta:
         model = Followers_email
