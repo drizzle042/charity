@@ -1,0 +1,72 @@
+section.only-section{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #2699FB;
+}
+section.only-section h2.thank-you-msg{
+    margin-bottom: 10px;
+}
+section.only-section div.receipt-details{
+    line-height: 2;
+    display: flex;
+    flex-flow: column;
+}
+section.only-section div.receipt-details img.flying-astronaut{
+    width: 400px;
+    height: 400px;
+    margin-left: -20px;
+}
+section.only-section div.receipt-details img.qrcode{
+    width: 400px;
+    height: 400px;
+    margin-left: -30px;
+}
+section.only-section div.receipt-details button.save-pdf{
+    padding: 6px;
+    width: 70px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2699FB;
+    color: #FFFFFF;
+    font-weight: 800;
+    position: relative;
+    right: -100%;
+}
+@media only screen and (max-width: 760px){
+    section.only-section{
+        width: 90%;
+    }
+    section.only-section div.receipt-details button.save-pdf{
+        position: relative;
+        right: -70%;
+    }
+}
+@media only screen and (max-width: 420px){
+    section.only-section div.receipt-details img.flying-astronaut{
+        margin-left: -40px;
+    }
+    section.only-section div.receipt-details img.qrcode{
+        width: 360px;
+        height: 360px;
+        margin-left: -3%;
+    }
+}
+@media only screen and (max-width: 320px){
+    section.only-section div.receipt-details img.qrcode{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 300px){
+    section.only-section div.receipt-details img.flying-astronaut{
+        width: 300px;
+        height: 300px;
+    }
+    section.only-section div.receipt-details img.qrcode{
+        width: 260px;
+        height: 260px;
+    }
+}

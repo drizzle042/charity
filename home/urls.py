@@ -14,4 +14,5 @@ urlpatterns = [
     path('profiles/', views.profile_feed, name='profiles'),
     path('profile/<slug:slug>/', views.profile_page, name='profile'),
     path('donate/', views.donation_page, name='donate'),
+    path('receipt/', views.receipt, name='receipt'),
 ]

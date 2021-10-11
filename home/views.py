@@ -214,3 +214,18 @@ def donation_page(request, *args, **kwargs):
 	return render(request, './home/donate.html', context)
 
 
+def receipt(request, *args, **kwarg):
+	form = Form(auto_id=False)
+	if request.method == 'POST':
+		form = Form(request.POST)
+		if form.is_valid():
+			form.clean()
+			form.save()
+			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			form = Form()
+	else:
+		form = Form()
+	context = {
+		'form': form
+	}
+	return render(request, 'home/receipt.html', context)
