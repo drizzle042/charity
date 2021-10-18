@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -108,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
@@ -118,6 +119,14 @@ USE_L10N = True
 
 USE_TZ = True
 
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale')
+]
+
+LANGUAGES = [
+    ('en', 'English'),
+    ('fr', 'French'),
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
@@ -135,7 +144,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-STRIPE_PUBLIC_KEY = 'pk_test_51JHvbtI37VjRFcPGfDsNG89cqNy7QTN7RzaQ6dPJk2akXTWo2ntpOYKUbj9CpLfOA3r15xYImMyIYGghlpUrbb7s00ltN7LeDr'
-
-STRIPE_PRIVATE_KEY = 'sk_test_51JHvbtI37VjRFcPGib6KZO7VQZpbywiEm5KGcTTis0rhzBepDYgckIZBHP88Wa3hiIKKowdUClubZS1DXA3Ju2Ik00txqydfa3'

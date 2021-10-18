@@ -1,0 +1,283 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR FREDRICKOTHNEIL@GMAIL.COM, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-17 21:58+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME FREDRICK OTHNEIL\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\charity\urls.py:30
+msgid "admin/"
+msgstr "administrateur"
+
+#: .\home\forms.py:11 .\home\forms.py:24
+msgid "Enter Your Email Here..."
+msgstr "Entrez votre email ici..."
+
+#: .\home\templates\home\base.html:18 .\home\templates\home\base.html:31
+msgid "HOME"
+msgstr "ACCUEIL"
+
+#: .\home\templates\home\base.html:19 .\home\templates\home\base.html:32
+msgid "EVENTS"
+msgstr "ÉVÉNEMENTS"
+
+#: .\home\templates\home\base.html:20 .\home\templates\home\base.html:33
+msgid "ABOUT"
+msgstr "SUR"
+
+#: .\home\templates\home\base.html:21 .\home\templates\home\base.html:34
+msgid "CONTACT"
+msgstr "CONTACT"
+
+#: .\home\templates\home\base.html:22 .\home\templates\home\base.html:35
+msgid "VISITS"
+msgstr "VISITES"
+
+#: .\home\templates\home\base.html:23 .\home\templates\home\base.html:36
+msgid "PROFILES"
+msgstr "PROFILS"
+
+#: .\home\templates\home\base.html:40
+msgid "Donate"
+msgstr "FAIRE UN DON"
+
+#: .\home\templates\home\base.html:56
+msgid "About Us"
+msgstr "À propos de nous"
+
+#: .\home\templates\home\base.html:56
+msgid "Contact"
+msgstr "Contact"
+
+#: .\home\templates\home\base.html:56
+msgid "Terms & Conditions"
+msgstr "Termes et Conditions"
+
+#: .\home\templates\home\base.html:57
+msgid "Facebook"
+msgstr "Facebook"
+
+#: .\home\templates\home\base.html:57
+msgid "Twitter"
+msgstr "Twitter"
+
+#: .\home\templates\home\base.html:57
+msgid "Instagram"
+msgstr "Instagram"
+
+#: .\home\templates\home\base.html:61
+msgid "Subscribe to our newsletter"
+msgstr "Abonnez-vous à notre newsletter"
+
+#: .\home\templates\home\home.html:12
+msgid "home"
+msgstr "accueil"
+
+#: .\home\templates\home\home.html:22
+msgid "WHAT DO WE DO?"
+msgstr "QU'EST-CE QU'ON FAIT?"
+
+#: .\home\templates\home\home.html:23
+msgid "WE BRING CHRISTMAS TO EVERY CHILD OUT THERE WHO IS LESS PRIVELEDGED"
+msgstr "NOUS APPORTONS NOL À CHAQUE ENFANT QUI EST MOINS PRIVILEGIE"
+
+#: .\home\templates\home\home.html:31
+msgid "WHAT DOES EVERY CHILD OUT THERE SEE?"
+msgstr "QUE VOIT TOUS LES ENFANTS ?"
+
+#: .\home\templates\home\home.html:32
+msgid "A PERFECT WORLD OF COURSE"
+msgstr "UN MONDE PARFAIT DE COURS"
+
+#: .\home\templates\home\home.html:32 .\home\templates\home\home.html:166
+msgid "AND"
+msgstr "ET"
+
+#: .\home\templates\home\home.html:32
+msgid ""
+"BEING LESS PRIVILEDGED SHOULD NOT CHANGE THAT FEELING IN ANY CHILD BUT "
+"SHOULD BRING MORE LIFE TO OUR CHILDREN SO THAT THEY CAN LIVE EVEN A BIT OF "
+"THE KIND OF LIFE WE LIVED"
+msgstr ""
+"ÊTRE MOINS PRIVILÉGIÉ NE DEVRAIT PAS CHANGER CE SENTIMENT CHEZ N'IMPORTE "
+"QUEL ENFANT MAIS DONNER PLUS DE VIE À NOS ENFANTS POUR QU'ILS PEUVENT VIVRE "
+"MÊME UN PEU DU GENRE DE VIE QUE NOUS AVONS VIVÉ"
+
+#: .\home\templates\home\home.html:40
+msgid ""
+"We are a non-profit organization that helps less privileged individuals from "
+"all over the world. Background, ethnic group and color doesn't matter as "
+"long as we hope on humanity. Young sick children and very poor people who "
+"cannot afford food are our major profiles. We do our best to meet these "
+"individual needs and we have been doing this for many years with your help "
+"and donations."
+msgstr ""
+"Nous sommes une organisation à but non lucratif qui aide les personnes moins "
+"privilégiées du monde entier. L'origine, l'ethnie et la couleur n'ont pas "
+"d'importance tant que nous l'espérons en l'humanité. Les jeunes enfants "
+"malades et les personnes très pauvres qui n'ont pas les moyens de se nourrir "
+"sont nos principaux profils. Nous faisons de notre mieux pour répondre à ces "
+"besoins individuels et nous le faisons depuis de nombreuses années avec "
+"votre aide et vos dons."
+
+#: .\home\templates\home\home.html:51
+msgid "FROM EDUCATION"
+msgstr "DE L'ÉDUCATION"
+
+#: .\home\templates\home\home.html:57
+msgid "TO HEALTH"
+msgstr "POUR LA SANTÉ"
+
+#: .\home\templates\home\home.html:63
+msgid "AND FOOD"
+msgstr "ET LA NOURRITURE"
+
+#: .\home\templates\home\home.html:70
+msgid "JUST DO SOMETHING, ANYTHING!"
+msgstr "FAIRE QUELQUE CHOSE, N'IMPORTE QUOI !"
+
+#: .\home\templates\home\home.html:71
+msgid "BELIEVE IT WHAT EVER YOU DO COUNTS!!"
+msgstr "CROYEZ-LE CE QUE VOUS FAITES COMPTE !!"
+
+#: .\home\templates\home\home.html:78
+msgid ""
+"MAYBE YOU MIGHT BE THE FIRST PERSON WE ARE ASKING TODAY BUT ANYWAY IF YOU "
+"CAN, BUY A CHILD A DOGHNUT TODAY!"
+msgstr ""
+"PEUT-ÊTRE QUE VOUS ÊTES LA PREMIÈRE PERSONNE QUE NOUS DEMANDONS AUJOURD'HUI, "
+"MAIS DE FAÇON SI VOUS PEUT, ACHETER UN ENFANT UN DOGHNUT AUJOURD'HUI !"
+
+#: .\home\templates\home\home.html:89
+msgid "OR YOU COULD BUY A CHILD A BOOK TODAY!"
+msgstr "OU VOUS POURRIEZ ACHETER UN LIVRE POUR UN ENFANT AUJOURD'HUI !"
+
+#: .\home\templates\home\home.html:102
+msgid ""
+"THE GREATEST JOY WE DERIVE FROM WHAT WE DO IS SEEING THE TESTIMONIALS WE GET "
+"FROM PAST BENEFICIARIES OF THIS GREAT ORGANIZATION AND HOW THEIR LIVES "
+"CHANGED DRAMATICALLY!"
+msgstr ""
+"LA PLUS GRANDE JOIE QUE NOUS RETIONS DE CE QUE NOUS FAISONS EST DE VOIR LES "
+"TÉMOIGNAGES QUE NOUS OBTENONS DES PASSÉS BÉNÉFICIAIRES DE CETTE GRANDE "
+"ORGANISATION ET COMMENT LEUR VIE CHANGÉ DRAMATIQUEMENT !"
+
+#: .\home\templates\home\home.html:103
+msgid "IN A GOOD WAY OF COURSE."
+msgstr "D'UNE BONNE FAÇON BIEN SR."
+
+#: .\home\templates\home\home.html:115 .\home\templates\home\home.html:127
+msgid "online"
+msgstr "en ligne"
+
+#: .\home\templates\home\home.html:118
+msgid ""
+"it was the best day of my life when I was told I had been admitted to the "
+"university of michigan"
+msgstr ""
+"c'était le plus beau jour de ma vie quand on m'a dit que j'avais été admis "
+"au université du michigan"
+
+#: .\home\templates\home\home.html:130
+msgid ""
+"you just can't believe what it felt like when we were told that he was "
+"suffering from cerebral palsy. but fortunately we came across this platform "
+"and we could raise the funds needed for his operation"
+msgstr ""
+"vous ne pouvez pas croire ce que ça fait quand on nous a dit qu'il était "
+"souffrant de paralysie cérébrale. mais heureusement nous sommes tombés sur "
+"cette plateforme et nous pourrions lever les fonds nécessaires à son "
+"opération"
+
+#: .\home\templates\home\home.html:163
+msgid "SO NOW WHEN WE LOOK AT OUR PLANET, WHAT DO WE SEE?"
+msgstr "ALORS QUAND ON REGARDE NOTRE PLANÈTE, QUE VOYONS-NOUS MAINTENANT ?"
+
+#: .\home\templates\home\home.html:166
+msgid "A CHAOTIC MASS WHERE NO ONE KNOWS ANYONE"
+msgstr "UNE MASSE CHAOTIQUE O PERSONNE NE CONNAÎT PERSONNE"
+
+#: .\home\templates\home\home.html:166
+msgid "NO ONE CARES TO KNOW ANYONE AND HELP ANYONE IN NEED?"
+msgstr ""
+"PERSONNE NE VEUT CONNAÎTRE QUELQU'UN ET AIDER QUELQU'UN DANS LE BESOIN ?"
+
+#: .\home\templates\home\home.html:177
+msgid ""
+"OR RATHER A NICE HOME FOR EVERYONE NO MATTER RACE, ETHNIC BACKGROUND, "
+"NATIONALITY, COLOR OR PHYSICAL STATE."
+msgstr ""
+"OU PLUTT UNE BELLE MAISON POUR TOUS PEU IMPORTE LA RACE, L'ORIGINE ETHNIQUE, "
+"NATIONALITÉ, COULEUR OU ÉTAT PHYSIQUE."
+
+#: .\home\templates\home\home.html:177
+msgid "BECAUSE"
+msgstr "CAR"
+
+#: .\home\templates\home\home.html:177
+msgid "HUMANITY SAKE IS STILL WORTH JOINING HANDS TOGETHER FOR."
+msgstr "LE SAKE DE L'HUMANITÉ VAUT TOUJOURS LA MAIN ENSEMBLE POUR."
+
+#: .\home\templates\home\home.html:183
+msgid ""
+"TODAY WE ARE GLAD TO SAY THAT WE HAVE DONE OUR BEST TO BRING CHRISTMAS TO "
+"MILLIONS OF CHILDREN AND LESS FORTUNATE ADULT INDIVIDUALS OUT THERE FOR MANY "
+"YEARS NOW AND WE THINK YOU SHOULD BE A PART OF THIS GREAT ACHIEVEMENT!"
+msgstr ""
+"AUJOURD'HUI, NOUS SOMMES HEUREUX DE DIRE QUE NOUS AVONS FAIT DE NOTRE "
+"MEILLEUR POUR APPORTER NOL À DES MILLIONS D'ENFANTS ET D'ADULTES MOINS "
+"CHANCEUX POUR BEAUCOUP DES ANNÉES MAINTENANT ET NOUS PENSONS QUE VOUS "
+"DEVRIEZ FAIRE PARTIE DE CETTE GRANDE RÉALISATION !"
+
+#: .\home\templates\home\home.html:195
+msgid "THIS ORGANIZATION IS PROUDLY SPONSORED BY"
+msgstr "CETTE ORGANISATION EST FIÈREMENT PARRAINÉE PAR"
+
+#: .\home\urls.py:10
+msgid "events/"
+msgstr "événements/"
+
+#: .\home\urls.py:11
+msgid "story/<slug:slug>/"
+msgstr "histoire/<slug:slug>/"
+
+#: .\home\urls.py:12
+msgid "topstory/<slug:slug>/"
+msgstr "topstory/<slug:slug>/"
+
+#: .\home\urls.py:13
+msgid "ad/<slug:slug>/"
+msgstr "ad/<slug:slug>/"
+
+#: .\home\urls.py:14
+msgid "about/"
+msgstr "sur/"
+
+#: .\home\urls.py:15
+msgid "profiles/"
+msgstr "profils/"
+
+#: .\home\urls.py:16
+msgid "profile/<slug:slug>/"
+msgstr "profil/<slug:slug>/"
+
+#: .\home\urls.py:17
+msgid "donate/"
+msgstr "faire un don/"
+
+#: .\home\urls.py:18
+msgid "receipt/"
+msgstr "reçu/"

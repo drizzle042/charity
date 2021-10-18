@@ -17,13 +17,13 @@ header ul#dropdown{
 	list-style: none; 
 	background-color: #ffffff; 
 	color: #2699FB; 
-	width: 50%; 
+	width: 150px; 
 	display: none;
 	position: absolute;
 	z-index: 2;
-	padding-left: 5%;
+	padding-left: 15px;
 	padding-top: 20px;
-	padding-bottom: 3%;
+	padding-bottom: 5px;
 	line-height: 2.5;
 	font-size: 1.0em;
 	font-weight: 400;
@@ -34,7 +34,7 @@ header ul#dropdown img#close{
 	color: #2699FB;
 	position: relative;
 	bottom: 10px;
-	left: 90%; 
+	left: 115px; 
 	width: 30px;
 	height: 30px;
 }
@@ -317,9 +317,6 @@ html, body{
 }
 @media only screen and (max-width: 710px){
 	/* header containing the nav bar having background of ash blue */
-	header ul#dropdown img#close{
-		left: 85%;
-	}
 	header div.container div#donate-btn{
 		position: initial;
 		padding-left: 50%;
@@ -344,9 +341,6 @@ html, body{
 }
 @media only screen and (max-width: 530px){
 	/* header containing the nav bar having background of ash blue */
-	header ul#dropdown img#close{
-		left: 80%;
-	}
 	header div.container div#donate-btn{
 		position: initial;
 		padding-left: 25%;
@@ -419,9 +413,6 @@ html, body{
 }
 @media only screen and (max-width: 410px){
 	/* header containing the nav bar having background of ash blue */
-	header ul#dropdown img#close{
-		left: 77%;
-	}
 	header div.container div#donate-btn{
 		position: initial;
 		padding-left: 15%;
@@ -450,9 +441,6 @@ html, body{
 }
 @media only screen and (max-width: 340px){
 	/* header containing the nav bar having background of ash blue */
-	header ul#dropdown img#close{
-		left: 75%;
-	}
 	header img#menu-icon{
 		width: 30px;
 		height: 20px;
@@ -488,9 +476,6 @@ html, body{
 }
 @media only screen and (max-width: 300px){
 	/* header containing the nav bar having background of ash blue */
-	header ul#dropdown img#close{
-		left: 73%;
-	}
 	header div.container div#donate-btn{
 		position: initial;
 		padding-left: 8%;
@@ -522,9 +507,6 @@ html, body{
 }
 @media only screen and (max-width: 260px){
 	/* header containing the nav bar having background of ash blue */
-	header ul#dropdown img#close{
-		left: 70%;
-	}
 	header nav.navbar figure.logo-img img#logo{
 		position: relative;
 		left: 45%;

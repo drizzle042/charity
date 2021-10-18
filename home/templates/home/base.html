@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +15,12 @@
     <img id="menu-icon" src="{% static './images/menu icon.png' %}" alt="">
     <ul id="dropdown">
         <img src="{% static './images/close.png' %}" alt="" id="close">
-        <li><a href="{% url 'home:home' %}">HOME</a></li>
-        <li><a href="{% url 'home:events' %}">EVENTS</a></li>
-        <li><a href="{% url 'home:about' %}">ABOUT</a></li>
-        <li>CONTACT</li>
-        <li>VISITS</li>
-        <li><a href="{% url 'home:profiles' %}">PROFILES</a></li>
+        <li><a href="{% url 'home:home' %}">{% translate "HOME" %}</a></li>
+        <li><a href="{% url 'home:events' %}">{% translate "EVENTS" %}</a></li>
+        <li><a href="{% url 'home:about' %}">{% translate "ABOUT" %}</a></li>
+        <li>{% translate "CONTACT" %}</li>
+        <li>{% translate "VISITS" %}</li>
+        <li><a href="{% url 'home:profiles' %}">{% translate "PROFILES" %}</a></li>
     </ul>
     <div class="container">
         <nav class="navbar">
@@ -27,16 +28,16 @@
                 <img id="logo" src="{% static './images/charity logo.png' %}" alt="logo">
             </figure>
             <ul id="menu">
-                <li><a href="{% url 'home:home' %}">HOME</a></li>
-                <li><a href="{% url 'home:events' %}">EVENTS</a></li>
-                <li><a href="{% url 'home:about' %}">ABOUT</a></li>
-                <li>CONTACT</li>
-                <li>VISITS</li>
-                <li><a href="{% url 'home:profiles' %}">PROFILES</a></li>
+                <li><a href="{% url 'home:home' %}">{% translate "HOME" %}</a></li>
+                <li><a href="{% url 'home:events' %}">{% translate "EVENTS" %}</a></li>
+                <li><a href="{% url 'home:about' %}">{% translate "ABOUT" %}</a></li>
+                <li>{% translate "CONTACT" %}</li>
+                <li>{% translate "VISITS" %}</li>
+                <li><a href="{% url 'home:profiles' %}">{% translate "PROFILES" %}</a></li>
             </ul>
         </nav>
         <div id="donate-btn">
-            <button><a href="{% url 'home:donate' %}">Donate</a></button>
+            <button><a href="{% url 'home:donate' %}">{% translate "Donate" %}</a></button>
         </div>
     </div>
     </header>
@@ -52,12 +53,12 @@
     {% endblock %}
     <footer class="footer">
 		<div class="container2">
-			<h2 class="about-us"><a href="{% url 'home:about' %}">About Us</a><br>Contact <br>Terms & Conditions</h2>
-			<h2 class="social_media_addresses"><img src="{% static './images/white_facebook_icon.png' %}" alt=""> Facebook <br><img src="{% static './images/white_twitter_icon.png' %}" alt=""> Twitter <br><img src="{% static './images/instagram_icon.png' %}" alt=""> Instagram</h2>
+			<h2 class="about-us"><a href="{% url 'home:about' %}">{% trans "About Us" %}</a><br>{% trans "Contact" %} <br>{% trans "Terms & Conditions" %}</h2>
+			<h2 class="social_media_addresses"><img src="{% static './images/white_facebook_icon.png' %}" alt=""> {% trans "Facebook" %} <br><img src="{% static './images/white_twitter_icon.png' %}" alt=""> {% trans "Twitter" %} <br><img src="{% static './images/instagram_icon.png' %}" alt=""> {% trans "Instagram" %}</h2>
 			<h2 class="address">497 Evergreen Rd. Roseville, CA 95673 <br>+44 345 678 903 <br>adobexd@mail.com</h2>
 		</div>
 		<div class="container3">
-			<h2 class="newsletter">Subscribe to our newsletter</h2>
+			<h2 class="newsletter">{% trans "Subscribe to our newsletter" %}</h2>
 			<div class="email">
 				<form action="" method="POST" class="email">
                     {% csrf_token %}

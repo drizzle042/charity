@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-17 21:12+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\charity\urls.py:30
+msgid "admin/"
+msgstr ""
+
+#: .\home\templates\home\base.html:18 .\home\templates\home\base.html:31
+msgid "HOME"
+msgstr ""
+
+#: .\home\templates\home\base.html:19 .\home\templates\home\base.html:32
+msgid "EVENTS"
+msgstr ""
+
+#: .\home\templates\home\base.html:20 .\home\templates\home\base.html:33
+msgid "ABOUT"
+msgstr ""
+
+#: .\home\templates\home\base.html:21 .\home\templates\home\base.html:34
+msgid "CONTACT"
+msgstr ""
+
+#: .\home\templates\home\base.html:22 .\home\templates\home\base.html:35
+msgid "VISITS"
+msgstr ""
+
+#: .\home\templates\home\base.html:23 .\home\templates\home\base.html:36
+msgid "PROFILES"
+msgstr ""
+
+#: .\home\templates\home\base.html:40
+msgid "Donate"
+msgstr ""
+
+#: .\home\templates\home\base.html:56
+msgid "About Us"
+msgstr ""
+
+#: .\home\templates\home\base.html:56
+msgid "Contact"
+msgstr ""
+
+#: .\home\templates\home\base.html:56
+msgid "Terms & Conditions"
+msgstr ""
+
+#: .\home\templates\home\base.html:57
+msgid "Facebook"
+msgstr ""
+
+#: .\home\templates\home\base.html:57
+msgid "Twitter"
+msgstr ""
+
+#: .\home\templates\home\base.html:57
+msgid "Instagram"
+msgstr ""
+
+#: .\home\templates\home\base.html:61
+msgid "Subscribe to our newsletter"
+msgstr ""
+
+#: .\home\templates\home\home.html:12
+msgid "home"
+msgstr ""
+
+#: .\home\templates\home\home.html:22
+msgid "WHAT DO WE DO?"
+msgstr ""
+
+#: .\home\templates\home\home.html:23
+msgid "WE BRING CHRISTMAS TO EVERY CHILD OUT THERE WHO IS LESS PRIVELEDGED"
+msgstr ""
+
+#: .\home\templates\home\home.html:31
+msgid "WHAT DOES EVERY CHILD OUT THERE SEE?"
+msgstr ""
+
+#: .\home\templates\home\home.html:32
+msgid "A PERFECT WORLD OF COURSE"
+msgstr ""
+
+#: .\home\templates\home\home.html:32 .\home\templates\home\home.html:170
+msgid "AND"
+msgstr ""
+
+#: .\home\templates\home\home.html:32
+msgid ""
+" BEING LESS PRIVILEDGED SHOULD NOT CHANGE THAT FEELING IN ANY CHILD BUT "
+"SHOULD BRING MORE LIFE TO OUR CHILDREN SO THAT THEY CAN LIVE EVEN A BIT OF "
+"THE KIND OF LIFE WE LIVED "
+msgstr ""
+
+#: .\home\templates\home\home.html:55
+msgid "FROM EDUCATION"
+msgstr ""
+
+#: .\home\templates\home\home.html:61
+msgid "TO HEALTH"
+msgstr ""
+
+#: .\home\templates\home\home.html:67
+msgid "AND FOOD"
+msgstr ""
+
+#: .\home\templates\home\home.html:74
+msgid "JUST DO SOMETHING, ANYTHING!"
+msgstr ""
+
+#: .\home\templates\home\home.html:75
+msgid "BELIEVE IT WHAT EVER YOU DO COUNTS!!"
+msgstr ""
+
+#: .\home\templates\home\home.html:82
+msgid ""
+"MAYBE YOU MIGHT BE THE FIRST PERSON WE ARE ASKING TODAY BUT ANYWAY IF YOU "
+"CAN, BUY A CHILD A DOGHNUT TODAY!"
+msgstr ""
+
+#: .\home\templates\home\home.html:93
+msgid "OR YOU COULD BUY A CHILD A BOOK TODAY!"
+msgstr ""
+
+#: .\home\templates\home\home.html:106
+msgid ""
+"THE GREATEST JOY WE DERIVE FROM WHAT WE DO IS SEEING THE TESTIMONIALS WE GET "
+"FROM PAST BENEFICIARIES OF THIS GREAT ORGANIZATION AND HOW THEIR LIVES "
+"CHANGED DRAMATICALLY!"
+msgstr ""
+
+#: .\home\templates\home\home.html:107
+msgid "IN A GOOD WAY OF COURSE."
+msgstr ""
+
+#: .\home\templates\home\home.html:119 .\home\templates\home\home.html:131
+msgid "online"
+msgstr ""
+
+#: .\home\templates\home\home.html:122
+msgid ""
+"it was the best day of my life when I was told I had been admitted to the "
+"university of michigan"
+msgstr ""
+
+#: .\home\templates\home\home.html:134
+msgid ""
+"you just can't believe what it felt like when we were told that he was "
+"suffering from cerebral palsy. but fortunately we came across this platform "
+"and we could raise the funds needed for his operation"
+msgstr ""
+
+#: .\home\templates\home\home.html:167
+msgid "SO NOW WHEN WE LOOK AT OUR PLANET, WHAT DO WE SEE?"
+msgstr ""
+
+#: .\home\templates\home\home.html:170
+msgid "A CHAOTIC MASS WHERE NO ONE KNOWS ANYONE"
+msgstr ""
+
+#: .\home\templates\home\home.html:170
+msgid "NO ONE CARES TO KNOW ANYONE AND HELP ANYONE IN NEED?"
+msgstr ""
+
+#: .\home\templates\home\home.html:181
+msgid ""
+"OR RATHER A NICE HOME FOR EVERYONE NO MATTER RACE, ETHNIC BACKGROUND, "
+"NATIONALITY, COLOR OR PHYSICAL STATE."
+msgstr ""
+
+#: .\home\templates\home\home.html:181
+msgid "BECAUSE"
+msgstr ""
+
+#: .\home\templates\home\home.html:181
+msgid "HUMANITY SAKE IS STILL WORTH JOINING HANDS TOGETHER FOR."
+msgstr ""
+
+#: .\home\templates\home\home.html:187
+msgid ""
+"TODAY WE ARE GLAD TO SAY THAT WE HAVE DONE OUR BEST TO BRING CHRISTMAS TO "
+"MILLIONS OF CHILDREN AND LESS FORTUNATE ADULT INDIVIDUALS OUT THERE FOR MANY "
+"YEARS NOW AND WE THINK YOU SHOULD BE A PART OF THIS GREAT ACHIEVEMENT!"
+msgstr ""
+
+#: .\home\templates\home\home.html:199
+msgid "THIS ORGANIZATION IS PROUDLY SPONSORED BY"
+msgstr ""
+
+#: .\home\urls.py:10
+msgid "events/"
+msgstr ""
+
+#: .\home\urls.py:11
+msgid "story/<slug:slug>/"
+msgstr ""
+
+#: .\home\urls.py:12
+msgid "topstory/<slug:slug>/"
+msgstr ""
+
+#: .\home\urls.py:13
+msgid "ad/<slug:slug>/"
+msgstr ""
+
+#: .\home\urls.py:14
+msgid "about/"
+msgstr ""
+
+#: .\home\urls.py:15
+msgid "profiles/"
+msgstr ""
+
+#: .\home\urls.py:16
+msgid "profile/<slug:slug>/"
+msgstr ""
+
+#: .\home\urls.py:17
+msgid "donate/"
+msgstr ""
+
+#: .\home\urls.py:18
+msgid "receipt/"
+msgstr ""

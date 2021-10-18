@@ -1,6 +1,7 @@
 {% extends './base.html' %}
 {% block body %}
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="{% static './Css/home.css' %}">
-	<title>home</title>
+	<title>{% trans "home" %}</title>
 </head>
 <body>
 	<section class="banner">
@@ -18,8 +19,8 @@
 			</figure>			
 			<div class="banner-msg" data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease">
 				<div class="container" style="display: flex; flex-flow: column;">
-					<h2>WHAT DO WE DO?</h2>
-					<p>WE BRING CHRISTMAS TO EVERY CHILD OUT THERE WHO IS LESS PRIVELEDGED</p>
+					<h2>{% trans "WHAT DO WE DO?" %}</h2>
+					<p>{% trans "WE BRING CHRISTMAS TO EVERY CHILD OUT THERE WHO IS LESS PRIVELEDGED" %}</p>
 				</div>
 			</div>
 		</div>
@@ -27,8 +28,8 @@
 	<section class="msg1">
 		<div class="container" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
 			<div class="msg1-msg">
-				<h2>WHAT DOES EVERY CHILD OUT THERE SEE?</h2>
-				<p>A PERFECT WORLD OF COURSE <br>AND <br>BEING LESS PRIVILEDGED SHOULD NOT CHANGE THAT FEELING IN ANY CHILD BUT SHOULD BRING MORE LIFE TO OUR CHILDREN SO THAT THEY CAN LIVE EVEN A BIT OF THE KIND OF LIFE WE LIVED</p>
+				<h2>{% trans "WHAT DOES EVERY CHILD OUT THERE SEE?" %}</h2>
+				<p>{% trans "A PERFECT WORLD OF COURSE" %} <br>{% trans "AND" %} <br>{% blocktranslate %}BEING LESS PRIVILEDGED SHOULD NOT CHANGE THAT FEELING IN ANY CHILD BUT SHOULD BRING MORE LIFE TO OUR CHILDREN SO THAT THEY CAN LIVE EVEN A BIT OF THE KIND OF LIFE WE LIVED{% endblocktranslate %}</p>
 			</div>
 			<figure class="msg1-img">
 				<img class="img1" src="{% static './images/city land scape with spaceship.png ' %}" alt="section image">
@@ -36,11 +37,7 @@
 		</div>
 		<div class="card" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
 			<div class="msg2-msg">
-				<h3>We are a non-profit organization that helps less privileged individuals from all over the world.
-					Background, ethnic group and color doesn't matter as long as we hope in humanity. 
-					Young sick children and very poor people who cannot afford food are our major profiles. 
-					We do our best to meet these individual needs and we have been doing this for many years with your help and donations.
-				</h3>
+				<h3>{% blocktranslate %}We are a non-profit organization that helps less privileged individuals from all over the world. Background, ethnic group and color doesn't matter as long as we hope on humanity. Young sick children and very poor people who cannot afford food are our major profiles. We do our best to meet these individual needs and we have been doing this for many years with your help and donations.{% endblocktranslate%}</h3>
 			</div>
 		</div>
 	</section>
@@ -51,34 +48,34 @@
 					<figure class="card1">
 						<img class="card1-img" src="{% static './images/school children.png' %}" alt="">
 					</figure> 
-					<h2 class="card1-msg">FROM EDUCATION</h2>
+					<h2 class="card1-msg">{% trans "FROM EDUCATION" %}</h2>
 				</div>
 				<div class="card2" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
 					<figure class="card2">
 						<img class="card2-img" src="{% static './images/health.png' %}" alt="">
 					</figure>
-					<h2 class="card2-msg">TO HEALTH</h2>
+					<h2 class="card2-msg">{% trans "TO HEALTH" %}</h2>
 				</div>
 				<div class="card3" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
 					<figure class="card3">
 						<img class="card3-img" src="{% static './images/food.png' %}" alt="">
 					</figure>
-					<h2 class="card3-msg">AND FOOD</h2>
+					<h2 class="card3-msg">{% trans "AND FOOD" %}</h2>
 				</div>
 			</div>
 		</div>
 		
 		<div class="container2" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
 			<div class="msg2-msg">
-				<h2 class="msg1">JUST DO SOMETHING, ANYTHING!</h2>
-				<h2 class="msg2">BELIEVE IT WHAT EVER YOU DO COUNTS!!</h2>
+				<h2 class="msg1">{% trans "JUST DO SOMETHING, ANYTHING!" %}</h2>
+				<h2 class="msg2">{% trans "BELIEVE IT WHAT EVER YOU DO COUNTS!!" %}</h2>
 			</div>
 		</div>
 	</section>
 	<section class="msg3">
 		<div class="container1">
 			<div class="card1" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
-				<h3 class="card1-msg">MAYBE YOU MIGHT BE THE FIRST PERSON WE ARE ASKING TODAY BUT ANYWAY IF YOU CAN, BUY A CHILD A DOGHNUT TODAY!</h3>
+				<h3 class="card1-msg">{% trans "MAYBE YOU MIGHT BE THE FIRST PERSON WE ARE ASKING TODAY BUT ANYWAY IF YOU CAN, BUY A CHILD A DOGHNUT TODAY!" %}</h3>
 				<figure class="card1-img">
 					<picture class="img1">
 						<source 
@@ -89,7 +86,7 @@
 				</figure>
 			</div>
 			<div class="card2" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
-				<h3 class="card2-msg">OR YOU COULD BUY A CHILD A BOOK TODAY!</h3>
+				<h3 class="card2-msg">{% trans "OR YOU COULD BUY A CHILD A BOOK TODAY!" %}</h3>
 				<figure class="card2-img">
 					<picture class="img2">
 						<source 
@@ -102,8 +99,8 @@
 		</div>
 		<div class="container2" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
 			<div class="msg3-msg">
-				<h3 class="msg1">THE GREATEST JOY WE DERIVE FROM WHAT WE DO IS SEEING THE TESTIMONIALS WE GET FROM PAST BENEFICIARIES OF THIS GREAT ORGANIZATION AND HOW THEIR LIVES CHANGED DRAMATICALLY!</h3>
-				<h3 class="msg2">IN A GOOD WAY OF COURSE.</h3>
+				<h3 class="msg1">{% trans "THE GREATEST JOY WE DERIVE FROM WHAT WE DO IS SEEING THE TESTIMONIALS WE GET FROM PAST BENEFICIARIES OF THIS GREAT ORGANIZATION AND HOW THEIR LIVES CHANGED DRAMATICALLY!" %}</h3>
+				<h3 class="msg2">{% trans "IN A GOOD WAY OF COURSE." %}</h3>
 			</div>
 		</div>
 	</section>
@@ -115,10 +112,10 @@
 						<img class="christine" src="{% static './images/christine.png' %}" alt="">
 					</figure>
 					<h6 class="user1">christine</h6>
-					<h5 class="online">online</h5>
+					<h5 class="online">{% trans "online" %}</h5>
 				</div>
 				<div class="card1-body">
-					<h4>it was the best day of my life when I was told I had been admitted to the university of michigan</h4> 
+					<h4>{% trans "it was the best day of my life when I was told I had been admitted to the university of michigan" %}</h4> 
 				</div>
 			</div>
 			<div class="card2" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
@@ -127,10 +124,10 @@
 						<img class="alicia" src="{% static './images/alicia.png' %}" alt="">
 					</figure>
 					<h6 class="user2">alicia</h6>
-					<h5 class="online">online</h5>
+					<h5 class="online">{% trans "online" %}</h5>
 				</div>
 				<div class="card2-body">
-					<h4>you just can't believe what it felt like when we were told that he was suffering from cerebral palsy. but fortunately we came across this platform and we could raise the funds needed for his operation</h4>
+					<h4>{% trans "you just can't believe what it felt like when we were told that he was suffering from cerebral palsy. but fortunately we came across this platform and we could raise the funds needed for his operation" %}</h4>
 				</div>
 			</div>
 		</div>
@@ -163,10 +160,10 @@
 						<img class="img1" src="{% static './images/astronaut viewing earth.png' %}" alt="">
 					</picture>
 				</figure>
-				<h2 class="card1-msg">SO NOW WHEN WE LOOK AT OUR PLANET, WHAT DO WE SEE?</h2>
+				<h2 class="card1-msg">{% trans "SO NOW WHEN WE LOOK AT OUR PLANET, WHAT DO WE SEE?" %}</h2>
 			</div>
 			<div class="txt-area" data-aos="flip-right" data-aos-duration="700" data-aos-easing="ease">
-				<h2 class="msg">A CHAOTIC MASS WHERE NO ONE KNOWS ANYONE <br>AND <br>NO ONE CARES TO KNOW ANYONE AND HELP ANYONE IN NEED?</h2>
+				<h2 class="msg">{% trans "A CHAOTIC MASS WHERE NO ONE KNOWS ANYONE" %} <br>{% trans "AND" %} <br>{% trans "NO ONE CARES TO KNOW ANYONE AND HELP ANYONE IN NEED?" %}</h2>
 			</div>
 			<div class="card2" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
 				<figure class="card2-img">
@@ -177,13 +174,13 @@
 						<img class="img2" src="{% static './images/space ship viewing earth.png' %}" alt="">
 					</picture>
 				</figure>
-				<h2 class="card2-msg">OR RATHER A NICE HOME FOR EVERYONE NO MATTER RACE, ETHNIC BACKGROUND, NATIONALITY, COLOR OR PHYSICAL STATE. <br> BECAUSE <br> HUMANITY SAKE IS STILL WORTH JOINING HANDS TOGETHER FOR.</h2>
+				<h2 class="card2-msg">{% trans "OR RATHER A NICE HOME FOR EVERYONE NO MATTER RACE, ETHNIC BACKGROUND, NATIONALITY, COLOR OR PHYSICAL STATE." %} <br> {% trans "BECAUSE" %} <br> {% trans "HUMANITY SAKE IS STILL WORTH JOINING HANDS TOGETHER FOR." %}</h2>
 			</div>
 		</div>
 	</section>
 	<section class="msg6">
 		<div class="container" data-aos="fade-up-left" data-aos-duration="700" data-aos-easing="ease">
-			<h2 class="msg">TODAY WE ARE GLAD TO SAY THAT WE HAVE DONE OUR BEST TO BRING CHRISTMAS TO MILLIONS OF CHILDREN AND LESS FORTUNATE ADULT INDIVIDUALS OUT THERE FOR MANY YEARS NOW AND WE THINK YOU SHOULD BE A PART OF THIS GREAT ACHIEVEMENT!</h2>
+			<h2 class="msg">{% trans "TODAY WE ARE GLAD TO SAY THAT WE HAVE DONE OUR BEST TO BRING CHRISTMAS TO MILLIONS OF CHILDREN AND LESS FORTUNATE ADULT INDIVIDUALS OUT THERE FOR MANY YEARS NOW AND WE THINK YOU SHOULD BE A PART OF THIS GREAT ACHIEVEMENT!" %}</h2>
 			<figure class="card-img">
 				<picture class="img">
 					<source
@@ -195,7 +192,7 @@
 		</div>
 	</section>
 	<footer class="footer">
-		<h2 class="msg1">THIS ORGANIZATION IS PROUDLY SPONSORED BY</h2>
+		<h2 class="msg1">{% trans "THIS ORGANIZATION IS PROUDLY SPONSORED BY" %}</h2>
 		<table data-aos="zoom-in" data-aos-duration="700" data-aos-easing="ease">
 			<tr class="supporters1">
 				<td class="ribena"><img class="ribena" src="{% static './images/ribena logo.png' %}" alt=""></td>

@@ -1,5 +1,6 @@
 from django.forms import ModelForm
 from .models import Email, Followers_email
+from django.utils.translation import gettext as _
 
 class Form(ModelForm):
     def __init__(self, *args, **kwargs):
@@ -7,7 +8,7 @@ class Form(ModelForm):
         self.fields['email'].label=''
         self.fields['email'].widget.attrs.update({
             'class': 'email', 
-            'placeholder': 'Enter Your Email Here...'
+            'placeholder': _('Enter Your Email Here...'),
             })
     class Meta:
         model = Email
@@ -20,7 +21,7 @@ class Followers_email_form(ModelForm):
         self.fields['email'].label=''
         self.fields['email'].widget.attrs.update({
             'class': 'email', 
-            'placeholder': 'Enter Your Email Here...'
+            'placeholder': _('Enter Your Email Here...'),
             })
         self.fields['profile'].label=''
         self.fields['profile'].widget.attrs.update({
