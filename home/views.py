@@ -1,11 +1,9 @@
-from django.db.models.deletion import CASCADE
-from django.forms import forms
-from django.forms.models import ModelForm
-from django.shortcuts import redirect, render
+from django.shortcuts import render
 from .forms import Followers_email_form, Form
-from .models import Advert, Advert_image, Followers_email, Profile, Profile_event_photo, Headline, Topstory, Topstory_image
+from .models import *
 from django.contrib import messages 
 from django.core.paginator import Paginator
+from django.utils.translation import gettext as _
 
 # Create your views here.
 
@@ -16,7 +14,7 @@ def home_page(request, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
-			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			messages.success(request, _("Your email was received successfully!"), fail_silently = True)
 			form = Form()
 	else:
 		form = Form()
@@ -46,7 +44,7 @@ def events_page(request, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
-			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			messages.success(request, _("Your email was received successfully!"), fail_silently = True)
 			form = Form()
 	else:
 		form = Form()
@@ -68,7 +66,7 @@ def story_detail(request, slug, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
-			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			messages.success(request, _("Your email was received successfully!"), fail_silently = True)
 			form = Form()
 	else:
 		form = Form()
@@ -88,7 +86,7 @@ def topstories(request, slug, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
-			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			messages.success(request, _("Your email was received successfully!"), fail_silently = True)
 			form = Form()
 	else:
 		form = Form()
@@ -109,7 +107,7 @@ def advert(request, slug, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
-			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			messages.success(request, _("Your email was received successfully!"), fail_silently = True)
 			form = Form()
 	else:
 		form = Form()
@@ -128,7 +126,7 @@ def about_page(request, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
-			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			messages.success(request, _("Your email was received successfully!"), fail_silently = True)
 			form = Form()
 	else:
 		form = Form()
@@ -146,7 +144,7 @@ def profile_feed(request, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
-			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			messages.success(request, _("Your email was received successfully!"), fail_silently = True)
 			form = Form()
 	else:
 		form = Form()
@@ -172,7 +170,7 @@ def profile_page(request, slug, *args, **kwargs):
 				followers_email_form.save()
 				profiles.followers += 1
 				profiles.save()
-				messages.success(request, "Your email was received successfully!, You now follow "+ profiles.first_name +"'s updates", fail_silently=True)
+				messages.success(request, _("Your email was received successfully!, You now follow ")+ profiles.first_name + _("'s updates"), fail_silently=True)
 				followers_email_form = Followers_email_form()
 			else:
 				followers_email_form = Followers_email_form()
@@ -182,7 +180,7 @@ def profile_page(request, slug, *args, **kwargs):
 			if form.is_valid():
 				form.clean()
 				form.save()
-				messages.success(request, "Your email was received successfully!", fail_silently = True)
+				messages.success(request, _("Your email was received successfully!"), fail_silently = True)
 				form = Form()
 			else:
 				form = Form()
@@ -204,7 +202,7 @@ def donation_page(request, *args, **kwargs):
 		if form.is_valid():
 			form.clean()
 			form.save()
-			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			messages.success(request, _("Your email was received successfully!"), fail_silently = True)
 			form = Form()
 	else:
 		form = Form()
@@ -221,7 +219,7 @@ def receipt(request, *args, **kwarg):
 		if form.is_valid():
 			form.clean()
 			form.save()
-			messages.success(request, "Your email was received successfully!", fail_silently = True)
+			messages.success(request, _("Your email was received successfully!"), fail_silently = True)
 			form = Form()
 	else:
 		form = Form()

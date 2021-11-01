@@ -1,6 +1,7 @@
 {% extends './base.html' %}
 {% block body %}
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,25 +9,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static './Css/donate.css'%}">
-    <title>donate</title>
+    <title>{% trans "donate" %}</title>
 </head>
 <body>
     <section class="page">
         <div class="card" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="ease">
-            <h4>YOUR DONATION CHANGES EVERYTHING!</h4>
+            <h4>{% trans "YOUR DONATION CHANGES EVERYTHING!" %}</h4>
             <img src="{% static './images/vase.png' %}" alt="">
         </div>
         <div class="donate-with" data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease">
-            <h1>DONATE TO THIS ORGANIZATION</h1>
-            <h3>MAKE YOUR DONATION WITH </h3>
-            <h3>CARD <span class="or">OR</span> <label id="paypal"><input type="radio" name="payment_selection" checked="checked">PAYPAL</label></h3>
+            <h1>{% trans "DONATE TO THIS ORGANIZATION" %}</h1>
+            <h3>{% trans "MAKE YOUR DONATION WITH" %}</h3>
+            <h3>CARD <span class="or">{% trans "OR" %}</span> <label id="paypal"><input type="radio" name="payment_selection" checked>PAYPAL</label></h3>
             <div class="others">
                 <h3><label id="mastercard"><input type="radio" name="payment_selection">MASTERCARD</label></h3>
                 <h3><label id="visa"><input type="radio" name="payment_selection">VISA</label></h3>
                 <h3><label id="verve"><input type="radio" name="payment_selection">VERVE</label></h3>
             </div>
             <select name="amount" id="amount">
-                <option value="" selected>Select amount</option>
+                <option value="" selected>{% trans "Select amount" %}</option>
             </select>
         </div>
     </section>

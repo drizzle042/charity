@@ -7,6 +7,79 @@ a{
 	text-decoration: none;
 	color: #ffffff;
 }
+header div.container div.language-form{
+	position: absolute;
+	left: 0%;
+	z-index: 3;
+	background-color: rgb(131, 127, 127, 0.8);
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 300%;
+	position: fixed;
+}
+header div.container div.language-form form.language-switch{
+	background-color: #ffffff;
+	width: 600px;
+	display: flex;
+	flex-flow: column;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 20%;
+	border-radius: 10px;
+}
+header div.container div.language-form form.language-switch label.language{
+	color: #2699FB;
+	font-size: 1.1em;
+    margin-bottom: 3%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: solid 1px #837f7f;
+}
+header div.container div.language-form form.language-switch select#language{
+    background-color: #837f7f;
+    height: 50px;
+	width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+	color: #ffffff;
+	font-size: 1.2em;
+	padding: 10px;	
+}
+header div.container div.language-form form.language-switch select#language option::first-letter{
+	text-transform: capitalize;
+}
+header div.container div.language-form form.language-switch input[type=submit]{
+	background-color: #2699FB;
+	border: none;
+	height: 35px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+header div.container div.language-form form.language-switch input[type=submit]:hover{
+	background-color: rgba(38, 152, 251, 0.801);
+}
+header div.container div.language-form form.language-switch button.cancel{
+	height: 35px;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(89, 91, 92, 0.767);
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 1.3em;
+}
 /* header containing the nav bar having background of ash blue */
 header{
 	background-color: #042A65;
@@ -41,10 +114,16 @@ header ul#dropdown img#close{
 header ul#dropdown a{
 	color: #2699FB;
 }
+header ul#dropdown li#language1{
+	cursor: pointer;
+}
 header div.container{
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
+}
+header div.container div.language-form{
+	display: none;
 }
 header div.container nav.navbar{
 	display: flex;
@@ -76,6 +155,9 @@ header div.container nav.navbar ul#menu li{
 	padding-left: 25px;
 	padding-right: 25px;
 }
+header div.container nav.navbar ul#menu li#language2{
+	cursor: pointer;
+}
 header div.container nav.navbar ul#menu :last-child{
 	padding-right: 0;
 }
@@ -96,7 +178,7 @@ header div.container div#donate-btn button a{
 	color: #2C21C4;
 }
 header div.container div#donate-btn{
-	margin-top: 40px;
+	margin-top: 30px;
 	margin-left: 160px;
 }
 /* signal messages */
@@ -317,6 +399,9 @@ html, body{
 }
 @media only screen and (max-width: 710px){
 	/* header containing the nav bar having background of ash blue */
+	header div.container div.language-form form.language-switch{
+		width: 95%;
+	}
 	header div.container div#donate-btn{
 		position: initial;
 		padding-left: 50%;
@@ -441,6 +526,9 @@ html, body{
 }
 @media only screen and (max-width: 340px){
 	/* header containing the nav bar having background of ash blue */
+	header div.container div.language-form form.language-switch{
+		margin-top: 25%;
+	}
 	header img#menu-icon{
 		width: 30px;
 		height: 20px;

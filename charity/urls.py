@@ -29,7 +29,6 @@ urlpatterns = [
 urlpatterns += i18n_patterns(    
     path(_('admin/'), admin.site.urls),
     path('', include('home.urls')),
-    prefix_default_language = False,
 )
 
 urlpatterns += staticfiles_urlpatterns()

@@ -1,6 +1,7 @@
 {% extends './base.html' %}
 {% block body %}
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +9,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static './Css/about.css' %}">
-    <title>about</title>
+    <title>{% trans "about" %}</title>
 </head>
 <body>
     <section class="msg1">
         <div class="card1" data-aos="zoom-in" data-aos-duration="1400" data-aos-easing="ease">
-            <h3 id="about-us">ABOUT US</h3>
+            <h3 id="about-us">{% translate "ABOUT US" %}</h3>
         </div>
         <div class="card2" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease">
-            <p class="about-us-msg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem commodi rerum pariatur, distinctio temporibus, 
+            <p class="about-us-msg">
+                {% blocktranslate %}
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem commodi rerum pariatur, distinctio temporibus, 
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sit corrupti est perspiciatis 
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis error maiores itaque nemo, expedita assumenda ea eligendi
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quaerat harum alias ea soluta.
@@ -30,12 +33,16 @@
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt enim laudantium atque delectus eaque cupiditate, beatae voluptatibus? Nam
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem voluptatum saepe delectus a ipsam. Unde possimus doloribus
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquam quam molestias earum. Eius dolores, aliquid corrupti qui 
-                animi eum fugit veritatis pariatur consequuntur voluptatum magni laudantium, non veniam quidem. enim animi veritatis labore id officia, adipisci odio accusamus ipsam doloremque nam aliquam? qui cum explicabo. Suscipit, eum! Accusantium, laborum illo necessitatibus nemo corrupti eveniet. maiores expedita nobis doloribus accusamus. Voluptas, dolore iusto provident veniam eaque totam impedit ex. tenetur mollitia minus repellendus dolores saepe recusandae. Exercitationem tenetur blanditiis unde eligendi! dolores quos reprehenderit praesentium exercitationem eveniet deserunt a ducimus sint. Velit, accusantium. itaque, animi vero natus vitae id assumenda quae ipsam ullam debitis adipisci dolore officiis. eos incidunt non deleniti unde ea consequuntur quaerat voluptas? Sequi eligendi aut voluptatem porro enim totam! magni commodi nulla suscipit voluptate consectetur possimus sint nihil dicta minima quibusdam velit provident. Iste earum aliquid fuga, maxime commodi ipsam inventore quia asperiores praesentium necessitatibus labore! Quas? Explicabo deserunt, pariatur a optio velit odit quidem, maxime quasi modi delectus harum ipsa possimus alias! rem blanditiis tempore consequatur, asperiores, nostrum omnis facilis dolorum mollitia totam quasi beatae. dignissimos expedita illo officia quidem soluta vel debitis nisi modi explicabo ut, a quo suscipit in veritatis. ipsum exercitationem eligendi iure ea repellat quae ipsam obcaecati atque rem sed consectetur saepe animi quos?</p>
+                animi eum fugit veritatis pariatur consequuntur voluptatum magni laudantium, non veniam quidem. enim animi veritatis labore id officia, adipisci odio accusamus ipsam doloremque nam aliquam? qui cum explicabo. Suscipit, eum! Accusantium, laborum illo necessitatibus nemo corrupti eveniet. maiores expedita nobis doloribus accusamus. Voluptas, dolore iusto provident veniam eaque totam impedit ex. tenetur mollitia minus repellendus dolores saepe recusandae. Exercitationem tenetur blanditiis unde eligendi! dolores quos reprehenderit praesentium exercitationem eveniet deserunt a ducimus sint. Velit, accusantium. itaque, animi vero natus vitae id assumenda quae ipsam ullam debitis adipisci dolore officiis. eos incidunt non deleniti unde ea consequuntur quaerat voluptas? Sequi eligendi aut voluptatem porro enim totam! magni commodi nulla suscipit voluptate consectetur possimus sint nihil dicta minima quibusdam velit provident. Iste earum aliquid fuga, maxime commodi ipsam inventore quia asperiores praesentium necessitatibus labore! Quas? Explicabo deserunt, pariatur a optio velit odit quidem, maxime quasi modi delectus harum ipsa possimus alias! rem blanditiis tempore consequatur, asperiores, nostrum omnis facilis dolorum mollitia totam quasi beatae. dignissimos expedita illo officia quidem soluta vel debitis nisi modi explicabo ut, a quo suscipit in veritatis. ipsum exercitationem eligendi iure ea repellat quae ipsam obcaecati atque rem sed consectetur saepe animi quos?
+                {% endblocktranslate %}
+            </p>
         </div>
     </section>
     <section class="licence">
-        <h3 id="licence">L&D LICENCE</h3>
-        <p class="licence-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde recusandae quam totam sapiente vitae delectus? 
+        <h3 id="licence">{% translate "L&D LICENCE" %}</h3>
+        <p class="licence-body">
+            {% blocktranslate %}
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde recusandae quam totam sapiente vitae delectus? 
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam delectus magni amet officia alias minima mollitia ratione soluta
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem ipsam doloremque iusto quia
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur velit, nisi cum consequuntur explicabo numquam, expedita
@@ -44,7 +51,9 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime eius accusamus? Odio nostrum expedita quas exercitationem,
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iste ea cumque. Incidunt, id ratione. Labore fugiat harum doloremque,
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, aspernatur. At doloremque distinctio officia tempore possimus
-            iste illum soluta aliquid aut tempora quod ad assumenda quos, ea consequuntur nulla dolores! porro soluta ab deserunt, velit eos consequuntur repellendus esse expedita at. nihil voluptatum quasi minus nulla inventore corporis incidunt vero voluptatibus praesentium perferendis non! in unde facilis fugit dolorum, beatae assumenda quae veniam ducimus illo totam vero. officia dolor quam harum modi incidunt! Ullam quisquam beatae dignissimos veritatis culpa veniam! eius delectus fugiat, amet voluptatum doloremque vel officiis doloribus porro reiciendis maiores quis inventore. fugit ducimus, mollitia nulla quidem vel numquam debitis sapiente praesentium iste eum quis et consequatur quas! numquam autem, necessitatibus, suscipit quis voluptatem totam obcaecati. Qui consequuntur repudiandae molestias. Officia fugiat ut nobis? Sed nisi, rerum iure deleniti nulla voluptates cupiditate architecto amet natus!</p>
+            iste illum soluta aliquid aut tempora quod ad assumenda quos, ea consequuntur nulla dolores! porro soluta ab deserunt, velit eos consequuntur repellendus esse expedita at. nihil voluptatum quasi minus nulla inventore corporis incidunt vero voluptatibus praesentium perferendis non! in unde facilis fugit dolorum, beatae assumenda quae veniam ducimus illo totam vero. officia dolor quam harum modi incidunt! Ullam quisquam beatae dignissimos veritatis culpa veniam! eius delectus fugiat, amet voluptatum doloremque vel officiis doloribus porro reiciendis maiores quis inventore. fugit ducimus, mollitia nulla quidem vel numquam debitis sapiente praesentium iste eum quis et consequatur quas! numquam autem, necessitatibus, suscipit quis voluptatem totam obcaecati. Qui consequuntur repudiandae molestias. Officia fugiat ut nobis? Sed nisi, rerum iure deleniti nulla voluptates cupiditate architecto amet natus!
+            {% endblocktranslate %}
+        </p>
     </section>
 </body>
 </html>

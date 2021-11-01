@@ -1,6 +1,7 @@
 {% extends './base.html' %}
 {% block body %}
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,21 +9,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static './Css/receipt.css' %}">
-    <title>receipt</title>
+    <title>{% trans "receipt" %}</title>
 </head>
 <body>
     <section class="only-section">
-        <h2 class="thank-you-msg">Thank You For Your Donation</h2>
+        <h2 class="thank-you-msg">{% trans "Thank You For Your Donation" %}</h2>
         <div class="receipt-details">
-            <h4 class="donor-name">DONOR :</h4>
-            <h4 class="donor-email">EMAIL :</h4>
-            <h4 class="receipt-no">RECEIPT NO :</h4>
-            <h4 class="donate-to">DONATION TO :</h4>
-            <h4 class="date">DATE :</h4>
-            <h4 class="donor-remark">REMARK :</h4>
+            <h4 class="donor-name">{% trans "DONOR" %} :</h4>
+            <h4 class="donor-email">{% trans "EMAIL" %} :</h4>
+            <h4 class="receipt-no">{% trans "RECEIPT NO" %} :</h4>
+            <h4 class="donate-to">{% trans "DONATION TO" %} :</h4>
+            <h4 class="date">{% trans "DATE" %} :</h4>
+            <h4 class="donor-remark">{% trans "REMARK" %} :</h4>
             <img src="{% static './images/flying astronaut.png' %}" alt="" class="flying-astronaut">
             <img src="{% static './images/qr_code_example.png' %}" alt="" class="qrcode">
-            <button class="save-pdf">SAVE</button>
+            <button class="save-pdf">{% trans "SAVE" %}</button>
         </div>
     </section>
 </body>

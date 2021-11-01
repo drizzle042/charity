@@ -1,6 +1,7 @@
 from django.db import models
 from django.db.models.deletion import CASCADE
 
+
 # Create your models here.
 
 # Email Modelform to map to database for receiving email from users
@@ -40,7 +41,7 @@ class Followers_email(models.Model):
 	def __str__(self):
 		return self.profile.slug
 	
-# Profiles Event_photos database Model to map to database. This inherits from Profile and attaches here using a foreignkey
+# Profiles Event_photos database Model to map to database. This inherits from Profile and attaches here using foreignkey
 class Profile_event_photo(models.Model):
 	profile = models.ForeignKey(Profile, on_delete = models.CASCADE)
 	event_photos = models.ImageField(blank = True, upload_to = 'profile/events_images/', default = 'profile/events_images/photos-gallery icon.png')
@@ -71,7 +72,7 @@ class Advert(models.Model):
 	def __str__(self):
 		return self.title
 
-# Advert photos 
+# Advert photos database Model to map to database. This inherits from Advert and attaches here using foreignkey
 class Advert_image(models.Model):
 	advert = models.ForeignKey(Advert, on_delete=CASCADE)
 	photos = models.ImageField(upload_to='news-images/', blank=True)
@@ -92,7 +93,7 @@ class Topstory(models.Model):
 	def snippet(self):
 		return self.body [:450]
 
-# Motivational messages photos
+# Motivational messages photos database Model to map to database. This inherits from Topstory and attaches here using foreignkey
 class Topstory_image(models.Model):
 	story = models.ForeignKey(Topstory, on_delete=CASCADE)
 	photos = models.ImageField(upload_to='news-images/', blank=True)

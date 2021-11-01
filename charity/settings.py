@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -35,6 +36,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,8 +126,19 @@ LOCALE_PATHS = [
 ]
 
 LANGUAGES = [
-    ('en', 'English'),
-    ('fr', 'French'),
+    ('en', _('English')),
+    ('fr', _('French')),
+]
+
+# for translation of models
+MODELTRANSLATION_DEFAULT_LANUAGE = 'en'
+
+MODELTRANSLATION_TRANSLATION_FILES = (
+    'home.translation',
+)
+
+TRANSLATABLE_MODEL_MODULES = [
+    "home.models",
 ]
 
 # Static files (CSS, JavaScript, Images)

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-17 21:58+0100\n"
+"POT-Creation-Date: 2021-10-21 06:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME FREDRICK OTHNEIL\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#: .\charity\settings.py:128
+msgid "English"
+msgstr "Anglaises"
+
+#: .\charity\settings.py:129
+msgid "French"
+msgstr "Français"
+
 #: .\charity\urls.py:30
 msgid "admin/"
 msgstr "administrateur"
@@ -26,61 +34,201 @@ msgstr "administrateur"
 msgid "Enter Your Email Here..."
 msgstr "Entrez votre email ici..."
 
-#: .\home\templates\home\base.html:18 .\home\templates\home\base.html:31
+#: .\home\templates\home\about.html:12
+#, fuzzy
+#| msgid "about/"
+msgid "about"
+msgstr "sur/"
+
+#: .\home\templates\home\about.html:17
+#| msgid "ABOUT"
+msgid "ABOUT US"
+msgstr "À PROPOS DE NOUS"
+
+#: .\home\templates\home\about.html:21
+msgid ""
+"\n"
+"                Lorem ipsum dolor sit, amet consectetur adipisicing elit. "
+"Quidem commodi rerum pariatur, distinctio temporibus, \n"
+"                Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+"Dolorem sit corrupti est perspiciatis \n"
+"                Lorem ipsum dolor, sit amet consectetur adipisicing elit. "
+"Officiis error maiores itaque nemo, expedita assumenda ea eligendi\n"
+"                Lorem ipsum dolor sit amet consectetur, adipisicing elit. "
+"Sunt quaerat harum alias ea soluta.\n"
+"                Lorem, ipsum dolor sit amet consectetur adipisicing elit. "
+"Commodi, ratione! Eum dignissimos omnis iusto nostrum perferendis.\n"
+"                Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+"Ratione, odit obcaecati dignissimos, sunt non quo recusandae\n"
+"                Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+"Dolore voluptatem aliquam reprehenderit, delectus, ullam\n"
+"                Lorem ipsum dolor, sit amet consectetur adipisicing elit. "
+"Quas, voluptates dolorem? Totam sunt repellat a beatae\n"
+"                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem "
+"minima, accusamus adipisci nam quam unde maiores autem. Voluptas\n"
+"                Lorem ipsum dolor sit, amet consectetur adipisicing elit. "
+"Asperiores nemo expedita amet voluptates accusamus laudantium vitae! Officia "
+"repellat\n"
+"                Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+"Exercitationem, praesentium, atque quae ducimus amet, inventore sequi\n"
+"                Lorem ipsum dolor sit, amet consectetur adipisicing elit. "
+"Nesciunt enim laudantium atque delectus eaque cupiditate, beatae "
+"voluptatibus? Nam\n"
+"                Lorem ipsum dolor sit amet consectetur, adipisicing elit. "
+"Voluptatem voluptatum saepe delectus a ipsam. Unde possimus doloribus\n"
+"                Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+"Accusantium aliquam quam molestias earum. Eius dolores, aliquid corrupti "
+"qui \n"
+"                animi eum fugit veritatis pariatur consequuntur voluptatum "
+"magni laudantium, non veniam quidem. enim animi veritatis labore id officia, "
+"adipisci odio accusamus ipsam doloremque nam aliquam? qui cum explicabo. "
+"Suscipit, eum! Accusantium, laborum illo necessitatibus nemo corrupti "
+"eveniet. maiores expedita nobis doloribus accusamus. Voluptas, dolore iusto "
+"provident veniam eaque totam impedit ex. tenetur mollitia minus repellendus "
+"dolores saepe recusandae. Exercitationem tenetur blanditiis unde eligendi! "
+"dolores quos reprehenderit praesentium exercitationem eveniet deserunt a "
+"ducimus sint. Velit, accusantium. itaque, animi vero natus vitae id "
+"assumenda quae ipsam ullam debitis adipisci dolore officiis. eos incidunt "
+"non deleniti unde ea consequuntur quaerat voluptas? Sequi eligendi aut "
+"voluptatem porro enim totam! magni commodi nulla suscipit voluptate "
+"consectetur possimus sint nihil dicta minima quibusdam velit provident. Iste "
+"earum aliquid fuga, maxime commodi ipsam inventore quia asperiores "
+"praesentium necessitatibus labore! Quas? Explicabo deserunt, pariatur a "
+"optio velit odit quidem, maxime quasi modi delectus harum ipsa possimus "
+"alias! rem blanditiis tempore consequatur, asperiores, nostrum omnis facilis "
+"dolorum mollitia totam quasi beatae. dignissimos expedita illo officia "
+"quidem soluta vel debitis nisi modi explicabo ut, a quo suscipit in "
+"veritatis. ipsum exercitationem eligendi iure ea repellat quae ipsam "
+"obcaecati atque rem sed consectetur saepe animi quos?\n"
+"                "
+msgstr ""
+
+#: .\home\templates\home\about.html:42
+msgid "L&D LICENCE"
+msgstr "LICENCE L&D"
+
+#: .\home\templates\home\about.html:44
+msgid ""
+"\n"
+"            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde "
+"recusandae quam totam sapiente vitae delectus? \n"
+"            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam "
+"delectus magni amet officia alias minima mollitia ratione soluta\n"
+"            Lorem ipsum dolor sit amet consectetur, adipisicing elit. "
+"Dolorum exercitationem ipsam doloremque iusto quia\n"
+"            Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+"Pariatur velit, nisi cum consequuntur explicabo numquam, expedita\n"
+"            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi "
+"ut beatae, excepturi animi nisi repellat sequi atque\n"
+"            Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+"Corporis, quam tempora voluptatem quibusdam sunt quas ad itaque\n"
+"            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum "
+"maxime eius accusamus? Odio nostrum expedita quas exercitationem,\n"
+"            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum "
+"iste ea cumque. Incidunt, id ratione. Labore fugiat harum doloremque,\n"
+"            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, "
+"aspernatur. At doloremque distinctio officia tempore possimus\n"
+"            iste illum soluta aliquid aut tempora quod ad assumenda quos, ea "
+"consequuntur nulla dolores! porro soluta ab deserunt, velit eos consequuntur "
+"repellendus esse expedita at. nihil voluptatum quasi minus nulla inventore "
+"corporis incidunt vero voluptatibus praesentium perferendis non! in unde "
+"facilis fugit dolorum, beatae assumenda quae veniam ducimus illo totam vero. "
+"officia dolor quam harum modi incidunt! Ullam quisquam beatae dignissimos "
+"veritatis culpa veniam! eius delectus fugiat, amet voluptatum doloremque vel "
+"officiis doloribus porro reiciendis maiores quis inventore. fugit ducimus, "
+"mollitia nulla quidem vel numquam debitis sapiente praesentium iste eum quis "
+"et consequatur quas! numquam autem, necessitatibus, suscipit quis voluptatem "
+"totam obcaecati. Qui consequuntur repudiandae molestias. Officia fugiat ut "
+"nobis? Sed nisi, rerum iure deleniti nulla voluptates cupiditate architecto "
+"amet natus!\n"
+"            "
+msgstr ""
+
+#: .\home\templates\home\base.html:18 .\home\templates\home\base.html:50
 msgid "HOME"
 msgstr "ACCUEIL"
 
-#: .\home\templates\home\base.html:19 .\home\templates\home\base.html:32
+#: .\home\templates\home\base.html:19 .\home\templates\home\base.html:51
 msgid "EVENTS"
 msgstr "ÉVÉNEMENTS"
 
-#: .\home\templates\home\base.html:20 .\home\templates\home\base.html:33
+#: .\home\templates\home\base.html:20 .\home\templates\home\base.html:52
 msgid "ABOUT"
 msgstr "SUR"
 
-#: .\home\templates\home\base.html:21 .\home\templates\home\base.html:34
+#: .\home\templates\home\base.html:21 .\home\templates\home\base.html:53
 msgid "CONTACT"
 msgstr "CONTACT"
 
-#: .\home\templates\home\base.html:22 .\home\templates\home\base.html:35
-msgid "VISITS"
-msgstr "VISITES"
+#: .\home\templates\home\base.html:22 .\home\templates\home\base.html:54
+msgid "LANGUAGE"
+msgstr "LANGUE"
 
-#: .\home\templates\home\base.html:23 .\home\templates\home\base.html:36
+#: .\home\templates\home\base.html:23 .\home\templates\home\base.html:55
 msgid "PROFILES"
 msgstr "PROFILS"
 
-#: .\home\templates\home\base.html:40
-msgid "Donate"
-msgstr "FAIRE UN DON"
+#: .\home\templates\home\base.html:30
+msgid "To change your language, select from the list provided"
+msgstr "Pour changer votre langue, sélectionnez dans la liste fournie"
 
-#: .\home\templates\home\base.html:56
+#: .\home\templates\home\base.html:59
+msgid "Donate"
+msgstr ""
+
+#: .\home\templates\home\base.html:75
 msgid "About Us"
 msgstr "À propos de nous"
 
-#: .\home\templates\home\base.html:56
+#: .\home\templates\home\base.html:75
 msgid "Contact"
 msgstr "Contact"
 
-#: .\home\templates\home\base.html:56
+#: .\home\templates\home\base.html:75
 msgid "Terms & Conditions"
 msgstr "Termes et Conditions"
 
-#: .\home\templates\home\base.html:57
+#: .\home\templates\home\base.html:76
 msgid "Facebook"
 msgstr "Facebook"
 
-#: .\home\templates\home\base.html:57
+#: .\home\templates\home\base.html:76
 msgid "Twitter"
 msgstr "Twitter"
 
-#: .\home\templates\home\base.html:57
+#: .\home\templates\home\base.html:76
 msgid "Instagram"
 msgstr "Instagram"
 
-#: .\home\templates\home\base.html:61
+#: .\home\templates\home\base.html:80
 msgid "Subscribe to our newsletter"
 msgstr "Abonnez-vous à notre newsletter"
+
+#: .\home\templates\home\donate.html:12
+#, fuzzy
+#| msgid "donate/"
+msgid "donate"
+msgstr "faire un don/"
+
+#: .\home\templates\home\donate.html:17
+msgid "YOUR DONATION CHANGES EVERYTHING!"
+msgstr "VOTRE DON CHANGE TOUT !"
+
+#: .\home\templates\home\donate.html:21
+msgid "DONATE TO THIS ORGANIZATION"
+msgstr "FAIRE UN DON À CETTE ORGANISATION"
+
+#: .\home\templates\home\donate.html:22
+msgid "MAKE YOUR DONATION WITH"
+msgstr "FAITES VOTRE DON AVEC"
+
+#: .\home\templates\home\donate.html:23
+msgid "OR"
+msgstr "OU"
+
+#: .\home\templates\home\donate.html:30
+msgid "Select amount"
+msgstr "Sélectionnez le montant"
 
 #: .\home\templates\home\home.html:12
 msgid "home"
@@ -246,6 +394,44 @@ msgstr ""
 msgid "THIS ORGANIZATION IS PROUDLY SPONSORED BY"
 msgstr "CETTE ORGANISATION EST FIÈREMENT PARRAINÉE PAR"
 
+#: .\home\templates\home\receipt.html:12
+#, fuzzy
+#| msgid "receipt/"
+msgid "receipt"
+msgstr "reçu/"
+
+#: .\home\templates\home\receipt.html:16
+msgid "Thank You For Your Donation"
+msgstr "Merci pour votre don"
+
+#: .\home\templates\home\receipt.html:18
+msgid "DONOR"
+msgstr "DONNEUR"
+
+#: .\home\templates\home\receipt.html:19
+msgid "EMAIL"
+msgstr "E-MAIL"
+
+#: .\home\templates\home\receipt.html:20
+msgid "RECEIPT NO"
+msgstr "NUMÉRO DE REÇU"
+
+#: .\home\templates\home\receipt.html:21
+msgid "DONATION TO"
+msgstr "DON À"
+
+#: .\home\templates\home\receipt.html:22
+msgid "DATE"
+msgstr "DATE"
+
+#: .\home\templates\home\receipt.html:23
+msgid "REMARK"
+msgstr "REMARQUE"
+
+#: .\home\templates\home\receipt.html:26
+msgid "SAVE"
+msgstr "ENREGISTRER"
+
 #: .\home\urls.py:10
 msgid "events/"
 msgstr "événements/"
@@ -281,3 +467,20 @@ msgstr "faire un don/"
 #: .\home\urls.py:18
 msgid "receipt/"
 msgstr "reçu/"
+
+#: .\home\views.py:17 .\home\views.py:47 .\home\views.py:69 .\home\views.py:89
+#: .\home\views.py:110 .\home\views.py:129 .\home\views.py:147
+#: .\home\views.py:183 .\home\views.py:205 .\home\views.py:222
+msgid "Your email was received successfully!"
+msgstr "Votre email a été reçu avec succès !"
+
+#: .\home\views.py:173
+msgid "Your email was received successfully!, You now follow "
+msgstr "Votre email a été reçu avec succès !, Vous suivez maintenant "
+
+#: .\home\views.py:173
+msgid "'s updates"
+msgstr "les mises à jour de"
+
+#~ msgid "VISITS"
+#~ msgstr "VISITES"

@@ -12,34 +12,53 @@
 </head>
 <body>
     <header>
-    <img id="menu-icon" src="{% static './images/menu icon.png' %}" alt="">
-    <ul id="dropdown">
-        <img src="{% static './images/close.png' %}" alt="" id="close">
-        <li><a href="{% url 'home:home' %}">{% translate "HOME" %}</a></li>
-        <li><a href="{% url 'home:events' %}">{% translate "EVENTS" %}</a></li>
-        <li><a href="{% url 'home:about' %}">{% translate "ABOUT" %}</a></li>
-        <li>{% translate "CONTACT" %}</li>
-        <li>{% translate "VISITS" %}</li>
-        <li><a href="{% url 'home:profiles' %}">{% translate "PROFILES" %}</a></li>
-    </ul>
-    <div class="container">
-        <nav class="navbar">
-            <figure class="logo-img">
-                <img id="logo" src="{% static './images/charity logo.png' %}" alt="logo">
-            </figure>
-            <ul id="menu">
-                <li><a href="{% url 'home:home' %}">{% translate "HOME" %}</a></li>
-                <li><a href="{% url 'home:events' %}">{% translate "EVENTS" %}</a></li>
-                <li><a href="{% url 'home:about' %}">{% translate "ABOUT" %}</a></li>
-                <li>{% translate "CONTACT" %}</li>
-                <li>{% translate "VISITS" %}</li>
-                <li><a href="{% url 'home:profiles' %}">{% translate "PROFILES" %}</a></li>
-            </ul>
-        </nav>
-        <div id="donate-btn">
-            <button><a href="{% url 'home:donate' %}">{% translate "Donate" %}</a></button>
+        <img id="menu-icon" src="{% static './images/menu icon.png' %}" alt="">
+        <ul id="dropdown">
+            <img src="{% static './images/close.png' %}" alt="" id="close">
+            <li><a href="{% url 'home:home' %}">{% translate "HOME" %}</a></li>
+            <li><a href="{% url 'home:events' %}">{% translate "EVENTS" %}</a></li>
+            <li><a href="{% url 'home:about' %}">{% translate "ABOUT" %}</a></li>
+            <li>{% translate "CONTACT" %}</li>
+            <li id="language1">{% translate "LANGUAGE" %}</li>
+            <li><a href="{% url 'home:profiles' %}">{% translate "PROFILES" %}</a></li>
+        </ul>
+        <div class="container">
+            <div class="language-form">
+                <form action="{% url 'set_language' %}" method="post" class="language-switch">
+                    {% csrf_token %}
+                    <input type="hidden" name="next" value="{{ redirect_to }}">
+                    <label for="language" class="language">{% translate "To change your language, select from the list provided" %}</label>
+                    <select name="language" id="language">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages%}
+                        {% for language in languages %}
+                            <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
+                                {{ language.name_local}} "{{ language.code }}" 
+                            </option>
+                        {% endfor %}
+                    </select>
+                    <input type="submit" value="CHANGE">
+                    <button class="cancel">CANCEL</button>
+                </form>
+            </div>
+            <nav class="navbar">
+                <figure class="logo-img">
+                    <img id="logo" src="{% static './images/charity logo.png' %}" alt="logo">
+                </figure>
+                <ul id="menu">
+                    <li><a href="{% url 'home:home' %}">{% translate "HOME" %}</a></li>
+                    <li><a href="{% url 'home:events' %}">{% translate "EVENTS" %}</a></li>
+                    <li><a href="{% url 'home:about' %}">{% translate "ABOUT" %}</a></li>
+                    <li>{% translate "CONTACT" %}</li>
+                    <li id="language2">{% translate "LANGUAGE" %}</li>
+                    <li><a href="{% url 'home:profiles' %}">{% translate "PROFILES" %}</a></li>
+                </ul>
+            </nav>
+            <div id="donate-btn">
+                <button><a href="{% url 'home:donate' %}">{% translate "Donate" %}</a></button>
+            </div>
         </div>
-    </div>
     </header>
     {% if messages %}
     <ul class="messages">
